@@ -150,9 +150,10 @@ export default function DoctorsPage() {
 
                       <div className="mb-6">
                         <h4 className="font-semibold text-gray-900 mb-3">About</h4>
-                        <p className="text-gray-600 leading-relaxed">
-                          {doctor.bio}
-                        </p>
+                        <p
+  className="text-gray-600 leading-relaxed"
+  dangerouslySetInnerHTML={{ __html: doctor.bio }}
+/>
                       </div>
 
                       <div className="mb-6">

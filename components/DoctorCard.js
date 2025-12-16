@@ -8,8 +8,9 @@ export default function DoctorCard({ doctor }) {
         <Image
           src={doctor.image}
           alt={doctor.name}
-          width={400}
-          height={100}
+          // width={400}
+          // height={100}
+          fill
           className="object-cover absolute -top-12 position-center group-hover:scale-110 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
