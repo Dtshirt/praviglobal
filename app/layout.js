@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ChristmasDecoration from '@/components/ChristmasDecoration'
 import { hospitalInfo } from '@/lib/data';
 import { generateOrganizationSchema } from '@/lib/schema';
 
@@ -210,6 +211,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header />
         <main className="min-h-screen">
+          <ChristmasDecoration />
           {children}
         </main>
         <Footer />
