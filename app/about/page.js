@@ -46,18 +46,13 @@ export default function AboutPage() {
                 Building Dreams, Creating Families
               </h2>
               <p className="text-gray-600 mb-4 leading-relaxed text-lg">
-                Founded with a vision to provide world-class fertility treatment in Chhattisgarh, Pravi IVF and 
-                Fertility Center has become a beacon of hope for thousands of couples seeking to build their families.
+                Founded with a vision to provide world-class fertility treatment in Lajpat Nagar, Delhi, Pravi Global IVF has become a beacon of hope for thousands of couples seeking to build their families.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed text-lg">
-                Our state-of-the-art facility in Raipur combines advanced reproductive technology with personalized, 
-                compassionate care. Every patient's journey is unique, and we pride ourselves on creating customized 
-                treatment plans that maximize success while supporting emotional wellbeing.
+                Our state of the art facility in Delhi combines advanced reproductive technology with personalized, compassionate care. Every patient's journey is unique, and we pride ourselves on creating customized treatment plans that maximize success while supporting emotional well being.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                With over 15 years of excellence and thousands of successful pregnancies, we continue to set the 
-                standard for fertility care in Central India. Our commitment to ethical practices, transparency, and 
-                patient education has earned us the trust of families across the region.
+                With over 15 years of excellence and thousands of successful pregnancies, we continue to set the standard for fertility care in kanpur and Delhi India. Our commitment to ethical practices, transparency, and patient education has earned us the trust of families across the region.
               </p>
 
               <div className="grid grid-cols-2 gap-6">
