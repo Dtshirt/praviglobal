@@ -46,14 +46,19 @@ export default function AboutPage() {
                 Building Dreams, Creating Families
               </h2>
               <p className="text-gray-600 mb-4 leading-relaxed text-lg">
-                Founded with a vision to provide world-class fertility treatment in Lajpat Nagar, Delhi, Pravi Global IVF has become a beacon of hope for thousands of couples seeking to build their families.
+                Founded with a clear vision to bring world-class fertility treatment closer to home, Pravi Global IVF in Lajpat Nagar, Delhi has emerged as a trusted destination for couples dreaming of parenthood.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed text-lg">
-                Our state of the art facility in Delhi combines advanced reproductive technology with personalized, compassionate care. Every patient's journey is unique, and we pride ourselves on creating customized treatment plans that maximize success while supporting emotional well being.
+                At Pravi Global IVF, we combine advanced reproductive technology, international treatment protocols, and deeply personalized care—because we understand that fertility treatment is not just medical; it is emotional.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                With over 15 years of excellence and thousands of successful pregnancies, we continue to set the standard for fertility care in kanpur and Delhi India. Our commitment to ethical practices, transparency, and patient education has earned us the trust of families across the region.
+                Our state-of-the-art IVF center offers customized treatment plans designed around each patient’s medical history, lifestyle, and emotional needs. From the first consultation to a confirmed pregnancy, our expert team walks with you at every step—with empathy, transparency, and constant support.
               </p>
+              <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+With over 15 years of experience and thousands of successful pregnancies, Pravi Global IVF continues to set new benchmarks in fertility care across Delhi and Kanpur, India. Our strong focus on ethical practices, honest guidance, patient education, and affordable excellence has earned the trust of families from across the region. <br />
+
+Because at Pravi Global IVF, your dream of parenthood is our mission.
+                </p>
 
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-blue-50 p-6 rounded-xl">
