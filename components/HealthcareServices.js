@@ -57,7 +57,7 @@ const HealthcareServices = () => {
       id: 'international-patients?',
       icon: <User className="w-7 h-7" />,
       title: 'International Patients?',
-      url:'',
+      url:'/international',
       onClick: () => console.log('Book a Test clicked'),
     },
   ];
