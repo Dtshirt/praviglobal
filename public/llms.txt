@@ -1,0 +1,7 @@
+# llms.txt
+# AI/LLM access policy
+
+User-agent: *
+Allow: /
+
+Sitemap: https://praviglobalivf.com/sitemap.xml
