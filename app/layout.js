@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer'; 
+import Analytics from '@/components/Analytics';
 import { hospitalInfo } from '@/lib/data';
 import { generateOrganizationSchema } from '@/lib/schema';
 
@@ -12,7 +13,7 @@ export const metadata = {
     default: `Pravi Global IVF Polyclinic - Best IVF Centre in Delhi`, 
   },
   description:
-    'Pravi Global IVF Polyclinic is the best IVF centre in Delhi offering advanced fertility treatments including IVF, ICSI, IUI, surrogacy, and egg donation.',
+    'Pravi Global IVF Polyclinic is the best IVF Center in Delhi offering advanced fertility treatments including IVF, ICSI, IUI, surrogacy, and egg donation.',
   keywords:
     'Best IVF centre in Delhi, Top IVF clinic in Delhi, Best fertility clinic in Delhi, IVF hospital in Delhi, IVF treatment in Delhi, Best IVF doctor in Delhi, fertility specialist Delhi, IUI, ICSI, surrogacy, egg freezing, male infertility, female infertility',
   authors: [{ name: 'Pravi Global IVF Polyclinic' }],
@@ -69,126 +70,73 @@ export const metadata = {
 
 const mapSchema = {
   "@context": "https://schema.org",
-  "@type": "MedicalOrganization",
+  "@type": "MedicalBusiness",
   "name": "Pravi Global IVF Polyclinic",
   "alternateName": "Pravi Global IVF & Fertility Center",
   "url": "https://praviglobalivf.com",
   "logo": "https://praviglobalivf.com/logo.png",
-  "image": [
-    "https://praviglobalivf.com/images/og-image.jpg",
-    "https://praviglobalivf.com/logo.png"
-  ],
-  "description": "Pravi Global IVF Polyclinic is one of the best IVF and fertility centres in Delhi offering IVF, ICSI, IUI, surrogacy, egg donation, egg freezing and advanced fertility care.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://praviglobalivf.com/images/og-image.jpg",
+    "name": "Pravi Global IVF Polyclinic Front View"
+  },
+  "description": "Pravi Global IVF Polyclinic is a premier fertility center in Delhi offering IVF, ICSI, IUI, and advanced reproductive care.",
   "email": "info@praviglobalivf.in",
-  "telephone": "+91 8009150040",
-
+  "telephone": "+91-8009150040",
+  "priceRange": "₹₹₹",
+  "hasMap": "https://maps.app.goo.gl/79RLa9txkQWQ58Jg6",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Building number 41, First Floor, Ring Rd, Block Q, Lajpat Nagar IV",
     "addressLocality": "Lajpat Nagar",
-    "addressRegion": "New Delhi",
+    "addressRegion": "Delhi",
     "postalCode": "110024",
     "addressCountry": "IN"
   },
-
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 28.5721,
     "longitude": 77.2437
   },
-
-  "hasMap": "https://maps.app.goo.gl/79RLa9txkQWQ58Jg6",
-
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "09:00",
-    "closes": "18:00"
-  },
-
-  "medicalSpecialty": [
-    "IVF",
-    "ICSI",
-    "IUI",
-    "Surrogacy",
-    "Egg Freezing",
-    "Embryo Freezing",
-    "Male Infertility",
-    "Female Infertility",
-    "Fertility Consultation"
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
   ],
-
+  "medicalSpecialty": "ReproductiveEndocrinology",
+  "knowsAbout": ["IVF", "ICSI", "IUI", "Surrogacy", "Egg Freezing"],
   "sameAs": [
-    "https://maps.app.goo.gl/79RLa9txkQWQ58Jg6",
-    "https://www.practo.com/delhi/clinic/pravi-global-ivf-polyclinic-lajpat-nagar-4",
-    "https://www.justdial.com/Delhi/Pravi-Global-IVF-Polyclinic-Next-to-Rama-Gallery-Lajpat-Nagar/011PXX11-XX11-250416163017-Q6I5_BZDET",
     "https://www.facebook.com/www.praviivf.in/",
     "https://www.instagram.com/ivfpravi/",
-    "https://www.youtube.com/@ivfcentre1Msubscriber"
+    "https://www.youtube.com/@ivfcentre1Msubscriber",
+    "https://www.practo.com/delhi/clinic/pravi-global-ivf-polyclinic-lajpat-nagar-4"
   ],
-
-  "imageObject": {
-    "@type": "ImageObject",
-    "contentUrl": "https://praviglobalivf.com/images/og-image.jpg",
-    "url": "https://praviglobalivf.com/images/og-image.jpg",
-    "name": "Pravi Global IVF Polyclinic - Front View",
-    "description": "Front view and reception area of Pravi Global IVF Polyclinic, Lajpat Nagar, New Delhi.",
-    "representativeOfPage": true
-  },
-
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9", 
-    "bestRating": "5",
-    "ratingCount": "157"
+    "ratingValue": "4.9",
+    "reviewCount": "157",
+    "bestRating": "5"
   },
-
   "review": [
     {
       "@type": "Review",
-      "name": "Google Reviews",
       "author": {
-        "@type": "Organization",
-        "name": "Google"
+        "@type": "Person",
+        "name": "Verified Patient"
       },
       "reviewRating": {
         "@type": "Rating",
-        "ratingValue": "4.9",
+        "ratingValue": "5",
         "bestRating": "5"
       },
-      "url": "https://maps.app.goo.gl/79RLa9txkQWQ58Jg6"
-    },
-    {
-      "@type": "Review",
-      "name": "Practo Rating",
-      "author": {
-        "@type": "Organization",
-        "name": "Practo"
-      },
-      "reviewBody": "Patient stories and treatment experience testimonials.",
-      "url": "https://www.practo.com/delhi/clinic/pravi-global-ivf-polyclinic-lajpat-nagar-4"
-    },
-    {
-      "@type": "Review",
-      "name": "Justdial Rating",
-      "author": {
-        "@type": "Organization",
-        "name": "Justdial"
-      },
-      "reviewBody": "Clinic reviews and photo submissions on Justdial.",
-      "url": "https://www.justdial.com/Delhi/Pravi-Global-IVF-Polyclinic-Next-to-Rama-Gallery-Lajpat-Nagar/011PXX11-XX11-250416163017-Q6I5_BZDET"
+      "reviewBody": "The best experience for IVF treatment in Delhi. Highly recommended."
     }
-  ],
-
-  "priceRange": "₹₹₹"
+  ]
 }
 
 
@@ -212,6 +160,7 @@ export default function RootLayout({ children }) {
         <main className="min-h-screen"> 
           {children}
         </main>
+        <Analytics />
         <Footer />
       </body>
     </html>

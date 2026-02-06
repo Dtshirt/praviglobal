@@ -174,12 +174,12 @@ export default function PraviIVFLanding() {
               <Award className="w-5 h-5 text-rose-400" />
               <span className="text-sm font-medium text-slate-700">International Center of Excellence</span>
             </div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Turning Your Dream of<br />
               <span className="text-white">
                 Parenthood into Reality
               </span>
-            </h2>
+            </h1>
             <p className="text-xl text-white mb-10 leading-relaxed">
               World-class fertility care with personalized support for international patients.
               Begin your journey with compassion, expertise, and unwavering commitment.

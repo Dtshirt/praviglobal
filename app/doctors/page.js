@@ -124,7 +124,7 @@ export default function DoctorsPage() {
                           <GraduationCap className="h-6 w-6 text-blue-600 flex-shrink-0" />
                           <div>
                             <div className="text-xs text-gray-600">Qualification</div>
-                            <div className="font-semibold text-sm">{doctor.qualification.split(',')[0]}</div>
+                            <div className="font-semibold text-sm">{doctor.qualification.split(',')[0]},{doctor.qualification.split(',')[1]}</div>
                           </div>
                         </div>
                         <div className="flex items-center space-x-3 bg-blue-50 p-4 rounded-lg">
