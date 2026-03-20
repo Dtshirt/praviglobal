@@ -8,7 +8,7 @@ import 'react-phone-input-2/lib/style.css';
 
 import HealthcareServices from '@/components/HealthcareServices';
 import HealthcareServices2 from '@/components/HealthcareServices2';
-import Link from 'next/link'; 
+import Link from 'next/link';
 
 export default function PraviIVFLanding() {
   const [phone, setPhone] = useState('');
@@ -193,7 +193,7 @@ export default function PraviIVFLanding() {
               Begin your journey with compassion, expertise, and unwavering commitment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href='https://api.whatsapp.com/send/?phone=8009150040&text=Hello%21+I+would+like+to+know+more+about+your+services.&type=phone_number&app_absent=0'><button className="bg-[#004b4b] hover:bg-[#004242] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+              <Link href='https://api.whatsapp.com/send/?phone=+918009150040&text=Hello%21+I+would+like+to+know+more+about+your+services.&type=phone_number&app_absent=0'><button className="bg-[#004b4b] hover:bg-[#004242] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200">
                 Start Free Consultation
               </button></Link>
               <Link href="#internationalSupport" className="bg-white hover:bg-slate-100 text-[#005353] px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200">
@@ -266,25 +266,25 @@ export default function PraviIVFLanding() {
                     className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none"
                   >
                     <option selected={country == '' ? true : ''} value="">Select Country</option>
-                    <option  selected={country == 'afghanistan' ? true : ''} value="afghanistan">Afghanistan</option>
-                    <option  selected={country == 'cameroon' ? true : ''} value="cameroon">Cameroon</option>
-                    <option  selected={country == 'canada' ? true : ''} value="canada">Canada</option>
-                    <option  selected={country == 'ethiopia' ? true : ''} value="ethiopia">Ethiopia</option>
-                    <option  selected={country == 'india' ? true : ''} value="india">India</option>
-                    <option  selected={country == 'iran' ? true : ''} value="iran">Iran</option>
-                    <option  selected={country == 'iraq' ? true : ''} value="iraq">Iraq</option>
-                    <option  selected={country == 'kazakhstan' ? true : ''} value="kazakhstan">Kazakhstan</option>
-                    <option  selected={country == 'maldives' ? true : ''} value="maldives">Maldives</option>
-                    <option  selected={country == 'myanmarq' ? true : ''} value="myanmarq">Myanmar</option>
-                    <option  selected={country == 'oman' ? true : ''} value="oman">Oman</option>
-                    <option  selected={country == 'pakistan' ? true : ''} value="pakistan">Pakistan</option>
-                    <option  selected={country == 'sri-lanka' ? true : ''} value="sri-lanka">Sri Lanka</option>
-                    <option  selected={country == 'tajikistan' ? true : ''} value="tajikistan">Tajikistan</option>
-                    <option  selected={country == 'uzbekistan' ? true : ''} value="uzbekistan">Uzbekistan</option>
-                    <option  selected={country == 'united-state' ? true : ''} value='united-state'>United States</option> 
-                    <option  selected={country == 'australia' ? true : ''} value='australia'>Australia</option>
-                    <option  selected={country == 'yemen' ? true : ''} value="yemen">Yemen</option>
-                    <option  selected={country == 'other' ? true : ''} value='other'>Other</option>
+                    <option selected={country == 'afghanistan' ? true : ''} value="afghanistan">Afghanistan</option>
+                    <option selected={country == 'cameroon' ? true : ''} value="cameroon">Cameroon</option>
+                    <option selected={country == 'canada' ? true : ''} value="canada">Canada</option>
+                    <option selected={country == 'ethiopia' ? true : ''} value="ethiopia">Ethiopia</option>
+                    <option selected={country == 'india' ? true : ''} value="india">India</option>
+                    <option selected={country == 'iran' ? true : ''} value="iran">Iran</option>
+                    <option selected={country == 'iraq' ? true : ''} value="iraq">Iraq</option>
+                    <option selected={country == 'kazakhstan' ? true : ''} value="kazakhstan">Kazakhstan</option>
+                    <option selected={country == 'maldives' ? true : ''} value="maldives">Maldives</option>
+                    <option selected={country == 'myanmarq' ? true : ''} value="myanmarq">Myanmar</option>
+                    <option selected={country == 'oman' ? true : ''} value="oman">Oman</option>
+                    <option selected={country == 'pakistan' ? true : ''} value="pakistan">Pakistan</option>
+                    <option selected={country == 'sri-lanka' ? true : ''} value="sri-lanka">Sri Lanka</option>
+                    <option selected={country == 'tajikistan' ? true : ''} value="tajikistan">Tajikistan</option>
+                    <option selected={country == 'uzbekistan' ? true : ''} value="uzbekistan">Uzbekistan</option>
+                    <option selected={country == 'united-state' ? true : ''} value='united-state'>United States</option>
+                    <option selected={country == 'australia' ? true : ''} value='australia'>Australia</option>
+                    <option selected={country == 'yemen' ? true : ''} value="yemen">Yemen</option>
+                    <option selected={country == 'other' ? true : ''} value='other'>Other</option>
                   </select>
 
                   <button

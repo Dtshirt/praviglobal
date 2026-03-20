@@ -224,7 +224,7 @@ export default function OCIPage() {
               With global-standard IVF technology and experienced specialists, we ensure a safe, efficient, and result-oriented fertility journey during your stay in India.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href='https://api.whatsapp.com/send/?phone=8009150040&text=Hello%21+I+am+an+OCI+card+holder+and+would+like+to+know+more+about+your+fertility+services.&type=phone_number&app_absent=0'>
+              <Link href='https://api.whatsapp.com/send/?phone=+918009150040&text=Hello%21+I+am+an+OCI+card+holder+and+would+like+to+know+more+about+your+fertility+services.&type=phone_number&app_absent=0'>
                 <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200 w-full sm:w-auto">
                   Start Free Consultation
                 </button>

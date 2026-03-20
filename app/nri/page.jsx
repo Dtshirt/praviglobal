@@ -218,7 +218,7 @@ export default function NRIPage() {
               With experienced doctors, modern IVF technology, and dedicated support for NRI patients, we ensure a smooth and stress-free fertility journey when you travel to India.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href='https://api.whatsapp.com/send/?phone=8009150040&text=Hello%21+I+am+an+NRI+and+would+like+to+know+more+about+your+fertility+services.&type=phone_number&app_absent=0'>
+              <Link href='https://api.whatsapp.com/send/?phone=+918009150040&text=Hello%21+I+am+an+NRI+and+would+like+to+know+more+about+your+fertility+services.&type=phone_number&app_absent=0'>
                 <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200 w-full sm:w-auto">
                   Start Free Consultation
                 </button>
