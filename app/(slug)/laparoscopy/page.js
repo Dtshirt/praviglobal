@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   Activity,
   Award,
   Heart,
@@ -23,8 +23,8 @@ const LaparoscopyPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -42,7 +42,7 @@ const LaparoscopyPage = () => {
                 Minimally Invasive Surgery for Fertility & Diagnosis
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Experience precise, minimally invasive **laparoscopy** at Pravi Global IVF Delhi — a trusted solution for diagnosing and treating fertility problems, endometriosis, fibroids, and other reproductive issues with advanced surgical care.
+                Experience precise, minimally invasive laparoscopy at Pravi Global IVF Delhi — a trusted solution for diagnosing and treating fertility problems, endometriosis, fibroids, and other reproductive issues with advanced surgical care.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -146,11 +146,10 @@ const LaparoscopyPage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -163,10 +162,10 @@ const LaparoscopyPage = () => {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Laparoscopy?</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  **Laparoscopy** is a minimally invasive surgical procedure used to diagnose and treat fertility problems. It involves inserting a thin tube with a camera (laparoscope) through small abdominal incisions to view the pelvic organs.
+                  Laparoscopy is a minimally invasive surgical procedure used to diagnose and treat fertility problems. It involves inserting a thin tube with a camera (laparoscope) through small abdominal incisions to view the pelvic organs.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  At **Pravi Global IVF Delhi**, laparoscopy helps identify conditions such as endometriosis, fibroids, ovarian cysts, and tubal blockages that may affect fertility — offering both diagnosis and treatment in a single procedure.
+                  At Pravi Global IVF Delhi, laparoscopy helps identify conditions such as endometriosis, fibroids, ovarian cysts, and tubal blockages that may affect fertility — offering both diagnosis and treatment in a single procedure.
                 </p>
               </div>
             )}
@@ -175,11 +174,11 @@ const LaparoscopyPage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Laparoscopy Procedure & Uses</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Performed under general anesthesia</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Small incisions made in the abdomen</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> A laparoscope camera provides clear internal visuals</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Used to diagnose or treat infertility-related issues</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Often combined with hysteroscopy for comprehensive evaluation</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Performed under general anesthesia</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Small incisions made in the abdomen</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> A laparoscope camera provides clear internal visuals</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Used to diagnose or treat infertility-related issues</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Often combined with hysteroscopy for comprehensive evaluation</li>
                 </ul>
               </div>
             )}
@@ -188,11 +187,11 @@ const LaparoscopyPage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Benefits of Laparoscopy</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Detects hidden causes of infertility</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Treats endometriosis, fibroids, cysts, and adhesions</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Short hospital stay and fast recovery</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Minimal pain and scarring</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Improves conception rates post-surgery</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Detects hidden causes of infertility</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Treats endometriosis, fibroids, cysts, and adhesions</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Short hospital stay and fast recovery</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Minimal pain and scarring</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Improves conception rates post-surgery</li>
                 </ul>
               </div>
             )}
@@ -232,8 +231,8 @@ const LaparoscopyPage = () => {
             Restore your reproductive health and improve fertility outcomes with minimally invasive laparoscopy performed by our expert gynecologic surgeons.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

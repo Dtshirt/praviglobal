@@ -11,6 +11,7 @@ import TestimonialCard from '@/components/TestimonialCard';
 import ServicesSection from '@/components/ServicesSection';
 import HealthcareServices from '@/components/HealthcareServices';
 import HealthcareServices2 from '@/components/HealthcareServices2';
+import HeroSlider from '@/components/HeroSlider';
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -43,65 +44,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-<section className="relative h-screen overflow-hidden">
-  
-  {/* Background Video Element */}
-  <div className="absolute inset-0">
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="w-full h-full object-cover"
-    >
-      {/* Replace 'path-to-your-video.mp4' with the actual path */}
-      <source src="/images/2.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  {/* Black Overlay with 50% Opacity */}
-  {/* <div className="absolute inset-0 bg-black/50" /> */}
-
-  {/* Existing Blue Gradient Overlay (Kept for style consistency) */}
-  <div className="absolute inset-0 bg-gradient-to-r from-[#005353f1]  to-[#00535345]" />
-
-  {/* Hero Content (Kept as is, simplified to only show current slide content) */}
-  <div className="relative h-full flex items-center">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-      <div className="max-w-3xl">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in leading-tight">
-          {/* Note: If you keep this code, you'll need to define a single 'heroContent' object */}
-          Your Parenthood Journey Starts Here
-        </h1>
-        <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
-          With Best IVF Center in Delhi
-        </p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/book-appointment" className="btn-primary text-lg px-8 py-4 hover:scale-105  text-white">
-            Book Appointment <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-          <Link href="https://api.whatsapp.com/send/?phone=8009150040&text=Hello%21+I+would+like+to+know+more+about+your+services.&type=phone_number&app_absent=0" className="btn-secondary text-lg px-8 py-4 hover:scale-105">
-            whatsapp Us <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </div>
-
-        {/* Quick Contact */}
-        <div className="mt-8 flex items-center space-x-2 text-white">
-          <Phone className="h-5 w-5" />
-          <span className="text-lg">Emergency: </span>
-          {/* Note: ensure hospitalInfo is still defined if you use this */}
-          <a href={`tel:${hospitalInfo.phone}`} className="text-lg font-semibold hover:text-blue-200">
-            {hospitalInfo.phone}
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {/* Slide Indicators - REMOVED since the image slider was removed for the video */}
-  {/* If you intend to keep a slider overlaying the video, you need to re-add the logic */}
-</section>
+      <HeroSlider />
 
       {/* Stats Section */}
       <section className="py-1 px-2 sm:px-2 bg-gradient-to-r -mt-20 relative z-10">

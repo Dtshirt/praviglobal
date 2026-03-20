@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   FlaskRound,
   CheckCircle2,
   Clock,
@@ -27,8 +27,8 @@ const IUIServicePage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -46,7 +46,7 @@ const IUIServicePage = () => {
                 Affordable, Safe & Effective Fertility Care
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                At Pravi Global IVF Delhi, we offer advanced **Intrauterine Insemination (IUI)** treatments — a simple, safe, and effective fertility procedure that helps couples achieve pregnancy naturally with medical support. 
+                At Pravi Global IVF Delhi, we offer advanced Intrauterine Insemination (IUI) treatments — a simple, safe, and effective fertility procedure that helps couples achieve pregnancy naturally with medical support.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -150,11 +150,10 @@ const IUIServicePage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -167,10 +166,10 @@ const IUIServicePage = () => {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">IUI Treatment – A Simple Path to Parenthood</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  **Intrauterine Insemination (IUI)** is one of the simplest and least invasive fertility treatments. In this process, prepared sperm is placed directly inside the uterus during ovulation, increasing the chances of fertilization naturally.
+                  Intrauterine Insemination (IUI) is one of the simplest and least invasive fertility treatments. In this process, prepared sperm is placed directly inside the uterus during ovulation, increasing the chances of fertilization naturally.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  At **Pravi Global IVF Delhi**, our fertility experts design customized IUI cycles based on the couple’s medical profile, ensuring the best chance of success.
+                  At Pravi Global IVF Delhi, our fertility experts design customized IUI cycles based on the couple’s medical profile, ensuring the best chance of success.
                 </p>
               </div>
             )}
@@ -206,11 +205,11 @@ const IUIServicePage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Why Choose IUI at Pravi Global IVF?</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Safe, minimally invasive, and affordable</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Performed by the best IUI specialists in Delhi</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Advanced semen processing for higher pregnancy rates</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Personalized treatment protocols for every couple</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> 24/7 support and post-IUI guidance</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Safe, minimally invasive, and affordable</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Performed by the best IUI specialists in Delhi</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Advanced semen processing for higher pregnancy rates</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Personalized treatment protocols for every couple</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> 24/7 support and post-IUI guidance</li>
                 </ul>
               </div>
             )}
@@ -250,8 +249,8 @@ const IUIServicePage = () => {
             Take the first step toward parenthood — book a free IUI consultation with our fertility experts in Delhi.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

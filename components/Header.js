@@ -9,6 +9,7 @@ import {
   Heart,
   Phone,
   ChevronDown,
+  ChevronRight,
   FlaskConical,
   Microscope,
   Mars as Male,
@@ -23,7 +24,9 @@ import {
   TestTube2,
   Baby,
   ClipboardList,
-  Globe
+  Globe,
+  UserCheck,
+  BadgeCheck
 } from 'lucide-react';
 import { hospitalInfo } from '@/lib/data';
 
@@ -31,6 +34,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [internationalOpen, setInternationalOpen] = useState(false);
+  const [ivfSuccessOpen, setIvfSuccessOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -41,7 +45,7 @@ export default function Header() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
+    { name: 'IVF Success', path: '/success-stories' },
     { name: 'Services', path: '/services' },
     { name: 'Doctors', path: '/doctors' },
     { name: 'Gallery', path: '/gallery' },
@@ -64,6 +68,19 @@ export default function Header() {
     { name: 'TESA & PESA', path: '/tesa-and-pesa', icon: TestTube2 },
     { name: 'Surrogacy', path: '/surrogacy', icon: Baby },
     { name: 'Verification Services', path: '/verification-services', icon: ClipboardList }
+  ];
+
+  const successCategories = [
+    { name: 'IVF Success Story', path: '/success-stories/ivf' },
+    { name: 'IUI Success Story', path: '/success-stories/iui' },
+    { name: 'ICSI Success Story', path: '/success-stories/icsi' },
+    { name: 'Low AMH Success Story', path: '/success-stories/low-amh' },
+    { name: 'Surrogacy Success Story', path: '/success-stories/surrogacy' },
+    { name: 'Block Fallopian Tube Success', path: '/success-stories/blocked-fallopian-tube' },
+    { name: 'Low Sperm Count Success', path: '/success-stories/low-sperm-count' },
+    { name: 'Nil Sperm Count Success', path: '/success-stories/nil-sperm-count' },
+    { name: 'By TESA and PESA', path: '/success-stories/tesa-pesa' },
+    { name: 'International Patient Success', path: '/success-stories/international' }
   ];
 
   const International = [
@@ -155,6 +172,35 @@ export default function Header() {
                       </ul>
                     </div>
                   </div>
+                ) : link.name === 'IVF Success' ? (
+                  <div key={link.name} className="relative group">
+                    <Link href="/success-stories">
+                      <button className="flex items-center text-gray-50 hover:text-white font-medium transition-colors relative">
+                        IVF Success
+                        <ChevronDown className="h-4 w-4 ml-1" />
+                      </button>
+                    </Link>
+                    <div className="absolute left-0 -mt-1 w-[350px] bg-white shadow-lg rounded-xl border border-gray-100 opacity-0 group-hover:opacity-100 group-hover:translate-y-1 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
+                      <ul className="flex flex-col py-2">
+                        <li className="px-4 py-2 border-b border-gray-50 pb-2 mb-1">
+                           <Link href="/success-stories" className="text-sm font-bold text-teal-700 hover:text-teal-800">
+                             All Success Stories
+                           </Link>
+                        </li>
+                        {successCategories.map((cat, idx) => (
+                          <li key={idx}>
+                            <Link
+                              href={cat.path}
+                              className="flex items-center gap-2 px-4 py-2.5 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition-colors"
+                            >
+                              <BadgeCheck className="h-4 w-4 text-teal-500" />
+                              {cat.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 ) : link.name === 'International' ? (
                   <div key={link.name} className="relative group">
                     <Link href="/international">
@@ -163,21 +209,51 @@ export default function Header() {
                         <ChevronDown className="h-4 w-4 ml-1" />
                       </button>
                     </Link>
-                    {/* International Dropdown */}
-                    <div className="absolute left-0 -mt-1 w-[400px] bg-white shadow-lg rounded-xl border border-gray-100 opacity-0 group-hover:opacity-100 group-hover:translate-y-1 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
-                      <ul className="grid grid-cols-2 gap-x-2 py-2">
-                        {International.map(({ name, path, icon: Icon }) => (
-                          <li key={path}>
-                            <Link
-                              href={path}
-                              className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-600 transition-colors rounded-md"
-                            >
-                              <Icon className="h-4 w-4 text-green-500" />
-                              {name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                    {/* Dropdown: International (with inline countries), NRI, OCI */}
+                    <div className="absolute right-0 -mt-1 w-[480px] bg-white shadow-xl rounded-xl border border-gray-100 opacity-0 group-hover:opacity-100 group-hover:translate-y-1 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
+                      <div className="p-4">
+
+                        {/* NRI & OCI */}
+                        <div className="grid grid-cols-2 gap-2">
+                          <Link
+                            href="/nri"
+                            className="flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-gray-700 bg-green-100 hover:bg-green-200 hover:text-green-700 transition-colors rounded-lg"
+                          >
+                            <UserCheck className="h-4 w-4 text-green-600" />
+                            NRI Patients
+                          </Link>
+                          <Link
+                            href="/oci"
+                            className="flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-gray-700 bg-green-100 hover:bg-green-200 hover:text-green-700 transition-colors rounded-lg"
+                          >
+                            <BadgeCheck className="h-4 w-4 text-green-600" />
+                            OCI Patients
+                          </Link>
+                        </div>
+                        
+                        {/* Divider */}
+                        <div className="border-t border-gray-100 my-2"></div>
+                        {/* International Countries Section */}
+                        <div className="mb-3">
+                          <div className="flex items-center gap-2 mb-3">
+                            <Globe className="h-4 w-4 text-green-600" />
+                            <span className="text-sm font-semibold text-gray-800 uppercase tracking-wide">International Patients</span>
+                          </div>
+                          <div className="grid grid-cols-3 gap-x-2 gap-y-1">
+                            {International.map(({ name, path, icon: Icon }) => (
+                              <Link
+                                key={path}
+                                href={path}
+                                className="flex items-center gap-2 px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors rounded-md"
+                              >
+                                <Icon className="h-3.5 w-3.5 text-green-500 flex-shrink-0" />
+                                {name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 ) : (
@@ -242,28 +318,86 @@ export default function Header() {
                         </div>
                       )}
                     </div>
+                  ) : link.name === 'IVF Success' ? (
+                    <div key={link.name}>
+                      <button
+                        onClick={() => setIvfSuccessOpen(!ivfSuccessOpen)}
+                        className="flex items-center justify-between text-gray-50 font-medium w-full py-2"
+                      >
+                        <span className="flex items-center gap-2">IVF Success</span>
+                        <ChevronDown className={`h-4 w-4 transition-transform ${ivfSuccessOpen ? 'rotate-180' : ''}`} />
+                      </button>
+                      {ivfSuccessOpen && (
+                        <div className="pl-4 mt-2 flex flex-col space-y-2">
+                          <Link
+                            href="/success-stories"
+                            className="flex items-center gap-2 text-teal-300 hover:text-teal-100 transition-colors text-sm font-semibold mb-1"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            All Success Stories
+                          </Link>
+                          {successCategories.map(({ name, path }) => (
+                            <Link
+                              key={path}
+                              href={path}
+                              className="flex items-center gap-2 text-gray-50 hover:text-teal-400 transition-colors text-sm"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              <BadgeCheck className="h-4 w-4 text-teal-400" />
+                              {name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   ) : link.name === 'International' ? (
                     <div key={link.name}>
                       <button
                         onClick={() => setInternationalOpen(!internationalOpen)}
                         className="flex items-center justify-between text-gray-50 font-medium w-full py-2"
                       >
-                        <span className="flex items-center gap-2">International</span>
+                        <span className="flex items-center gap-2">
+                          <Globe className="h-4 w-4" />
+                          International
+                        </span>
                         <ChevronDown className={`h-4 w-4 transition-transform ${internationalOpen ? 'rotate-180' : ''}`} />
                       </button>
                       {internationalOpen && (
-                        <div className="pl-4 mt-2 grid grid-cols-2 gap-x-3 gap-y-2">
-                          {International.map(({ name, path, icon: Icon }) => (
+                        <div className="pl-4 mt-2 space-y-2">
+                          {/* Countries grid */}
+                          <p className="text-xs text-gray-400 uppercase tracking-wide font-semibold mb-1">Countries</p>
+                          <div className="grid grid-cols-2 gap-x-3 gap-y-2">
+                            {International.map(({ name, path, icon: Icon }) => (
+                              <Link
+                                key={path}
+                                href={path}
+                                className="flex items-center gap-2 text-gray-50 hover:text-green-400 transition-colors text-sm"
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                <Icon className="h-4 w-4 text-green-400" />
+                                {name}
+                              </Link>
+                            ))}
+                          </div>
+                          {/* NRI & OCI */}
+                          <div className="pt-2 border-t border-gray-700 grid grid-cols-2 gap-x-3 gap-y-2">
                             <Link
-                              key={path}
-                              href={path}
+                              href="/nri"
                               className="flex items-center gap-2 text-gray-50 hover:text-green-400 transition-colors text-sm"
                               onClick={() => setMobileMenuOpen(false)}
                             >
-                              <Icon className="h-4 w-4 text-green-400" />
-                              {name}
+                              <UserCheck className="h-4 w-4 text-green-400" />
+                              NRI
                             </Link>
-                          ))}
+                            <Link
+                              href="/oci"
+                              className="flex items-center gap-2 text-gray-50 hover:text-green-400 transition-colors text-sm"
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              <BadgeCheck className="h-4 w-4 text-green-400" />
+                              OCI
+                            </Link>
+                          </div>
                         </div>
                       )}
                     </div>

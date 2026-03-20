@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   Shield,
   Award,
   FileCheck2,
@@ -23,8 +23,8 @@ const VerificationServicesPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -42,7 +42,7 @@ const VerificationServicesPage = () => {
                 Ensuring Transparency, Legality & Patient Safety
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Our **Verification Services** ensure that every fertility treatment, donor match, and surrogacy arrangement at Pravi Global IVF Delhi adheres to legal, ethical, and medical standards.  
+                Our Verification Services ensure that every fertility treatment, donor match, and surrogacy arrangement at Pravi Global IVF Delhi adheres to legal, ethical, and medical standards.
                 We prioritize transparency, confidentiality, and compliance to protect every parent’s journey.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
@@ -149,11 +149,10 @@ const VerificationServicesPage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -168,11 +167,11 @@ const VerificationServicesPage = () => {
                   What Are Verification Services?
                 </h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  **Verification Services** at Pravi Global IVF Delhi ensure that every fertility treatment follows proper **legal, medical, and ethical** guidelines.  
+                  Verification Services at Pravi Global IVF Delhi ensure that every fertility treatment follows proper legal, medical, and ethical guidelines.
                   These services safeguard the rights of intended parents, donors, and surrogates while maintaining complete confidentiality and compliance.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Our verification protocols align with the **Indian Council of Medical Research (ICMR)** and **ART Regulation Act**, ensuring ethical medical practice in all reproductive procedures.
+                  Our verification protocols align with the Indian Council of Medical Research (ICMR) and ART Regulation Act, ensuring ethical medical practice in all reproductive procedures.
                 </p>
               </div>
             )}
@@ -181,10 +180,10 @@ const VerificationServicesPage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Types of Verification We Provide</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **Identity Verification** – Aadhaar, passport, or government ID verification for all parties.</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **Medical Verification** – Health, fertility, and infectious disease screening for patients, donors, and surrogates.</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **Legal Verification** – Consent forms, surrogacy agreements, and compliance checks under ART law.</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **Genetic Verification** – DNA and blood group matching where applicable.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Identity Verification – Aadhaar, passport, or government ID verification for all parties.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Medical Verification – Health, fertility, and infectious disease screening for patients, donors, and surrogates.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Legal Verification – Consent forms, surrogacy agreements, and compliance checks under ART law.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Genetic Verification – DNA and blood group matching where applicable.</li>
                 </ul>
               </div>
             )}
@@ -252,8 +251,8 @@ const VerificationServicesPage = () => {
             Trust Pravi Global IVF Delhi for fully verified, ethical, and compliant fertility treatments that protect your rights and ensure safety at every step.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   FlaskRound,
   CheckCircle2,
   Clock,
@@ -18,7 +18,7 @@ import {
   TrendingUp,
   Activity,
   Globe,
-  User as Male, 
+  User as Male,
 } from 'lucide-react';
 
 const MaleInfertilityPage = () => {
@@ -27,8 +27,8 @@ const MaleInfertilityPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -46,7 +46,7 @@ const MaleInfertilityPage = () => {
                 Advanced Andrology & Fertility Solutions for Men
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                At Pravi Global IVF Delhi, we specialize in **male infertility diagnosis and treatment** using cutting-edge andrology techniques. Our experts address low sperm count, motility issues, and hormonal imbalances to help couples achieve parenthood naturally or through assisted reproduction.
+                At Pravi Global IVF Delhi, we specialize in male infertility diagnosis and treatment using cutting-edge andrology techniques. Our experts address low sperm count, motility issues, and hormonal imbalances to help couples achieve parenthood naturally or through assisted reproduction.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -150,11 +150,10 @@ const MaleInfertilityPage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -169,7 +168,7 @@ const MaleInfertilityPage = () => {
                   Understanding Male Infertility
                 </h2>
                 <p className="text-gray-700 text-lg mb-4 leading-relaxed">
-                  **Male infertility** refers to a man’s inability to contribute to conception due to low sperm production, poor sperm function, hormonal imbalance, or blockages. At **Pravi Global IVF Delhi**, we use advanced diagnostic tools to identify the root cause and design the right treatment plan for every individual.
+                  Male infertility refers to a man’s inability to contribute to conception due to low sperm production, poor sperm function, hormonal imbalance, or blockages. At Pravi Global IVF Delhi, we use advanced diagnostic tools to identify the root cause and design the right treatment plan for every individual.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
                   Our approach combines medical expertise, cutting-edge technology, and compassionate counseling to help men regain confidence and fertility health.
@@ -263,8 +262,8 @@ const MaleInfertilityPage = () => {
             Meet our experts today for a confidential consultation and comprehensive male infertility evaluation at Pravi Global IVF Delhi.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

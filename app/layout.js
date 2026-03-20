@@ -2,6 +2,8 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer'; 
+import MobileFooter from '@/components/MobileFooter';
+import DoctorPopup from '@/components/DoctorPopup';
 import Analytics from '@/components/Analytics';
 import { hospitalInfo } from '@/lib/data';
 import { generateOrganizationSchema } from '@/lib/schema';
@@ -162,6 +164,8 @@ export default function RootLayout({ children }) {
         </main>
         <Analytics />
         <Footer />
+        <MobileFooter />
+        <DoctorPopup />
       </body>
     </html>
   );

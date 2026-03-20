@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   Activity,
   Award,
   Heart,
@@ -24,8 +24,8 @@ const TesaPesaPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -43,7 +43,7 @@ const TesaPesaPage = () => {
                 Surgical Sperm Retrieval with Precision & Care
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                At Pravi Global IVF Delhi, we perform **TESA (Testicular Sperm Aspiration)** and **PESA (Percutaneous Epididymal Sperm Aspiration)** to retrieve sperm directly from the testis or epididymis in men with obstructive or non-obstructive azoospermia.  
+                At Pravi Global IVF Delhi, we perform TESA (Testicular Sperm Aspiration) and PESA (Percutaneous Epididymal Sperm Aspiration) to retrieve sperm directly from the testis or epididymis in men with obstructive or non-obstructive azoospermia.
                 These minimally invasive techniques help achieve fatherhood through IVF-ICSI.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
@@ -148,11 +148,10 @@ const TesaPesaPage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -165,8 +164,8 @@ const TesaPesaPage = () => {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">What Are TESA & PESA?</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  **TESA (Testicular Sperm Aspiration)** and **PESA (Percutaneous Epididymal Sperm Aspiration)** are advanced procedures designed to extract sperm directly from the testes or epididymis in men with azoospermia (no sperm in semen).  
-                  These techniques help men with blockages or sperm production problems to achieve biological fatherhood through **ICSI (Intracytoplasmic Sperm Injection)**.
+                  TESA (Testicular Sperm Aspiration) and PESA (Percutaneous Epididymal Sperm Aspiration) are advanced procedures designed to extract sperm directly from the testes or epididymis in men with azoospermia (no sperm in semen).
+                  These techniques help men with blockages or sperm production problems to achieve biological fatherhood through ICSI (Intracytoplasmic Sperm Injection).
                 </p>
               </div>
             )}
@@ -175,10 +174,10 @@ const TesaPesaPage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Difference Between TESA and PESA</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **TESA:** Sperm retrieved from the testicular tissue using a fine needle.</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **PESA:** Sperm aspirated from the epididymis (just above the testis).</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Both methods are minimally invasive and ideal for men with obstructive azoospermia.</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Both can be performed under local anesthesia and on an outpatient basis.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> TESA: Sperm retrieved from the testicular tissue using a fine needle.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> PESA: Sperm aspirated from the epididymis (just above the testis).</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Both methods are minimally invasive and ideal for men with obstructive azoospermia.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Both can be performed under local anesthesia and on an outpatient basis.</li>
                 </ul>
               </div>
             )}
@@ -244,8 +243,8 @@ const TesaPesaPage = () => {
             Achieve fatherhood with advanced sperm retrieval and IVF-ICSI support — expert care for every step of your fertility journey.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

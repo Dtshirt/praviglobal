@@ -264,7 +264,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Visit Our Clinic</h2>
-            <p className="text-gray-600 text-lg">Located in the heart of Raipur, easily accessible from all parts of the city</p>
+            <p className="text-gray-600 text-lg">Located in the heart of Delhi, easily accessible from all parts of the city</p>
           </div>
 
           <div className="rounded-2xl overflow-hidden shadow-2xl h-96 md:h-[500px]">

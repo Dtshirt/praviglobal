@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   Microscope,
   CheckCircle2,
   Clock,
@@ -26,8 +26,8 @@ const HysteroscopyServicePage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -45,7 +45,7 @@ const HysteroscopyServicePage = () => {
                 Accurate Diagnosis & Treatment for Uterine Health
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Pravi Global IVF Delhi offers advanced **hysteroscopy procedures** using high-definition endoscopic technology for both diagnostic and therapeutic purposes. Our expert gynecologists provide safe, painless, and precise evaluations of uterine conditions affecting fertility and menstrual health.
+                Pravi Global IVF Delhi offers advanced hysteroscopy procedures using high-definition endoscopic technology for both diagnostic and therapeutic purposes. Our expert gynecologists provide safe, painless, and precise evaluations of uterine conditions affecting fertility and menstrual health.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -149,11 +149,10 @@ const HysteroscopyServicePage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -166,10 +165,10 @@ const HysteroscopyServicePage = () => {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Hysteroscopy?</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  **Hysteroscopy** is a minimally invasive diagnostic and therapeutic procedure that allows doctors to view the inside of the uterus using a thin, lighted instrument called a hysteroscope. It helps detect and treat uterine issues such as fibroids, polyps, adhesions, and abnormal bleeding.
+                  Hysteroscopy is a minimally invasive diagnostic and therapeutic procedure that allows doctors to view the inside of the uterus using a thin, lighted instrument called a hysteroscope. It helps detect and treat uterine issues such as fibroids, polyps, adhesions, and abnormal bleeding.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  At **Pravi Global IVF Delhi**, we perform both **diagnostic and operative hysteroscopy** using the latest endoscopic systems for optimal safety and accuracy.
+                  At Pravi Global IVF Delhi, we perform both diagnostic and operative hysteroscopy using the latest endoscopic systems for optimal safety and accuracy.
                 </p>
               </div>
             )}
@@ -205,12 +204,12 @@ const HysteroscopyServicePage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">When is Hysteroscopy Recommended?</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Unexplained infertility or recurrent miscarriages</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Heavy or irregular menstrual bleeding</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Suspected uterine fibroids or polyps</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> To remove intrauterine adhesions (Asherman’s syndrome)</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Evaluate uterine shape or structural anomalies</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Retrieve lost IUCD (contraceptive device)</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Unexplained infertility or recurrent miscarriages</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Heavy or irregular menstrual bleeding</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Suspected uterine fibroids or polyps</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> To remove intrauterine adhesions (Asherman’s syndrome)</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Evaluate uterine shape or structural anomalies</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Retrieve lost IUCD (contraceptive device)</li>
                 </ul>
               </div>
             )}
@@ -250,8 +249,8 @@ const HysteroscopyServicePage = () => {
             Get accurate diagnosis and effective treatment from Delhi’s leading fertility specialists using world-class hysteroscopy technology.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

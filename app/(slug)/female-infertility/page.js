@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   Users,
   Award,
   Heart,
@@ -23,8 +23,8 @@ const FemaleInfertilityPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -42,7 +42,7 @@ const FemaleInfertilityPage = () => {
                 Restoring Hope with Advanced Fertility Care
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                At Pravi Global IVF Delhi, we specialize in diagnosing and treating **female infertility** through advanced reproductive techniques and compassionate care. From hormonal imbalance to tubal blockages, our experts identify and treat the root cause to help you achieve your dream of motherhood.
+                At Pravi Global IVF Delhi, we specialize in diagnosing and treating female infertility through advanced reproductive techniques and compassionate care. From hormonal imbalance to tubal blockages, our experts identify and treat the root cause to help you achieve your dream of motherhood.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -146,11 +146,10 @@ const FemaleInfertilityPage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -163,10 +162,10 @@ const FemaleInfertilityPage = () => {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Understanding Female Infertility</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  **Female infertility** refers to the inability to conceive after a year of unprotected intercourse. It can result from hormonal issues, ovulation problems, blocked fallopian tubes, endometriosis, or uterine conditions.  
+                  Female infertility refers to the inability to conceive after a year of unprotected intercourse. It can result from hormonal issues, ovulation problems, blocked fallopian tubes, endometriosis, or uterine conditions.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  At **Pravi Global IVF Delhi**, we identify the cause through advanced diagnostics and provide targeted treatments to restore natural fertility or assist through ART (Assisted Reproductive Technology).
+                  At Pravi Global IVF Delhi, we identify the cause through advanced diagnostics and provide targeted treatments to restore natural fertility or assist through ART (Assisted Reproductive Technology).
                 </p>
               </div>
             )}
@@ -175,12 +174,12 @@ const FemaleInfertilityPage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Common Causes of Female Infertility</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Ovulation disorders (PCOS, hormonal imbalance)</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Fallopian tube blockage or damage</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Endometriosis or fibroids</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Uterine or cervical abnormalities</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Age-related decline in egg quality</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Lifestyle and stress factors</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Ovulation disorders (PCOS, hormonal imbalance)</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Fallopian tube blockage or damage</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Endometriosis or fibroids</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Uterine or cervical abnormalities</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Age-related decline in egg quality</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Lifestyle and stress factors</li>
                 </ul>
               </div>
             )}
@@ -189,12 +188,12 @@ const FemaleInfertilityPage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Treatment Options at Pravi Global IVF</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Ovulation Induction & Hormonal Therapy</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Intrauterine Insemination (IUI)</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> In Vitro Fertilization (IVF)</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Hysteroscopy & Laparoscopy for Uterine Correction</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Egg Freezing & Donor Programs</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Lifestyle and Nutritional Counseling</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Ovulation Induction & Hormonal Therapy</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Intrauterine Insemination (IUI)</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> In Vitro Fertilization (IVF)</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Hysteroscopy & Laparoscopy for Uterine Correction</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Egg Freezing & Donor Programs</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Lifestyle and Nutritional Counseling</li>
                 </ul>
               </div>
             )}
@@ -234,8 +233,8 @@ const FemaleInfertilityPage = () => {
             Discover expert diagnosis, personalized treatment, and emotional support for female infertility — because every woman deserves a chance at motherhood.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   FlaskRound,
   CheckCircle2,
   Clock,
@@ -26,8 +26,8 @@ const HormonalTestPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -45,7 +45,7 @@ const HormonalTestPage = () => {
                 Accurate, Advanced & Reliable Hormone Analysis
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                At Pravi Global IVF Delhi, we offer advanced **hormonal testing** to evaluate reproductive and endocrine health. These tests help diagnose fertility issues, menstrual irregularities, thyroid problems, and more — ensuring targeted treatment for both men and women.
+                At Pravi Global IVF Delhi, we offer advanced hormonal testing to evaluate reproductive and endocrine health. These tests help diagnose fertility issues, menstrual irregularities, thyroid problems, and more — ensuring targeted treatment for both men and women.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -149,11 +149,10 @@ const HormonalTestPage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -166,10 +165,10 @@ const HormonalTestPage = () => {
               <div className="space-y-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Comprehensive Hormonal Testing in Delhi</h2>
                 <p className="text-gray-700 text-lg mb-4 leading-relaxed">
-                  Hormones play a vital role in regulating fertility, metabolism, and overall health. At <strong>Pravi Global IVF Delhi</strong>, we provide a complete range of **hormonal tests** that help identify underlying causes of infertility, menstrual issues, thyroid imbalances, PCOD, and male hormonal problems.
+                  Hormones play a vital role in regulating fertility, metabolism, and overall health. At <strong>Pravi Global IVF Delhi</strong>, we provide a complete range of hormonal tests that help identify underlying causes of infertility, menstrual issues, thyroid imbalances, PCOD, and male hormonal problems.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Our lab is equipped with **state-of-the-art automated hormone analyzers**, ensuring precise, reliable, and fast results under expert supervision.
+                  Our lab is equipped with state-of-the-art automated hormone analyzers, ensuring precise, reliable, and fast results under expert supervision.
                 </p>
               </div>
             )}
@@ -178,13 +177,13 @@ const HormonalTestPage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Types of Hormonal Tests We Offer</h2>
                 <ul className="space-y-4 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> FSH (Follicle Stimulating Hormone) – Evaluates ovarian reserve</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> LH (Luteinizing Hormone) – Determines ovulation function</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> AMH (Anti-Müllerian Hormone) – Measures egg reserve and fertility potential</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Prolactin – Detects hormonal imbalance affecting ovulation</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Estradiol (E2) – Assesses ovarian and menstrual health</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Thyroid Panel (TSH, T3, T4) – Screens thyroid-related infertility</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Testosterone – For male and female hormone imbalance</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> FSH (Follicle Stimulating Hormone) – Evaluates ovarian reserve</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> LH (Luteinizing Hormone) – Determines ovulation function</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> AMH (Anti-Müllerian Hormone) – Measures egg reserve and fertility potential</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Prolactin – Detects hormonal imbalance affecting ovulation</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Estradiol (E2) – Assesses ovarian and menstrual health</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Thyroid Panel (TSH, T3, T4) – Screens thyroid-related infertility</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Testosterone – For male and female hormone imbalance</li>
                 </ul>
               </div>
             )}
@@ -260,8 +259,8 @@ const HormonalTestPage = () => {
             Early diagnosis makes all the difference. Schedule a consultation at Pravi Global IVF Delhi for precise hormone testing.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

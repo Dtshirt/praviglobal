@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import React, { useState } from 'react';
 import { Check, Globe, FileText, Plane, Home, Phone, Mail, MapPin, Calendar, Users, Award, Heart, Loader2, CheckCircle } from 'lucide-react';
 import Image from 'next/image';
@@ -61,6 +61,14 @@ export default function PraviIVFLanding() {
       role: "Medical Director",
       specialty: "IVF & Embryo Transfer Specialist",
       image: "/images/praviivf68adeb4f45d30_1756228431.png",
+    },
+        {
+      name: "Dr. Aradhana Kalra",
+      title: "Clinical Director & Senior IVF Consultant",
+      experience: "15+ Years",
+      role: "Clinical Director",
+      specialty: "IVF & Reproductive Medicine",
+      image: "/images/Dr-Aradhana-Kalra.jpg",
     },
     {
       name: "Dr. Rit Shukla",
@@ -307,7 +315,7 @@ export default function PraviIVFLanding() {
                   )}
 
                   <p className="text-xs text-slate-500 mt-4 text-center">
-                    Free consultation • No obligation • 100% confidential
+                    Free consultation â€¢ No obligation â€¢ 100% confidential
                   </p>
                 </form>
               </div>
@@ -371,7 +379,7 @@ export default function PraviIVFLanding() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {doctors.map((doctor, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
                 <div className="p-8">
@@ -446,3 +454,4 @@ export default function PraviIVFLanding() {
     </div>
   );
 }
+

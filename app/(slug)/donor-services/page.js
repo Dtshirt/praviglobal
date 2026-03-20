@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   Users,
   Award,
   Heart,
@@ -23,8 +23,8 @@ const DonorServicesPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -42,7 +42,7 @@ const DonorServicesPage = () => {
                 Ethical, Confidential & Compassionate Donor Programs
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Our **Donor Services** at Pravi Global IVF Delhi offer reliable and ethical access to **egg, sperm, and embryo donors**. We follow strict screening, legal, and ethical guidelines to help couples and individuals build families safely and confidentially.
+                Our Donor Services at Pravi Global IVF Delhi offer reliable and ethical access to egg, sperm, and embryo donors. We follow strict screening, legal, and ethical guidelines to help couples and individuals build families safely and confidentially.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -146,11 +146,10 @@ const DonorServicesPage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -163,10 +162,10 @@ const DonorServicesPage = () => {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">What Are Donor Services?</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  **Donor services** provide healthy, medically screened eggs, sperm, or embryos to couples and individuals struggling with infertility. These services are ideal for cases involving poor egg/sperm quality, genetic issues, or single-parent conception.
+                  Donor services provide healthy, medically screened eggs, sperm, or embryos to couples and individuals struggling with infertility. These services are ideal for cases involving poor egg/sperm quality, genetic issues, or single-parent conception.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  At **Pravi Global IVF Delhi**, we offer legal, ethical, and transparent donor programs following ICMR guidelines, ensuring safety and confidentiality for all parties.
+                  At Pravi Global IVF Delhi, we offer legal, ethical, and transparent donor programs following ICMR guidelines, ensuring safety and confidentiality for all parties.
                 </p>
               </div>
             )}
@@ -175,10 +174,10 @@ const DonorServicesPage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Types of Donor Programs We Offer</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **Egg Donor Program** – For women with poor egg quality or premature ovarian failure.</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **Sperm Donor Program** – For male infertility cases involving low sperm count or motility.</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **Embryo Donor Program** – For couples where both partners have infertility issues.</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> **Anonymous & Confidential** – We ensure full legal and ethical compliance for all donor matches.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Egg Donor Program – For women with poor egg quality or premature ovarian failure.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Sperm Donor Program – For male infertility cases involving low sperm count or motility.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Embryo Donor Program – For couples where both partners have infertility issues.</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Anonymous & Confidential – We ensure full legal and ethical compliance for all donor matches.</li>
                 </ul>
               </div>
             )}
@@ -244,8 +243,8 @@ const DonorServicesPage = () => {
             Safe, legal, and compassionate donor services — helping families grow with care, confidentiality, and medical excellence.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

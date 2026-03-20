@@ -23,8 +23,8 @@ const EggFreezingPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -42,8 +42,8 @@ const EggFreezingPage = () => {
                 Advanced Oocyte Cryopreservation for Women
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Our **Egg Freezing program** empowers women to preserve their fertility for the future.  
-                Using advanced vitrification technology, **Pravi Global IVF Delhi** ensures high survival and fertilization rates — giving women control over when to start their family.
+                Our Egg Freezing program empowers women to preserve their fertility for the future.
+                Using advanced vitrification technology, Pravi Global IVF Delhi ensures high survival and fertilization rates — giving women control over when to start their family.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -147,11 +147,10 @@ const EggFreezingPage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -164,11 +163,11 @@ const EggFreezingPage = () => {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">What Is Egg Freezing?</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  **Egg freezing (oocyte cryopreservation)** allows women to preserve their eggs for future use.  
+                  Egg freezing (oocyte cryopreservation) allows women to preserve their eggs for future use.
                   The eggs are frozen using rapid cooling (vitrification) to maintain their health and potential for fertilization later in life.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  At **Pravi Global IVF Delhi**, our advanced technology and lab precision ensure optimal egg survival and successful fertilization rates after thawing.
+                  At Pravi Global IVF Delhi, our advanced technology and lab precision ensure optimal egg survival and successful fertilization rates after thawing.
                 </p>
               </div>
             )}
@@ -247,8 +246,8 @@ const EggFreezingPage = () => {
             Choose flexibility, security, and control over your fertility with advanced egg freezing technology and expert care.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />

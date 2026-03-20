@@ -63,12 +63,12 @@ export default function PraviIVFLanding() {
       image: "/images/praviivf68adeb4f45d30_1756228431.png",
     },
     {
-      name: "Dr. Rit Shukla",
-      title: "Chief Embryologist & Scientific Director",
-      experience: "18+ Years",
-      role: "Chief Embryologist",
-      specialty: "Intracytoplasmic Sperm Injection (ICSI)",
-      image: "/images/praviivf68adeb76c3b74_1756228470.png",
+      name: "Dr. Aradhana Kalra",
+      title: "Clinical Director & Senior IVF Consultant",
+      experience: "15+ Years",
+      role: "Clinical Director",
+      specialty: "IVF & Reproductive Medicine",
+      image: "/images/Dr-Aradhana-Kalra.jpg",
     },
     {
       name: "Dr. Sakshi Tandon",
@@ -77,6 +77,14 @@ export default function PraviIVFLanding() {
       role: "Lab Director",
       specialty: "OBS.Gynae, IVF Specialist",
       image: "/images/praviivf68adeb8d21097_1756228493.png",
+    },
+    {
+      name: "Dr. Rit Shukla",
+      title: "Chief Embryologist & Scientific Director",
+      experience: "18+ Years",
+      role: "Chief Embryologist",
+      specialty: "Intracytoplasmic Sperm Injection (ICSI)",
+      image: "/images/praviivf68adeb76c3b74_1756228470.png",
     }
   ];
 
@@ -371,7 +379,7 @@ export default function PraviIVFLanding() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {doctors.map((doctor, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
                 <div className="p-8">

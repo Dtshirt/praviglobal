@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { 
+import {
   Users,
   Award,
   Heart,
@@ -24,8 +24,8 @@ const SurrogacyServicePage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
         </div>
@@ -43,7 +43,7 @@ const SurrogacyServicePage = () => {
                 Bringing Hope, Love & Parenthood Together
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Pravi Global IVF Delhi provides **ethical, transparent, and medically supervised surrogacy programs** to help couples fulfill their dream of parenthood. With expert fertility specialists and compassionate care, we guide you through every step of your surrogacy journey with trust and respect.
+                Pravi Global IVF Delhi provides ethical, transparent, and medically supervised surrogacy programs to help couples fulfill their dream of parenthood. With expert fertility specialists and compassionate care, we guide you through every step of your surrogacy journey with trust and respect.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
@@ -147,11 +147,10 @@ const SurrogacyServicePage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
+                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
                       ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
                       : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -164,10 +163,10 @@ const SurrogacyServicePage = () => {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Understanding Surrogacy</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  **Surrogacy** is an assisted reproductive process where a woman (the surrogate mother) carries and gives birth to a baby for another couple who are unable to conceive or carry a pregnancy. The embryo is created using the intended parents’ eggs and sperm through **IVF**, ensuring the child is genetically related to them.
+                  Surrogacy is an assisted reproductive process where a woman (the surrogate mother) carries and gives birth to a baby for another couple who are unable to conceive or carry a pregnancy. The embryo is created using the intended parents’ eggs and sperm through IVF, ensuring the child is genetically related to them.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  At **Pravi Global IVF Delhi**, our surrogacy programs are 100% ethical, medically safe, and legally compliant — guided by top fertility experts and supported by our experienced legal team.
+                  At Pravi Global IVF Delhi, our surrogacy programs are 100% ethical, medically safe, and legally compliant — guided by top fertility experts and supported by our experienced legal team.
                 </p>
               </div>
             )}
@@ -203,11 +202,11 @@ const SurrogacyServicePage = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-gray-900">Who Can Opt for Surrogacy?</h2>
                 <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Women with absent or damaged uterus</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Women with multiple IVF failures</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Women with medical conditions preventing pregnancy</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Couples with repeated pregnancy losses</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2"/> Intended parents cleared medically and legally for surrogacy</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Women with absent or damaged uterus</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Women with multiple IVF failures</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Women with medical conditions preventing pregnancy</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Couples with repeated pregnancy losses</li>
+                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Intended parents cleared medically and legally for surrogacy</li>
                 </ul>
               </div>
             )}
@@ -247,8 +246,8 @@ const SurrogacyServicePage = () => {
             Trust our experienced IVF and surrogacy team to make your dream of parenthood a reality — ethically, safely, and compassionately.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a 
-              href="tel:+918009150040" 
+            <a
+              href="tel:+918009150040"
               className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
             >
               <Phone className="w-6 h-6" />
