@@ -63,12 +63,12 @@ export default function PraviIVFLanding() {
       image: "/images/praviivf68adeb4f45d30_1756228431.png",
     },
     {
-      name: "Dr. Aradhana Kalra",
+      name: "Dr. Ankita",
       title: "Clinical Director & Senior IVF Consultant",
       experience: "15+ Years",
       role: "Clinical Director",
       specialty: "IVF & Reproductive Medicine",
-      image: "/images/Dr-Aradhana-Kalra.jpg",
+      image: "/images/dr-ankita.jpeg",
     },
     {
       name: "Dr. Sakshi Tandon",

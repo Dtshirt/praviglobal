@@ -18,7 +18,7 @@ const slides = [
   {
     image: "/images/banner/Dr Aradhna.jpeg",
     title: "Advanced Fertility Solutions",
-    subtitle: "Personalized protocols by Dr. Aradhana Kalra"
+    subtitle: "Evidence-based fertility care with Dr. Ankita"
   },
   {
     image: "/images/banner/Dr rit Shukla.jpeg",

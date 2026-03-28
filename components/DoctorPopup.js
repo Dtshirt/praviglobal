@@ -7,7 +7,7 @@ export default function DoctorPopup() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Show popup after 5 seconds
+    // Show popup after 5 seconds 
     const timer = setTimeout(() => {
       setIsOpen(true);
     }, 5000);
@@ -22,13 +22,20 @@ export default function DoctorPopup() {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
-      <div className="bg-white rounded-3xl shadow-2xl w-full max-w-4xl relative animate-slide-up flex flex-col md:flex-row overflow-hidden border border-slate-100">
+    <div 
+      className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
+      onClick={handleClose}
+    >
+      <div 
+        className="bg-white rounded-3xl shadow-2xl w-full max-w-4xl relative animate-slide-up flex flex-col md:flex-row overflow-hidden border border-slate-100"
+        onClick={(e) => e.stopPropagation()}
+      >
 
-        {/* Close Button */}
+        {/* Close Button - large tap target, highest z-index */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 z-10 bg-black/5 hover:bg-black/10 text-slate-500 hover:text-slate-800 p-2 rounded-full transition-colors backdrop-blur-sm"
+          className="absolute top-3 right-3 z-[50] bg-white/90 hover:bg-white text-slate-700 hover:text-slate-900 p-3 rounded-full shadow-md transition-colors border border-slate-200"
+          aria-label="Close popup"
         >
           <X className="w-5 h-5" />
         </button>
