@@ -109,14 +109,14 @@ export default function HealthcareServices2() {
                   </div>
                   
                   {/* Title */}
-                  <h3 className={`
+                  <p className={`
                     ${service.textColor}
                     text-center font-semibold text-xs sm:text-sm lg:text-base
                     transition-all duration-300
                     group-hover:scale-105
                   `}>
                     {service.title}
-                  </h3>
+                  </p>
                 </div>
 
                 {/* Decorative elements */}

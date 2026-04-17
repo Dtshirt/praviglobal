@@ -38,9 +38,14 @@ export default function Footer() {
                             alt="Pravi IVF Logo"
                             />
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+            <p className="text-gray-400 text-sm leading-relaxed mb-3">
               Leading fertility center dedicated to helping families grow with compassion, expertise, and the latest reproductive technologies.
             </p>
+            <ul className='text-sm text-gray-400 mt-0 mb-3'>
+              <li>Best IVF Centre in Delhi</li>
+              <li>Best IVF Centre in Laxmi Nagar</li>
+              <li>Best IVF Centre in South Delhi</li> 
+            </ul>
             <div className="flex space-x-4">
               <a
                 href={hospitalInfo.social.facebook}
@@ -74,7 +79,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
+            <p className="text-lg font-semibold mb-6">Quick Links</p>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.path}>
@@ -92,7 +97,7 @@ export default function Footer() {
 
           {/* Our Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Our Services</h3>
+            <p className="text-lg font-semibold mb-6">Our Services</p>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service}>
@@ -110,7 +115,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
+            <p className="text-lg font-semibold mb-6">Contact Us</p>
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 text-blue-500 mt-1 flex-shrink-0" />
@@ -140,7 +145,7 @@ export default function Footer() {
 
             {/* Opening Hours */}
             <div className="mt-6 p-4 bg-gray-800 rounded-lg">
-              <h4 className="font-semibold mb-2 text-sm">Opening Hours</h4>
+              <p className="font-semibold mb-2 text-sm">Opening Hours</p>
               <p className="text-gray-400 text-sm">Mon - Sat: 9:00 AM - 6:00 PM</p>
               <p className="text-gray-400 text-sm">Sunday: By Appointment</p>
             </div>

@@ -17,7 +17,7 @@ const slides = [
   },
   {
     image: "/images/banner/Dr Aradhna.jpeg",
-    title: "Advanced Fertility Solutions",
+    title: "Best IVF Center in India",
     subtitle: "Evidence-based fertility care with Dr. Ankita"
   },
   {
@@ -66,9 +66,15 @@ export default function HeroSlider() {
           <div className="relative h-full flex items-center z-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
               <div className="max-w-3xl">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-                  {slide.title}
-                </h1>
+                {idx === 2 ? (
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+                    {slide.title}
+                  </h1>
+                ) : (
+                  <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+                    {slide.title}
+                  </h2>
+                )}
                 <p className="text-xl md:text-2xl text-blue-50 mb-8 leading-relaxed font-medium drop-shadow-md">
                   {slide.subtitle}
                 </p>

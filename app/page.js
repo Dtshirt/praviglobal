@@ -12,6 +12,7 @@ import ServicesSection from '@/components/ServicesSection';
 import HealthcareServices from '@/components/HealthcareServices';
 import HealthcareServices2 from '@/components/HealthcareServices2';
 import HeroSlider from '@/components/HeroSlider';
+import HomeSeoContent from '@/components/HomeSeoContent';
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -91,28 +92,28 @@ export default function HomePage() {
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div className="ml-3">
-                    <h4 className="font-semibold text-gray-900">Expert Team</h4>
+                    <p className="font-semibold text-gray-900">Expert Team</p>
                     <p className="text-gray-600 text-sm">Highly qualified specialists</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div className="ml-3">
-                    <h4 className="font-semibold text-gray-900">Advanced Tech</h4>
+                    <p className="font-semibold text-gray-900">Advanced Tech</p>
                     <p className="text-gray-600 text-sm">Latest IVF technology</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div className="ml-3">
-                    <h4 className="font-semibold text-gray-900">High Success</h4>
+                    <p className="font-semibold text-gray-900">High Success</p>
                     <p className="text-gray-600 text-sm">65% success rate</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div className="ml-3">
-                    <h4 className="font-semibold text-gray-900">Personal Care</h4>
+                    <p className="font-semibold text-gray-900">Personal Care</p>
                     <p className="text-gray-600 text-sm">Customized treatment</p>
                   </div>
                 </div>
@@ -281,6 +282,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
+      {/* SEO Content Section */}
+      <HomeSeoContent />
     </>
   );
 }

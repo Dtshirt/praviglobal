@@ -27,7 +27,7 @@ export default function TestimonialCard({ testimonial }) {
           />
         </div>
         <div>
-          <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+          <p className="font-semibold text-gray-900">{testimonial.name}</p>
           <p className="text-sm text-gray-600">{testimonial.location}</p>
         </div>
       </div>
