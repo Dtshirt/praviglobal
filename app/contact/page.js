@@ -65,7 +65,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            We're here to answer your questions and support you on your journey to parenthood
+            As the best IVF center in Delhi, we're here to answer your questions and support you on your journey to parenthood
           </p>
         </div>
       </section>

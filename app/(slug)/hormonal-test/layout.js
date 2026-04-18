@@ -1,19 +1,19 @@
 export const metadata = {
-  title: "Hormonal Test for Fertility | Pravi Global IVF Polyclinic Delhi",
+  title: "Hormonal Test for Fertility | Best IVF Center In Delhi | Pravi Global IVF",
   description:
-    "Get accurate hormonal tests at Pravi Global IVF Polyclinic, the best IVF centre in Delhi. We evaluate hormone levels to diagnose fertility issues for both men and women and provide personalized treatment plans.",
+    "Get highly accurate hormonal tests at Pravi Global IVF Polyclinic, a leading IVF Center in Lajpat Nagar. We expertly diagnose male and female fertility issues.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: `https://praviglobalivf.com/hormonal-test/`,
+    canonical: `https://praviglobalivf.com/hormonal-test`,
   },
   openGraph: {
     title: "Hormonal Test for Fertility | Pravi Global IVF Polyclinic Delhi",
     description:
-      "Pravi Global IVF Polyclinic offers advanced hormonal testing in Delhi to assess fertility health. Accurate diagnosis and customized fertility treatments for men and women.",
-    url: `https://praviglobalivf.com/hormonal-test/`,
+      "Get highly accurate hormonal tests at Pravi Global IVF Polyclinic, a leading IVF Center in Lajpat Nagar. We expertly diagnose male and female fertility issues.",
+    url: `https://praviglobalivf.com/hormonal-test`,
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
@@ -36,5 +36,69 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <>{children}</>;
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://praviglobalivf.com/#clinic",
+        "name": "Pravi Global IVF Polyclinic",
+        "description": "Best IVF Center In Delhi specialized in comprehensive fertility treatments including advanced hormonal testing.",
+        "url": "https://praviglobalivf.com",
+        "telephone": "+91 800 915 0040",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Building number 41, First Floor, Ring Rd, Block Q, Lajpat Nagar IV, Lajpat Nagar",
+          "addressLocality": "New Delhi",
+          "addressRegion": "Delhi",
+          "postalCode": "110024",
+          "addressCountry": "IN"
+        },
+        "medicalSpecialty": ["Gynecologic", "Urologic"],
+        "priceRange": "$$"
+      },
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://praviglobalivf.com/hormonal-test/#webpage",
+        "url": "https://praviglobalivf.com/hormonal-test",
+        "name": "Hormonal Test for Fertility",
+        "headline": "Hormonal Testing for Male and Female Infertility",
+        "about": {
+          "@type": "MedicalTest",
+          "name": "Hormonal Blood Test"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "When should I get a hormonal test done?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you experience irregular periods, difficulty conceiving for over a year, or have symptoms of thyroid imbalance, testing is strongly recommended."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is fasting required before hormonal tests?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some hormonal tests may require fasting or strict timing during your cycle (like day 2 or 3 of your period). Your doctor will advise you fully."
+            }
+          }
+        ]
+      }
+    ]
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      {children}
+    </>
+  );
 }

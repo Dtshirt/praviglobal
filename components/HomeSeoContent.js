@@ -328,43 +328,6 @@ export default function HomeSeoContent() {
           It is important to understand what is included in these costs. A basic IVF package usually covers the initial consultations, monitoring scans, the egg retrieval procedure, and the final embryo transfer. However, some cases may require additional services such as specialised hormone injections, ICSI for male factor infertility, or embryo freezing for future use. A trustworthy IVF centre in Delhi will provide a written estimate that explains all these components clearly during your first visit.
         </p>
 
-        <div className="overflow-x-auto mb-8">
-          <table className="w-full text-left border-collapse border border-gray-300 shadow-sm rounded-lg overflow-hidden">
-            <thead className="bg-blue-600 text-white">
-              <tr>
-                <th className="p-4 border border-blue-700 font-semibold w-1/2">Cost Component</th>
-                <th className="p-4 border border-blue-700 font-semibold w-1/2">Typical Price Range (INR)</th>
-              </tr>
-            </thead>
-            <tbody className="bg-white">
-              <tr>
-                <td className="p-4 border border-gray-300 font-medium">Basic IVF Package</td>
-                <td className="p-4 border border-gray-300">₹1,00,000 – ₹1,80,000</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="p-4 border border-gray-300 font-medium">Hormone Medications</td>
-                <td className="p-4 border border-gray-300">₹40,000 – ₹80,000</td>
-              </tr>
-              <tr>
-                <td className="p-4 border border-gray-300 font-medium">ICSI Procedure</td>
-                <td className="p-4 border border-gray-300">₹20,000 – ₹70,000</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="p-4 border border-gray-300 font-medium">Embryo Cryopreservation</td>
-                <td className="p-4 border border-gray-300">₹20,000 – ₹40,000</td>
-              </tr>
-              <tr>
-                <td className="p-4 border border-gray-300 font-medium">Frozen Embryo Transfer (FET)</td>
-                <td className="p-4 border border-gray-300">₹30,000 – ₹80,000</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="p-4 border border-gray-300 font-medium">Donor Egg Program</td>
-                <td className="p-4 border border-gray-300">₹1,00,000 – ₹2,50,000</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
         <p className="mb-12">
           To help manage these costs, many clinics in the South Delhi and Lajpat Nagar hubs offer flexible payment options. These include 0% interest EMI (Equated Monthly Installment) plans, which allow you to spread the cost of the treatment over several months without any extra interest charges. By making the cost of the best IVF centre in Delhi more manageable, these financial plans ensure that high-quality fertility care is within reach for more couples ready to start their families.
         </p>

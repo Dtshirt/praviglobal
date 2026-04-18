@@ -7,7 +7,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/surrogacy/",
+    canonical: "https://praviglobalivf.com/surrogacy",
   },
   openGraph: {
     title: "Surrogacy Centre in Delhi | Pravi Global IVF Polyclinic",

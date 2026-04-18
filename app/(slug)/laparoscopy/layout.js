@@ -7,7 +7,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/laparoscopy/",
+    canonical: "https://praviglobalivf.com/laparoscopy",
   },
   openGraph: {
     title: "Laparoscopy Treatment in Delhi | Pravi Global IVF Polyclinic",

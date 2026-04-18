@@ -50,15 +50,15 @@ export default function DoctorsPage() {
       <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
-            backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
+            backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2pv4h2v-4pv-2h-4zm0-30V0h-2v4h-4v2pv4h2V6pV4h-4zM6 34v-4pv4H0v2pv4h2v-4pv-2H6zM6 4V0pv4H0v2pv4h2V6pV4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
           }}></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Our Expert Team
+            Meet the Best IVF Doctors in Delhi at Pravi Global IVF Polyclinic
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            Meet the fertility specialists dedicated to making your dream of parenthood a reality
+            Meet our team of best IVF doctors in Delhi — fertility specialists dedicated to making your dream of parenthood a reality
           </p>
         </div>
       </section>
@@ -144,12 +144,12 @@ export default function DoctorsPage() {
                       </div>
 
                       <div className="mb-6">
-                        <h4 className="font-semibold text-gray-900 mb-2">Qualifications</h4>
+                        <p className="font-semibold text-gray-900 mb-2">Qualifications</p>
                         <p className="text-gray-600">{doctor.qualification}</p>
                       </div>
 
                       <div className="mb-6">
-                        <h4 className="font-semibold text-gray-900 mb-3">About</h4>
+                        <p className="font-semibold text-gray-900 mb-3">About</p>
                         <p
   className="text-gray-600 leading-relaxed"
   dangerouslySetInnerHTML={{ __html: doctor.bio }}
@@ -157,7 +157,7 @@ export default function DoctorsPage() {
                       </div>
 
                       <div className="mb-6">
-                        <h4 className="font-semibold text-gray-900 mb-3">Areas of Expertise</h4>
+                        <p className="font-semibold text-gray-900 mb-3">Areas of Expertise</p>
                         <div className="grid md:grid-cols-2 gap-3">
                           {doctor.specialties.map((specialty, sIdx) => (
                             <div key={sIdx} className="flex items-center">
@@ -204,7 +204,7 @@ export default function DoctorsPage() {
                 <div className="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="h-8 w-8" />
                 </div>
-                <h4 className="font-bold text-gray-900 mb-2">{role.title}</h4>
+                <p className="font-bold text-gray-900 mb-2">{role.title}</p>
                 <p className="text-gray-600 text-sm">{role.desc}</p>
               </div>
             ))}

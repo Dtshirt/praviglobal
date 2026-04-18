@@ -7,7 +7,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/tesa-and-pesa/",
+    canonical: "https://praviglobalivf.com/tesa-and-pesa",
   },
   openGraph: {
     title: "TESA & PESA Treatment in Delhi | Pravi Global IVF Polyclinic",

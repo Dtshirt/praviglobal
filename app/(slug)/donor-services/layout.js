@@ -7,7 +7,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/donor-services/",
+    canonical: "https://praviglobalivf.com/donor-services",
   },
   openGraph: {
     title: "Donor Services in Delhi | Egg, Sperm & Embryo Donation - Pravi Global IVF Polyclinic",

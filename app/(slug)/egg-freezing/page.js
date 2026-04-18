@@ -133,105 +133,98 @@ const EggFreezingPage = () => {
         </div>
       </div>
 
-      {/* Tabs Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="border-b border-gray-200 bg-gray-50">
-            <div className="flex overflow-x-auto">
-              {[
-                { id: 'overview', label: 'About Egg Freezing' },
-                { id: 'process', label: 'Freezing Process' },
-                { id: 'benefits', label: 'Benefits' },
-                { id: 'faqs', label: 'FAQs' }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
-                      ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                    }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-          </div>
+      {/* Comprehensive SEO Content Section */}
+      <div className="bg-white py-16 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
+          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What Exactly is Egg Freezing?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Every woman is born with all the eggs she will ever have. As you get older, the number of eggs slowly drops. Sadly, the quality of these eggs also drops over time. This makes getting pregnant quite hard once a woman passes the age of 35. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            But medical science has found an amazing way to stop the clock. Egg freezing, also fully known as oocyte cryopreservation, is an amazing modern choice. It lets you closely protect your future. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            We gently collect your healthy eggs while you are still young and strong. We quickly freeze them using a very fast, super-cold cooling process. This locks the eggs safely in perfectly frozen time. They do not age a single day while they sleep in our frozen tanks. Years later, when you are fully ready to start a beautiful family, you can warmly wake them up and use them to create a healthy pregnancy.
+          </p>
 
-          <div className="p-8 md:p-12">
-            {activeTab === 'overview' && (
-              <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">What Is Egg Freezing?</h2>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  Egg freezing (oocyte cryopreservation) allows women to preserve their eggs for future use.
-                  The eggs are frozen using rapid cooling (vitrification) to maintain their health and potential for fertilization later in life.
-                </p>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  At Pravi Global IVF Delhi, our advanced technology and lab precision ensure optimal egg survival and successful fertilization rates after thawing.
-                </p>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why Do Strong Women Choose to Freeze Their Eggs?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Modern women rightly want full control over their own bright lives. Many women study hard in college for many years. Others work very hard to build powerful, successful careers. Some are patiently waiting to meet their perfect life partner before they bring a baby into the world. You should never feel forced to rush into motherhood simply because of a ticking biological clock. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            By freezing your beautiful eggs now, you buy yourself massive peace of mind. It removes the heavy daily stress. You can finish your high studies, brilliantly climb the tall corporate ladder, and boldly travel the vast globe. You bravely do all of this securely knowing your fertility is completely safe.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Besides career and life choices, there are real medical reasons to urgently freeze eggs. If a woman finds out she has sad cancer, strong treatments like heavy chemotherapy can quickly destroy her fragile eggs forever. Freezing them before starting the harsh cancer treatment safely saves her happy chance of later becoming a mother. Conditions like severe endometriosis or deep family history of early menopause also push women to happily choose this safe path. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            As the proudly recognized <strong>Best IVF Center In Delhi</strong>, we strongly empower women every single day. We give you the powerful gift of pure time. Your bright future totally belongs strictly to you. Taking safely proactive steps today firmly promises a happier, softer tomorrow. We stand totally by your brave side during every easy step.
+          </p>
 
-            {activeTab === 'process' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Egg Freezing Process</h2>
-                <div className="space-y-6">
-                  {[
-                    { step: '01', title: 'Initial Consultation', desc: 'Fertility assessment, ovarian reserve tests, and counseling.' },
-                    { step: '02', title: 'Ovarian Stimulation', desc: 'Medications to stimulate multiple egg development over 10–12 days.' },
-                    { step: '03', title: 'Egg Retrieval', desc: 'Eggs collected using ultrasound-guided aspiration under anesthesia.' },
-                    { step: '04', title: 'Vitrification (Freezing)', desc: 'Collected eggs are rapidly frozen and stored in liquid nitrogen tanks.' }
-                  ].map((step, idx) => (
-                    <div key={idx} className="flex gap-6 items-start">
-                      <div className="flex-shrink-0">
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-xl">
-                          {step.step}
-                        </div>
-                      </div>
-                      <div className="flex-1 bg-gray-50 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-                        <p className="text-gray-700 leading-relaxed">{step.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">How Does The Freezing Process Actually Work?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Many women fear this awesome process is terribly painful or scary. The truth is, it is very straightforward and totally safe. We break it down into four simple, easy steps.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Step One is a warm, private chat. We thoroughly check your basic health. We test your blood and gently scan your lovely ovaries with a quiet machine. This softly tells us exactly how many eggs you currently have sleeping inside you.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Step Two is safely waking the eggs. In a normal month, your body completely grows just one single egg. But for freezing, we want to safely collect between ten to fifteen eggs at once. To do this, we give you very safe, tiny hormone pens. You simply use these small, painless pens on your belly for about ten fast days. You visit us for quick, clean checkups so we can easily watch the beautiful eggs grow.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Step Three is safely gathering the eggs. Do not worry, you will not feel a single thing! You totally sleep for fifteen short minutes in our extremely clean, quiet operating room. Our gentle doctor quickly removes the perfectly grown eggs through a tiny needle. There are absolutely no scary cuts or ugly stitches. You usually wake up feeling completely great and walk peacefully home exactly the same day.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Step Four is the pure magic of freezing. The highly gathered eggs go directly into our bright lab. Our genius scientists securely bathe them in a special safe medicine. Then, they instantly drop them into deeply freezing liquid nitrogen. This instant freeze safely protects them completely. They bravely rest there in total peace for months or even long years.
+          </p>
 
-            {activeTab === 'benefits' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Benefits of Egg Freezing</h2>
-                <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" />Preserves fertility for career or personal planning</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" />Ideal for medical reasons (chemotherapy, endometriosis, etc.)</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" />Maintains egg quality despite age-related decline</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" />Enables use of your own genetic material later in life</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" />Safe, proven, and globally accepted technology</li>
-                </ul>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">When is the Best Age to Freeze Your Eggs?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Many smart patients frequently ask exactly what age is the most perfect time to complete this fast process. The strict medical answer is heavily clear: earlier is absolutely much better. Your beautifully natural eggs are highly strongest and healthiest right when you are beautifully situated between twenty-five and early thirty-five years exactly old. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            During this vibrant bright young window of smooth time, your lovely eggs powerfully laugh at strong damage. If you happily choose to actively safely freeze them during these early great years, you closely secure the greatest, safest chances of beautifully giving birth to a brilliant, bouncy, amazingly healthy baby safely later. After a lovely woman strongly passes the exact smart age of thirty-five, the raw golden number of brilliant eggs greatly safely drops totally down securely. But importantly, completely please do totally understand that even if you beautifully are currently slightly older, there is still powerful warm hope gently waiting. We exactly warmly invite absolutely you to fully brightly meet our skilled clinic.
+          </p>
 
-            {activeTab === 'faqs' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions About Egg Freezing</h2>
-                <div className="space-y-4">
-                  {[
-                    { q: 'Is egg freezing safe?', a: 'Yes. It’s a safe and minimally invasive process using advanced vitrification to prevent damage during freezing.' },
-                    { q: 'What is the ideal age to freeze eggs?', a: 'The best time is between 25–35 years, when egg quality is highest.' },
-                    { q: 'How long can eggs be stored?', a: 'Eggs can be safely stored for many years without loss of quality.' },
-                    { q: 'Can frozen eggs be used for IVF later?', a: 'Yes, thawed eggs are fertilized through ICSI to achieve pregnancy when desired.' }
-                  ].map((faq, idx) => (
-                    <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
-                      <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
-                        <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                        <span>{faq.q}</span>
-                      </h3>
-                      <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
-                    </div>
-                  ))}
-                </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The Awesome Power of Safe Vitrification</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Years ago, perfectly freezing an egg was highly difficult. A human egg is mostly made of water. If you freeze water slowly, it sadly makes sharp ice crystals. Those sharp crystals would break the delicate egg. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Today, we use a space-age method brilliantly called vitrification. It means we freeze the egg so incredibly fast that no sharp ice crystals can ever form. The egg instantly turns into a smooth, safe, glass-like bead. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Because of this amazing fast method, nearly 99% of all eggs fully survive the deep freeze. When you warmly thaw them years later, they act exactly as healthy as the day they were gently removed. By strictly using this perfect method, our proud <strong>IVF Center in Lajpat Nagar</strong> safely offers women the highest global success rates. Your frozen trust is literally kept entirely secure.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Is the Freezing Procedure Deeply Safe For You?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Yes! This modern procedure is globally proven and incredibly safe. Millions of smart women entirely around the wide world have successfully frozen their lovely eggs without any health trouble.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The tiny hormone pens we use are completely safe. Your body naturally removes them safely within a few rapid days. Some women feel a little soft bloating or mild emotion during the ten days of fast growth, but severe pain is exceptionally rare. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The short collection day is extremely safe. Our highly trained doctors proudly use sterile, shiny equipment. We intensely monitor your gentle breathing the entire fast time you sleep. The real truth is, the deepest comfort you gain vastly outweighs any tiny, short bump in the road. You actively buy beautiful insurance for your lovely family's future. 
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'Is egg freezing safe?', a: 'Yes. It is a safe and minimally invasive process using advanced vitrification to perfectly prevent damage globally during the rapid freezing stage.' },
+              { q: 'What is the ideal age to freeze eggs?', a: 'The best wonderful time is exactly between 25 and 35 years old, strictly when your lovely egg quality is solidly highest.' },
+              { q: 'How long can eggs be safely stored?', a: 'Tiny delicate eggs can be safely fully stored for deeply many long years absolutely without any sad loss of pure quality.' },
+              { q: 'Can frozen eggs be magically used for IVF later?', a: 'Yes entirely, safely thawed eggs are smoothly fertilized through proven ICSI science to boldly achieve a happy pregnancy when absolutely desired.' }
+            ].map((faq, idx) => (
+              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+                  <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <span>{faq.q}</span>
+                </h3>
+                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
               </div>
-            )}
+            ))}
           </div>
         </div>
       </div>

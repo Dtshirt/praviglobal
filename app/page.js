@@ -49,9 +49,9 @@ export default function HomePage() {
 
       {/* Stats Section */}
       <section className="py-1 px-2 sm:px-2 bg-gradient-to-r -mt-20 relative z-10">
-      <HealthcareServices /></section>
+        <HealthcareServices /></section>
       <section className="py-1 px-2 sm:px-2 bg-gradient-to-r  relative z-10">
-      <HealthcareServices2 /></section>
+        <HealthcareServices2 /></section>
       {/* <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 -mt-20 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -79,12 +79,12 @@ export default function HomePage() {
                 Welcome to Pravi Global IVF & Fertility Center
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                At Pravi Global IVF and Fertility Center, we understand that the journey to parenthood can be challenging. 
-                Our team of experienced fertility specialists is dedicated to providing personalized, compassionate care 
+                At Pravi Global IVF and Fertility Center, we understand that the journey to parenthood can be challenging.
+                Our team of experienced fertility specialists is dedicated to providing personalized, compassionate care
                 using the latest reproductive technologies.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed text-lg">
-                With state-of-the-art facilities, a patient-centered approach, and a proven track record, we've helped 
+                With state-of-the-art facilities, a patient-centered approach, and a proven track record, we've helped
                 thousands of families realize their dream of having a child.
               </p>
 
@@ -127,7 +127,7 @@ export default function HomePage() {
             <div className="order-1 lg:order-2 relative">
               <div className="relative h-96 lg:h-full min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/visit-clinic-bg.jpg"
+                  src="/images/visit-clinic-bg.jpeg"
                   alt="Pravi IVF Clinic"
                   fill
                   className="object-cover"
@@ -190,8 +190,8 @@ export default function HomePage() {
               const icons = { Award, Shield, Heart, CheckCircle, Users, Clock };
               const Icon = icons[item.icon];
               return (
-                <div 
-                  key={idx} 
+                <div
+                  key={idx}
                   className="card p-8 text-center hover:-translate-y-2 transition-all duration-300"
                   style={{ animationDelay: `${idx * 100}ms` }}
                 >
@@ -261,19 +261,19 @@ export default function HomePage() {
               Ready to Start Your Journey?
             </h2>
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-              Schedule a consultation with our fertility experts today and take the first step 
+              Schedule a consultation with our fertility experts today and take the first step
               towards realizing your dream of parenthood
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/book-appointment" 
+              <Link
+                href="/book-appointment"
                 className="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover:scale-105 inline-flex items-center justify-center text-lg font-semibold"
               >
                 <Calendar className="mr-2 h-6 w-6" />
                 Book Your Appointment
               </Link>
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-blue-600 transition-all hover:scale-105 inline-flex items-center justify-center text-lg font-semibold"
               >
                 Contact Us
@@ -282,7 +282,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* SEO Content Section */}
       <HomeSeoContent />
     </>

@@ -43,7 +43,7 @@ export default function Footer() {
             </p>
             <ul className='text-sm text-gray-400 mt-0 mb-3'>
               <li>Best IVF Centre in Delhi</li>
-              <li>Best IVF Centre in Laxmi Nagar</li>
+              <li>Best IVF Centre in Lajpat Nagar</li>
               <li>Best IVF Centre in South Delhi</li> 
             </ul>
             <div className="flex space-x-4">

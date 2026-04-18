@@ -19,9 +19,9 @@ export default function DoctorCard({ doctor }) {
       <div className="p-6">
         <div className="flex items-start justify-between mb-3">
           <div>
-            <h3 className="text-xl font-bold text-gray-900 mb-1">
+            <p className="text-xl font-bold text-gray-900 mb-1">
               {doctor.name}
-            </h3>
+            </p>
             <p className="text-blue-600 font-medium mb-2">
               {doctor.specialty}
             </p>

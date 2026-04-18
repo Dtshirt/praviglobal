@@ -14,9 +14,9 @@ export default function AllSuccessStories() {
             <Heart className="w-5 h-5 text-rose-500 fill-rose-500" />
             <span className="text-sm font-semibold text-rose-700">Patient Journeys</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6">Our Success Stories</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6">Success Stories from the Best IVF Center in Delhi</h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Nothing brings us more joy than helping our patients overcome challenges and build their families. Explore genuine stories of hope, resilience, and clinical excellence.
+            At the Best IVF center in Delhi, nothing brings us more joy than helping patients overcome fertility challenges and start their journey toward parenthood. Discover real stories of hope, resilience, and clinical excellence that reflect our commitment to successful outcomes.
           </p>
         </div>
 

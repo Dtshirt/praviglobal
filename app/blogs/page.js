@@ -61,11 +61,11 @@ export default async function BlogsPage() {
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Fertility Blog & Resources
+              Fertility Center In Delhi Blogs
             </h1>
             
             <p className="text-xl text-blue-100 mb-8">
-              Expert advice, treatment guides, and success stories to support your fertility journey
+              Trusted Fertility Center in Delhi Helping Couples Achieve Parenthood with Advanced and Affordable Care.
             </p>
             
             {/* Search Bar */}

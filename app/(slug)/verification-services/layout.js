@@ -7,7 +7,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/verification-services/",
+    canonical: "https://praviglobalivf.com/verification-services",
   },
   openGraph: {
     title: "Verification Services in Delhi | Pravi Global IVF Polyclinic",

@@ -135,106 +135,84 @@ const HysteroscopyServicePage = () => {
         </div>
       </div>
 
-      {/* Tabs Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="border-b border-gray-200 bg-gray-50">
-            <div className="flex overflow-x-auto">
-              {[
-                { id: 'overview', label: 'About Hysteroscopy' },
-                { id: 'procedure', label: 'Procedure Steps' },
-                { id: 'uses', label: 'When It’s Recommended' },
-                { id: 'faqs', label: 'FAQs' }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
-                      ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                    }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-          </div>
+      {/* Comprehensive SEO Content Section */}
+      <div className="bg-white py-16 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
+          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What Exactly is a Hysteroscopy?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When trying to figure out why a woman is having trouble getting pregnant or why she is experiencing very heavy bleeding, a doctor needs to look closely inside the womb. The womb is officially called the uterus. It is the safe, warm home where a baby grows during a healthy pregnancy.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            A hysteroscopy is a simple, safe way for doctors to clearly see the deeply hidden inside of this tiny home. Instead of just helplessly guessing what is wrong based on your symptoms, the doctor uses a very special, thin tool called a hysteroscope. This amazing tool is about as incredibly thin as a standard pencil. It has a very bright light and a tiny, powerful digital camera secured on the absolute very end of it.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The doctor gently slides this tiny camera directly through your body's natural opening (the cervix) and straight into the womb. Because of the brilliantly bright camera, the doctor can easily see everything completely clearly on a large, high-definition television screen located right inside the operating room. There are absolutely zero painful cuts on your outside stomach and absolutely no heavy stitches to heal from later. It is a brilliant, entirely safe way to honestly see exactly what is secretly happening deeply inside your own reproductive body.
+          </p>
 
-          <div className="p-8 md:p-12">
-            {activeTab === 'overview' && (
-              <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Hysteroscopy?</h2>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  Hysteroscopy is a minimally invasive diagnostic and therapeutic procedure that allows doctors to view the inside of the uterus using a thin, lighted instrument called a hysteroscope. It helps detect and treat uterine issues such as fibroids, polyps, adhesions, and abnormal bleeding.
-                </p>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  At Pravi Global IVF Delhi, we perform both diagnostic and operative hysteroscopy using the latest endoscopic systems for optimal safety and accuracy.
-                </p>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why Might You Suddenly Need This Important Test?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Your womb is supposed to be perfectly smooth and clean on the inside, beautifully acting just like a soft, deflated balloon. But sometimes, tiny hidden problems can magically start to grow in there. These annoying problems can easily cause deep daily pain, heavily unpredictable bleeding, or totally block the start of a beautiful natural pregnancy.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            You might urgently need a hysteroscopy if you are currently having deeply unexplained trouble getting pregnant. If a naturally fertilized egg proudly enters a bumpy, uneven, or partially blocked womb, it simply cannot stick properly to the inner wall to safely grow. You might also completely need this highly awesome diagnostic test if you have totally unpredictable monthly periods or if you intensely bleed way too heavily during every single menstrual cycle.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Sometimes, women deeply suffer from tiny, soft growths hanging safely inside the sensitive womb. These soft growths are medically and warmly called polyps or fibroids. Other times, highly sticky scar tissue, often called strong adhesions, can totally glue the soft, delicate walls of the uterus completely together. This incredibly sadly happens quite often after a past heavy infection or from recovering from a highly difficult past surgery.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Many times, as the highly trusted <strong>Best IVF Center In Delhi</strong>, we effectively use this powerful medical procedure directly just before officially starting an amazing IVF journey. We fiercely want to medically guarantee that the warm future baby home is absolutely one hundred percent perfectly ready and safe before we carefully place a tiny, precious embryo inside you. Doing a very fast hysteroscopy first incredibly powerfully boosts the final, glorious chances of a completely wonderfully successful, healthy pregnancy. It makes completely sure that absolutely nothing is silently hiding in the complete dark to spoil your beautiful, long-time baby dreams.
+          </p>
 
-            {activeTab === 'procedure' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Hysteroscopy Procedure at Pravi Global IVF</h2>
-                <div className="space-y-6">
-                  {[
-                    { step: '01', title: 'Pre-Procedure Evaluation', desc: 'Includes ultrasound and necessary lab tests to ensure readiness for the procedure.' },
-                    { step: '02', title: 'Anesthesia & Preparation', desc: 'Performed under mild anesthesia or sedation for comfort.' },
-                    { step: '03', title: 'Hysteroscope Insertion', desc: 'A thin camera is inserted through the cervix to visualize the uterine cavity.' },
-                    { step: '04', title: 'Diagnosis or Treatment', desc: 'Polyps, fibroids, or adhesions are detected and treated using micro-instruments.' },
-                    { step: '05', title: 'Post-Procedure Recovery', desc: 'You can usually return home the same day with minimal downtime.' }
-                  ].map((step, idx) => (
-                    <div key={idx} className="flex gap-6 items-start">
-                      <div className="flex-shrink-0">
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-xl">
-                          {step.step}
-                        </div>
-                      </div>
-                      <div className="flex-1 bg-gray-50 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-                        <p className="text-gray-700 leading-relaxed">{step.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Exactly How is the Procedure Safely Done?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Hearing you need a completely new medical procedure can easily feel totally scary on the inside. But please kindly relax and deeply breathe! This is genuinely one of the easiest, amazingly fastest, and absolutely safest procedures available in modern medicine today. We will gladly walk you safely through every single wonderfully easy step here at our clinic.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            First, you will visit our highly clean, wonderfully happy medical clinic on a perfectly scheduled morning. You do not ever need to stay loudly overnight in a scary, cold, crowded hospital ward. You literally get to go securely deeply home onto your own couch the exactly same day. When it is beautifully time for the short test to properly begin, you will calmly step into a very private, softly quiet room. Our highly trained expert doctors will safely give you very mild, gentle medicine so you instantly feel deeply sleepy and super physically relaxed.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When you are fully nicely asleep and strongly resting peacefully without any worry, the careful specialist doctor simply slowly glides the deeply tiny lighted camera gently directly into the lovely lower opening of your cervix. To perfectly completely cleanly see every hidden dark corner safely, we very gently push a tiny, controlled bit of purely clean medical water safely into the deeply hidden womb. This soft clear water gently perfectly smoothly opens the completely flat womb precisely exactly like a slowly filling soft smooth water balloon, happily giving the exact smart doctor a crystal totally clear, massive, wonderfully beautiful view directly onto the television screen.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            If the smart expert doctor amazingly finds a tiny hidden bad polyp or some wildly sticky scary scar tissue while bravely looking proudly around your beautiful uterus, they can instantly magically surgically fix it right then and deeply there in precisely exactly the same single visit! The deeply amazing tiny smart camera tool wonderfully has hidden, tiny micro-sized surgical scissors and amazingly gentle little wire loops securely hiding inside it. Instead of sadly securely forcing you to forcefully return roughly for a completely new, powerfully hard, entirely separate surgery day, we cleanly correctly safely fully thoroughly perfectly gently remove the small deeply annoying medical problem instantly without any extra drama or pain. The extremely entire total easy process honestly takes only fifteen to absolutely fast thirty total painless minutes. It is basically a totally powerfully brilliant pure two-for-one entirely safely wonderfully smart medical deal: a completely deep incredibly bright clear lovely look and an instantly amazingly perfectly fast lovely fix perfectly gracefully combined securely strictly totally exactly properly together.
+          </p>
 
-            {activeTab === 'uses' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">When is Hysteroscopy Recommended?</h2>
-                <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Unexplained infertility or recurrent miscarriages</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Heavy or irregular menstrual bleeding</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Suspected uterine fibroids or polyps</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> To remove intrauterine adhesions (Asherman’s syndrome)</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Evaluate uterine shape or structural anomalies</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Retrieve lost IUCD (contraceptive device)</li>
-                </ul>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Diagnostic vs Operative Hysteroscopy Explained</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            In the medical world, doctors basically use two different important words to strictly describe exactly what they are actively doing deeply inside the lovely womb during this fast test. Understanding these two beautiful words will naturally totally help you securely feel completely bravely wonderfully powerfully in proudly strong control of your highly amazing deeply incredible amazing fiercely incredibly deeply powerfully highly fiercely completely exactly totally medical wildly heavily smoothly beautifully health journey.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The first medical word you might hear is "Diagnostic." This simply means the doctor is looking around to clearly understand exactly what is wrong. They might check the overall size of your womb, look closely for any tiny bumps on the pink walls, or see if the entrance to your fallopian tubes is clear. They are simply acting like a detective, gathering visual information to safely plan the best next medical steps for you.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The second important word is "Operative." This means the doctor is actually fixing the hidden problem during the exact same look inside. For example, if they find a small polyp blocking the way, they will easily remove it using the same thin camera tool right then and there. Operating immediately means you don't have to schedule a second surgery later, getting your womb ready for a healthy baby much faster. 
+          </p>
 
-            {activeTab === 'faqs' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions About Hysteroscopy</h2>
-                <div className="space-y-4">
-                  {[
-                    { q: 'Is hysteroscopy painful?', a: 'The procedure is performed under local or mild general anesthesia, making it painless and comfortable for the patient.' },
-                    { q: 'How long does it take?', a: 'A diagnostic hysteroscopy takes about 15–30 minutes, while operative procedures may take slightly longer.' },
-                    { q: 'Is hospitalization required?', a: 'No. Hysteroscopy is a day-care procedure, and you can go home within a few hours.' },
-                    { q: 'When can I resume normal activities?', a: 'Most women can resume daily activities within 24 hours after the procedure.' }
-                  ].map((faq, idx) => (
-                    <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
-                      <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
-                        <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                        <span>{faq.q}</span>
-                      </h3>
-                      <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
-                    </div>
-                  ))}
-                </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">What is the Honest Recovery Like?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            After the quick test is over, you will safely wake up resting in a very soft, comfortable recovery chair. At our comfortable <strong>IVF Center in Lajpat Nagar</strong>, our sweet nursing team will gently offer you hot tea and a small snack while your body wakes up. You might feel a tiny bit of mild cramping in your belly. This soft cramping feels almost exactly like a normal, light menstrual period starting.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            You might also notice a very small amount of light spotting or bleeding when you use the restroom. This is totally normal and purely caused by the tiny camera lightly brushing against the soft inner walls of your womb. We recommend bringing a normal sanitary pad with you to the clinic. Within just two to four hours of arriving, you will confidently walk out of our front doors feeling well. You can comfortably go home, rest on your couch, and easily resume your normal, daily work activities the very next morning without any heavy pain.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'Is hysteroscopy painful?', a: 'The procedure is performed under local or mild general anesthesia, making it painless and comfortable for the patient.' },
+              { q: 'How long does it take?', a: 'A diagnostic hysteroscopy takes about 15–30 minutes, while operative procedures may take slightly longer.' },
+              { q: 'Is hospitalization required?', a: 'No. Hysteroscopy is a day-care procedure, and you can go home within a few hours.' },
+              { q: 'When can I resume normal activities?', a: 'Most women can resume daily activities within 24 hours after the procedure.' }
+            ].map((faq, idx) => (
+              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+                  <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <span>{faq.q}</span>
+                </h3>
+                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
               </div>
-            )}
+            ))}
           </div>
         </div>
       </div>

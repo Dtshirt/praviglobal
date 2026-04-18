@@ -81,7 +81,7 @@ export default async function SuccessStoryDynamicPage({ params }) {
                   <UserRound className="w-7 h-7 text-teal-700" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 text-lg">{testimonial.name}</h4>
+                  <p className="font-bold text-slate-900 text-lg">{testimonial.name}</p>
                   <p className="text-sm font-medium text-slate-500">{testimonial.location}</p>
                 </div>
               </div>

@@ -132,91 +132,69 @@ const LaparoscopyPage = () => {
         </div>
       </div>
 
-      {/* Tabs Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="border-b border-gray-200 bg-gray-50">
-            <div className="flex overflow-x-auto">
-              {[
-                { id: 'overview', label: 'About Laparoscopy' },
-                { id: 'procedure', label: 'Procedure & Uses' },
-                { id: 'benefits', label: 'Benefits' },
-                { id: 'faqs', label: 'FAQs' }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
-                      ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                    }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-          </div>
+      {/* Comprehensive SEO Content Section */}
+      <div className="bg-white py-16 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
+          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What Exactly is Laparoscopy Surgery?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Sometimes, despite passing hundreds of normal blood exams and standard ultrasounds, doctors simply cannot figure out why a hopeful mother is failing to have a baby. When the outside medical tests show completely healthy results but biology remains stubbornly stuck, the trained doctor needs to actually look directly inside the mother's lower stomach. Laparoscopy is an incredibly smart, highly advanced medical procedure famously known in the medical community as <strong>keyhole surgery</strong>. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Instead of making a massive, painful cut completely across the stomach to see inside, the doctor simply makes one tiny, almost invisible scratch right near the mother's belly button. They carefully slide a beautifully tiny, lighted camera completely through this tiny doorway. This magical camera lights up the entire dark inside of the stomach, projecting large, highly clear video pictures straight onto a bright computer screen. This allows the doctor to closely investigate the delicate uterus, the thin fallopian tubes, and the ovaries directly with their own eyes. 
+          </p>
 
-          <div className="p-8 md:p-12">
-            {activeTab === 'overview' && (
-              <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Laparoscopy?</h2>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  Laparoscopy is a minimally invasive surgical procedure used to diagnose and treat fertility problems. It involves inserting a thin tube with a camera (laparoscope) through small abdominal incisions to view the pelvic organs.
-                </p>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  At Pravi Global IVF Delhi, laparoscopy helps identify conditions such as endometriosis, fibroids, ovarian cysts, and tubal blockages that may affect fertility — offering both diagnosis and treatment in a single procedure.
-                </p>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why You Might Need This Procedure</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            There are many hidden biological roadblocks that cause severe <strong>pelvic pain</strong> and silently stop a pregnancy. The deepest secret of laparoscopy is that it acts beautifully as both a discovering camera and a repair tool at the absolute exact same time. If the investigating doctor suddenly discovers a physical problem while exploring with the camera, they do not wake the mother up to completely reschedule another separate surgery. Instead, they gently slide tiny robotic tools through another tiny scratch and fix the problem completely safely right then and there.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The most common hidden villain is a painful sickness heavily called <strong>endometriosis</strong>. This terrible condition happens when the soft tissue that belongs entirely safely inside the womb decides to dangerously grow completely outside the womb, tightly wrapping around the healthy ovaries and tubes like thick spider webs. Using <strong>minimally invasive surgery</strong>, the doctor safely burns or carefully cuts this painful tissue completely away. This instantly helps cure the mother's daily pain and dramatically improves her chances of proudly taking home a baby.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Doctors also routinely use this brilliant tool to safely remove dangerously large ovarian cysts, slice away hard muscular fibroids inside the uterus, or politely repair completely blocked fallopian tubes that are stopping the sperm from reaching the egg.
+          </p>
 
-            {activeTab === 'procedure' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Laparoscopy Procedure & Uses</h2>
-                <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Performed under general anesthesia</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Small incisions made in the abdomen</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> A laparoscope camera provides clear internal visuals</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Used to diagnose or treat infertility-related issues</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Often combined with hysteroscopy for comprehensive evaluation</li>
-                </ul>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">What Happens During The Process?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Like all highly modern surgeries, keeping the mother completely safe and absolutely comfortable is the highest ultimate goal. Before anything starts, the medical clinical team fully puts the mother smoothly to sleep using safe hospital anesthesia medicine. Once she is deeply asleep and safely feeling absolutely zero pain, the doctor mildly fills her stomach quietly with completely harmless carbon dioxide gas. This safe gas simply acts like a gentle balloon, safely pushing the stomach walls upwards away from the internal organs to highly give the doctor plenty of empty room to see and work perfectly safely. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Once the lighted camera clearly locates the hidden fertility problems, the expert doctor cleanly fixes them using tiny microscopic instruments. Finally, the safe gas is carefully pressed completely out of the stomach, the tiny scratch is beautifully closed with exactly one or two simple hospital stitches, and a small clean bandage is safely applied. Because the physical surgical cut is completely microscopic compared to old-fashioned heavy surgeries, the total amount of bodily damage is incredibly low.
+          </p>
 
-            {activeTab === 'benefits' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Benefits of Laparoscopy</h2>
-                <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Detects hidden causes of infertility</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Treats endometriosis, fibroids, cysts, and adhesions</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Short hospital stay and fast recovery</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Minimal pain and scarring</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Improves conception rates post-surgery</li>
-                </ul>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The Extreme Importance of Advanced Surgical Skill</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Operating highly sharp tools safely beside delicate reproductive organs using only a computer video screen requires a massively extreme amount of trained human skill. A poor surgeon can completely accidentally cut a healthy ovary or leave dangerous scar tissue behind that permanently ends a woman's fertility completely. This is simply not a common risk you ever want to personally take.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            This is exactly why choosing the absolute <strong>Best IVF Center In Delhi</strong> matters so heavily for your physical safety. Elite clinics employ highly famous doctors who perform thousands of these precise keyhole surgeries every single wonderful year. They possess the firm muscle memory and expensive modern camera equipment legally required to protect your future family safely.
+          </p>
 
-            {activeTab === 'faqs' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions About Laparoscopy</h2>
-                <div className="space-y-4">
-                  {[
-                    { q: 'Is laparoscopy painful?', a: 'No, the procedure is done under anesthesia. Mild soreness may occur for a day or two post-surgery.' },
-                    { q: 'How long is recovery time?', a: 'Most patients recover within 2–5 days and resume normal activities shortly after.' },
-                    { q: 'When is laparoscopy recommended?', a: 'It’s suggested for women with unexplained infertility, endometriosis, fibroids, or tubal issues.' },
-                    { q: 'Does laparoscopy improve fertility?', a: 'Yes, by treating the underlying causes of infertility, laparoscopy can significantly enhance conception chances.' }
-                  ].map((faq, idx) => (
-                    <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
-                      <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
-                        <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                        <span>{faq.q}</span>
-                      </h3>
-                      <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
-                    </div>
-                  ))}
-                </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">A Beautifully Gentle Recovery Speed</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Since this is entirely a modern keyhole medical procedure, the <strong>recovery time</strong> is notoriously incredibly fast. Most happy mothers actually gently wake up, peacefully drink some warm hospital tea, and calmly walk directly out to their waiting car safely on that exact same afternoon. You completely do not need to securely stay overnight miserably in a scary hospital bed safely at all. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            You might physically experience completely mild stomach soreness for exactly one or two wonderfully short days following the procedure. Sometimes, the safe carbon dioxide gas secretly escapes towards the upper chest, causing some totally normal shoulder pain for a few short hours. Because building your trusted <strong>IVF Center in Lajpat Nagar</strong> requires intense personal patient care, our lovely medical nurses will strictly follow up closely with you by phone to completely ensure your body is healing beautifully safely at home.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'Will I completely have large ugly scars on my beautiful stomach?', a: 'No, absolutely not. The tiny physical cuts made during laparoscopy are truly smaller than a simple dime. Once the skin completely safely heals after a few normal months, the tiny lines become practically invisible completely hiding quietly inside or near your belly button.' },
+              { q: 'How safely soon can I successfully try to finally get pregnant after surgery?', a: 'This heavily securely depends strictly on exactly what the doctor magically repaired silently during the actual surgery. However, in most completely normal healthy cases, eager caring couples are joyfully given the green absolute light fully to deeply try conceiving again just one or two normal months safely after the tissue heals.' },
+              { q: 'Is laparoscopy officially counted as a highly dangerous major surgery?', a: 'While deeply sending an anxious patient carefully to sleep fully makes it essentially a hospital surgery naturally, laparoscopy is medically categorized safely globally as entirely a minor, extremely low-risk safe day procedure. Serious dangerous medical complications are wonderfully incredibly rare globally.' },
+              { q: 'Should I quickly safely take total weeks completely off heavily from my job?', a: 'No, that is completely unnecessary totally. Because the bodily physical damage safely is purely microscopic closely, most tough women happily completely gently normally safely quietly bravely beautifully happily clearly return directly fully strictly cleanly exactly cleanly directly purely back strictly normally to totally standard desk jobs comfortably within three highly short working days safely.' }
+            ].map((faq, idx) => (
+              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+                  <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <span>{faq.q}</span>
+                </h3>
+                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
               </div>
-            )}
+            ))}
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/male-infertility/",
+    canonical: "https://praviglobalivf.com/male-infertility",
   },
   openGraph: {
     title: "Male Infertility Treatment in Delhi | Pravi Global IVF Polyclinic",

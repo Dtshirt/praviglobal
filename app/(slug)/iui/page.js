@@ -136,105 +136,81 @@ const IUIServicePage = () => {
         </div>
       </div>
 
-      {/* Tabs Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="border-b border-gray-200 bg-gray-50">
-            <div className="flex overflow-x-auto">
-              {[
-                { id: 'overview', label: 'About IUI' },
-                { id: 'process', label: 'IUI Process' },
-                { id: 'benefits', label: 'Success Factors' },
-                { id: 'faqs', label: 'FAQs' }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
-                      ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                    }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-          </div>
+      {/* Comprehensive SEO Content Section */}
+      <div className="bg-white py-16 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
+          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What Exactly is IUI (Intrauterine Insemination)?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When a couple begins trying to have a baby, they quickly learn that human biology depends heavily on perfect timing and quite a bit of physical luck. The male sperm cells must successfully travel a very long, difficult physical journey all the way from the bottom of the female cervix up to the distant fallopian tubes. They must brave that distance, hoping to bump into a beautifully mature female egg exactly on the correct day of the month. If anything naturally goes wrong during this exhausting trip, the pregnancy simply fails.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Intrauterine Insemination, broadly known in the medical world simply as IUI, is an incredibly smart, simple medical procedure designed to skip the hardest part of that physical journey. Instead of asking the tiny sperm to swim the entire massive distance through the thick natural mucus of the cervix on their own, a trained medical doctor uses a tiny, completely soft plastic tube. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The doctor gently slides this perfectly soft tube past the cervix and places a highly concentrated amount of the best, fastest-swimming sperm directly into the very top of the mother's warm uterus. By placing the healthy sperm simply inches away from the awaiting female egg exactly at the perfect time of ovulation, the natural chances of a successful pregnancy increase dramatically. It is identical to giving Mother Nature a very helpful, supportive physical push directly forward.
+          </p>
 
-          <div className="p-8 md:p-12">
-            {activeTab === 'overview' && (
-              <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">IUI Treatment – A Simple Path to Parenthood</h2>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  Intrauterine Insemination (IUI) is one of the simplest and least invasive fertility treatments. In this process, prepared sperm is placed directly inside the uterus during ovulation, increasing the chances of fertilization naturally.
-                </p>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  At Pravi Global IVF Delhi, our fertility experts design customized IUI cycles based on the couple’s medical profile, ensuring the best chance of success.
-                </p>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why and When Do Doctors Recommend IUI?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When hopeful couples first step into a fertility clinic seeking professional help, doctors rarely immediately jump into performing highly complicated treatments like advanced IVF. Instead, they strongly prefer starting with much simpler, less physically invasive options. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            IUI is famous as the absolute best starting point for couples suffering from unexplained infertility. This frustrating condition simply means that all the medical blood tests look incredibly great, the internal bodily tubes remain open, yet nothing works as it should. Providing the sperm with a massive head start completely solves this invisible distance problem.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            It is also highly recommended if the father has a mildly low sperm count or poor sperm motility. Because the laboratory carefully filters out the tired sperm and physically moves the energetic ones right to the finish line, mild male factor issues are instantly solved. Secondly, it is a brilliant option for women facing mild endometriosis or severe issues with their cervical mucus. Sometimes, the natural mucus completely accidentally acts like a thick wall safely blocking the healthy sperm. IUI magically bypasses this confusing wall entirely.
+          </p>
 
-            {activeTab === 'process' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Step-by-Step IUI Treatment Process</h2>
-                <div className="space-y-6">
-                  {[
-                    { step: '01', title: 'Initial Consultation & Evaluation', desc: 'Detailed fertility check-up and assessment of ovulation and semen quality.' },
-                    { step: '02', title: 'Ovulation Monitoring', desc: 'Tracking ovulation through ultrasound and hormone tests to determine the right timing.' },
-                    { step: '03', title: 'Semen Collection & Preparation', desc: 'The sperm sample is collected and processed in our advanced lab to select the healthiest sperms.' },
-                    { step: '04', title: 'Insemination Procedure', desc: 'Processed sperm is placed into the uterus using a soft catheter — a quick, painless procedure.' },
-                    { step: '05', title: 'Post-Procedure Care & Follow-Up', desc: 'You can resume normal activities after a short rest, with a pregnancy test after 2 weeks.' }
-                  ].map((step, idx) => (
-                    <div key={idx} className="flex gap-6 items-start">
-                      <div className="flex-shrink-0">
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-xl">
-                          {step.step}
-                        </div>
-                      </div>
-                      <div className="flex-1 bg-gray-50 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-                        <p className="text-gray-700 leading-relaxed">{step.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The Four Simple Steps of The Process</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Many worried couples feel shocked to wonderfully discover exactly how physically simple and perfectly fast the entire IUI cycle actually is. The medical journey consists of four very quick phases perfectly designed to maximize your bodily potential.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            First is exact scientific ovulation tracking. For a few short days at the start of the female cycle, the doctor carefully monitors the growing female eggs using a painless ultrasound probe. Sometimes they give the mother mild, safe hormone pills to powerfully help encourage the eggs to fully grow. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Second is the gentle hormone trigger shot. Once the ultrasound correctly shows that exactly one or two beautiful eggs are fully mature, the doctor gives a tiny, completely harmless injection. This safe hormone magically tells the ovaries to release those healthy eggs exactly thirty-six hours later. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Third is the sperm washing phase. The father provides a fresh sperm sample to the clinic laboratory. The expert scientists place this important sample inside a high-speed machine that safely washes away all the dead, slow, or strangely shaped sperm alongside any confusing background debris. All that remains is an incredibly powerful, highly concentrated liquid pool of microscopic champions.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Finally comes the amazingly short insemination procedure. Using the soft, tiny plastic tube, the doctor smoothly injects this clean pool of champion sperm into the uterus. The physical process takes only about ten short minutes to completely finish, and the mother feels absolutely zero surgical pain during the entire event. She simply rests on the warm bed for a quiet moment and then safely drives straight home. 
+          </p>
 
-            {activeTab === 'benefits' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Why Choose IUI at Pravi Global IVF?</h2>
-                <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Safe, minimally invasive, and affordable</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Performed by the best IUI specialists in Delhi</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Advanced semen processing for higher pregnancy rates</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Personalized treatment protocols for every couple</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> 24/7 support and post-IUI guidance</li>
-                </ul>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why the Quality of The Laboratory Matters Deeply</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The entire secret to a successful IUI cycle relies entirely on the precise medical skills of the laboratory team performing the essential sperm washing. If the lab uses cheap older equipment or careless techniques, they can easily damage the healthy sperm or leave behind dangerous debris that causes stomach cramping and total failure.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            This is strictly why choosing the right medical clinic is essentially the most vital decision you can possibly make. Being recognized as the premier <strong>Best IVF Center In Delhi</strong> requires highly intense dedication to keeping our laboratory spotless and equipped with the world's absolute best medical spinning machines. By trusting highly experienced scientists to perfectly wash and accurately concentrate the sperm sample, your physical chances of hearing a baby's heartbeat drastically rise.
+          </p>
 
-            {activeTab === 'faqs' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions About IUI</h2>
-                <div className="space-y-4">
-                  {[
-                    { q: 'Is IUI painful?', a: 'No, IUI is a quick and virtually painless procedure. Some women may experience mild cramping during or after the process.' },
-                    { q: 'What is the success rate of IUI?', a: 'The success rate varies between 15%–25% per cycle, depending on age, sperm quality, and other health factors.' },
-                    { q: 'Who is eligible for IUI?', a: 'IUI is recommended for couples with unexplained infertility, mild male infertility, or cervical issues.' },
-                    { q: 'How long does the procedure take?', a: 'The entire insemination process takes only about 10–15 minutes, with no need for anesthesia or recovery time.' }
-                  ].map((faq, idx) => (
-                    <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
-                      <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
-                        <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                        <span>{faq.q}</span>
-                      </h3>
-                      <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
-                    </div>
-                  ))}
-                </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Staying Positively Calm Through The Entire Journey</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Facing the unknown roads of fertility treatments can force your mind to feel deeply stressed and heavily chaotic. Attempting to manage a busy career while desperately waiting to finally become a lovely parent is an incredibly heavy emotional burden for absolutely any couple. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            However, keeping your body highly relaxed physically improves your biological chances of taking home a baby. We completely understand this, which is why serving as your highly trusted <strong>IVF Center in Lajpat Nagar</strong> means that we naturally prioritize your calm emotional comfort. We respectfully answer your every single worried phone call and hold your shaking hands during the confusing times. From the quiet start to the magical positive pregnancy test, you will strictly never be forced to bravely walk this scary path completely alone.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions About Artificial Insemination</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'Is IUI physically painful?', a: 'No, IUI is a highly quick and completely painless medical procedure. Most happy women state it physically feels roughly identical to a totally normal routine pap smear. A very small number of women might experience incredibly mild standard stomach cramping for a few hours afterward, but nothing strictly severe.' },
+              { q: 'What is the real mathematical success rate?', a: 'The success rate strictly mathematically varies between 15% to 25% perfectly per single cycle, highly heavily depending on the exact maternal age, precise sperm quality, and other important health factors. However, the cumulative odds drastically raise safely if couples attempt multiple rapid cycles.' },
+              { q: 'How physically long does the insemination procedure officially take?', a: 'The entire medical insemination physical process specifically takes only about roughly exactly ten to roughly exactly fifteen extremely short minutes, with absolutely zero need for hard surgical anesthesia or heavy long recovery resting time.' },
+              { q: 'Are there any serious risks to the future growing baby?', a: 'No. This simply gives normal healthy biology a simple medical head start. The resulting born baby is entirely identical strongly in normal health to a naturally safely created child.' }
+            ].map((faq, idx) => (
+              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+                  <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <span>{faq.q}</span>
+                </h3>
+                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
               </div>
-            )}
+            ))}
           </div>
         </div>
       </div>

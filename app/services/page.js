@@ -34,17 +34,18 @@ export default function ServicesPage() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Our Fertility Services
+            Fertility Services in Lajpat Nagar, Delhi
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive fertility solutions tailored to your unique journey to parenthood
+          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed"> 
+            As the best IVF center in Lajpat Nagar, Delhi, we offer comprehensive fertility solutions tailored to your unique journey to parenthood.
           </p>
         </div> 
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="sr-only">Our Core Fertility Treatments</h2>
           <div className="grid gap-12">
             {services.map((service, idx) => {
               const Icon = iconMap[service.icon] || Heart;
@@ -61,9 +62,9 @@ export default function ServicesPage() {
                         <Icon className="h-8 w-8 text-white" />
                       </div>
                       
-                      <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                      <h3 className="text-3xl font-bold text-gray-900 mb-4">
                         {service.name}
-                      </h2>
+                      </h3>
                       
                       <p className="text-gray-600 text-lg mb-6 leading-relaxed">
                         {service.fullDescription}
@@ -184,7 +185,7 @@ export default function ServicesPage() {
             ].map((stat, idx) => (
               <div key={idx} className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-8 rounded-2xl text-center shadow-xl">
                 <div className="text-5xl font-bold mb-3">{stat.rate}</div>
-                <h4 className="text-xl font-semibold mb-2">{stat.label}</h4>
+                <h3 className="text-xl font-semibold mb-2">{stat.label}</h3>
                 <p className="text-blue-100">{stat.desc}</p>
               </div>
             ))}
@@ -192,6 +193,35 @@ export default function ServicesPage() {
 
           <p className="text-center text-gray-600 mt-8 text-sm">
             *Success rates vary based on individual factors. Consult with our specialists for personalized assessment.
+          </p>
+        </div>
+      </section>
+
+      {/* SEO Content Above CTA */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Understanding Your Fertility Journey in Delhi</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Starting a family is a beautiful dream. However, for many couples, the path to parenthood is not always easy or fast. If you have been trying to get pregnant for over a year without success, it might be the right time to seek expert help. For women over the age of 35, doctors suggest seeking advice after just six months of trying. Finding the right medical clinic is the very first and most important step. At Pravi IVF in Lajpat Nagar, Delhi, we provide top-tier medical care combined with deep personal compassion. We know this journey can feel lonely, confusing, and stressful. But you do not have to walk it alone.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Our dedicated team of skilled fertility doctors is always here to listen. We take the time to carefully review your medical history and understand your unique needs. By focusing on your overall health, we create a custom treatment plan just for you. Every single person is different, and there is no single medical solution that fits everyone.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Why Time Matters in Fertility Treatment</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When it comes to building a family, time is a key factor. Age naturally affects both female egg quality and male sperm health. Still, waiting to seek help or feeling scared is very common. We want to remove that fear. Modern medicine offers many amazing and safe solutions today.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Simple, painless tests can give us a totally clear picture of your reproductive health. Once we know the exact root cause, we can suggest the best medical options. These steps might include daily lifestyle changes, simple medicine, IUI procedures, or advanced treatments like IVF. The earlier we start testing, the better the overall chances of success.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">How Pravi IVF Leads with Care and Medical Science</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Deep trust is vital when choosing a fertility doctor. Our clinic closely follows strict safety guidelines to protect your health at all times. We use world-class laboratory equipment with the very latest technology. This high standard means healthier eggs, stronger embryos, and much better outcomes for your family.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Beyond the complex science, we deeply pride ourselves on simple honesty. We will explain every medical test, every treatment step, and every single cost clearly. There are absolutely no hidden surprises. We firmly want you to feel fully informed, relaxed, and confident in every choice you make with our trained staff.
           </p>
         </div>
       </section>
@@ -213,6 +243,44 @@ export default function ServicesPage() {
               Contact Us
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* SEO Content Below CTA */}
+      <section className="py-16 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Expert Answers to Common Fertility Questions</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            It is completely normal to have questions before starting fertility treatments. Seeking help is a big decision. We believe that clear, honest information is the best way to reduce anxiety. Here are some of the most common questions we hear from our patients every day.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Does IVF Treatment Hurt?</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Many patients fear that the process will be very painful. In reality, modern fertility treatments are quite gentle. You might feel mild cramps or bloating, similar to a normal menstrual cycle. During egg retrieval, you will be given safe medicine so you sleep and feel no pain. Our doctors provide full support and medicine to keep you comfortable at all times.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">How Long Does the Process Take?</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            A single cycle usually takes about three to four weeks. It begins on the first day of your period. You will visit our clinic a few times for quick ultrasounds and blood tests. These visits help us track your progress safely. Once the embryos are ready, we gently transfer them. Then, we wait about two weeks to take a pregnancy test.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">Is Infertility Only a Female Issue?</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            No, infertility is a shared issue. In roughly half of all cases, male factors play a big part. This is why testing both partners is vital right from the start. We offer complete testing for men, including advanced sperm analysis. If a problem is found, our expert doctors provide specialized treatments. Solutions like ICSI are highly effective for improving male fertility success limits.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">What Makes a Clinic Trustworthy?</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            A trustworthy clinic puts your health first. It employs certified, highly skilled doctors who write clear treatment plans. Excellent clinics also have advanced, clean laboratories. Lab quality directly affects how well embryos grow. Above all, a good clinic is honest about your chances of success. They will never give you false promises, but they will give you the best possible care.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Your Next Steps Toward a Growing Family</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            We know that taking the first step is often the hardest part. It requires courage to ask for medical help when building your family. But learning about your options gives you power and hope. Modern science has helped millions of people become parents. You deserve that same joy.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            At Pravi IVF, our entire staff is ready to support you. From the caring nurses to the expert doctors, we stand by your side. We promise to protect your privacy, listen to your worries, and celebrate your wins. Reach out today to schedule a simple chat. Let us explore the best path forward together, creating a beautiful future for your family.
+          </p>
         </div>
       </section>
     </>

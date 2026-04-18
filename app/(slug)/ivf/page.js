@@ -225,328 +225,78 @@ const IVFServicePage = () => {
         </div>
       </div>
 
-      {/* Tabs Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="border-b border-gray-200 bg-gray-50">
-            <div className="flex overflow-x-auto">
-              {[
-                { id: 'overview', label: 'About IVF Treatment' },
-                { id: 'process', label: 'Treatment Process' },
-                { id: 'success', label: 'Success Factors' },
-                { id: 'faqs', label: 'FAQs' }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${
-                    activeTab === tab.id
-                      ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-          </div>
+      {/* Comprehensive SEO Content Section */}
+      <div className="bg-white py-16 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
+          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What Exactly is the IVF Treatment Process?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When you dream of holding your own child but nature is blocking your path, medical science offers a brilliant path forward. In Vitro Fertilization, commonly called IVF, is currently the most successful infertility treatment available in the entire medical world today. At its core level, IVF is simply a very safe way to help biology do exactly what it naturally wants to do. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            For many generations, families wrongly believed that failing to have a child was a personal failure or a secret curse. Today, medical science clearly proves that it is simply a mechanical bodily issue that can be accurately fixed by trained professionals using microscopic tools. The entire goal of this treatment is to gently assist your brave body when normal biology creates temporary physical barriers.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Instead of waiting for the male sperm to travel deep inside the mother’s body to find the female egg, an expert doctor carefully brings both the egg and the sperm into a perfectly clean, highly protected medical laboratory. There, skilled scientists help the two join together safely. Once they join and form a tiny growing seed of life, called an embryo, the doctor gently places it right back inside the mother’s warm womb to grow naturally into a beautiful baby. Many people used to call this creating a <strong>test tube baby</strong>, though today we simply use tiny, advanced medical dishes instead of old glass tubes.
+          </p>
 
-          <div className="p-8 md:p-12">
-            {activeTab === 'overview' && (
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-3xl font-bold mb-6 text-gray-900">
-                    IVF Treatment at Delhi's Premier Test Tube Baby Centre
-                  </h2>
-                  <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                    Pravi Global IVF Delhi is recognized as the <strong>Best IVF Centre in Delhi</strong>, offering comprehensive fertility solutions with a perfect blend of advanced technology and compassionate care. Our <strong>Test Tube Baby Centre</strong> is equipped with world-class infrastructure and staffed by the <strong>Best IVF Doctor in Delhi</strong> and the <strong>Best Embryologist in Delhi</strong>.
-                  </p>
-                  <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                    In Vitro Fertilization (IVF) is an advanced assisted reproductive technology where eggs are fertilized with sperm outside the body in our state-of-the-art laboratory. As a leading <strong>IVF Expert in Delhi</strong>, we specialize in personalized treatment protocols that maximize your chances of success.
-                  </p>
-                </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Who Truly Needs This Treatment?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Parents often wonder why simple biology suddenly feels so difficult. There are many common health reasons why a loving couple might need to skip normal biology and rely directly on IVF. One of the most common medical reasons involves <strong>blocked fallopian tubes</strong>. Normally, a mother's eggs travel slowly down these tiny tubes to meet the swimming sperm. If those delicate tubes are blocked by past infections or scarred tissue, they act like a closed road. Because IVF completely bypasses these tubes and collects the eggs directly from the ovaries, the closed road never stops you.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Doctors also heavily suggest this pathway if the father has very low numbers of healthy, active sperm. If the sperm lack the physical energy to swim the long distance inside the mother naturally, the laboratory scientists can pick up exactly one single perfect sperm and place it directly inside the egg. This specific action instantly solves extreme male fertility issues. Furthermore, women who are gracefully passing into older age brackets often use IVF to harvest their best remaining eggs before their natural biological clock fully stops.
+          </p>
 
-                <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-8">
-                  <h3 className="text-2xl font-bold mb-6 text-gray-900">What Makes Us the Best IVF Centre in Delhi</h3>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    {[
-                      'World-Class IVF Laboratory with Advanced Technology',
-                      '24/7 Embryologist Support for Optimal Results',
-                      'Experienced Team with 18+ Years Combined Expertise',
-                      'Comprehensive Services Under One Roof',
-                      'International Collaboration & Global Standards',
-                      'Modern Care with Personal Touch',
-                      'High Success Rates in IVF & ICSI Procedures',
-                      'Personalized Treatment Plans for Each Couple'
-                    ].map((point, idx) => (
-                      <div key={idx} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
-                        <span className="text-gray-800 font-medium">{point}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Understanding the Journey Step by Step</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Many women feel terrified before starting simply because they do not know what the <strong>IVF treatment process</strong> actually looks like. It is actually broken down into a few very clear, highly manageable medical steps.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The very first stage is helping the mother grow her eggs safely. Normally, a woman only grows exactly one egg each month. For the clinic to succeed, they need multiple chances. The mother takes very small, painless daily hormone shots at home using a tiny pen-like needle. This safe medicine tells her ovaries to kindly grow ten or fifteen beautiful eggs all at the exact same time. The doctor will watch her closely with painless ultrasound machines to make sure she stays perfectly healthy and comfortable while they secretly grow.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When all those eggs are finally mature and visibly large enough, the second stage begins. The mother comes into the clinic and takes a very short fifteen-minute nap under mild medicine. While she is peacefully dreaming and feeling zero pain, the doctor uses a thin needle to softly collect all the waiting eggs from her body. She wakes up shortly after, drinks some water, and safely goes home to rest on the couch. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The third stage is the invisible magic that happens entirely behind closed doors. Inside the high-tech laboratory, expert scientists wash the father's given sperm sample. They place the strongest swimming sperm directly next to the collected eggs inside a special warm machine that perfectly acts exactly like a human body. Over the next three to five days, they carefully watch the cells bravely divide and wonderfully grow into healthy, strong embryos. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The final step is the beautiful <strong>embryo transfer</strong>. The mother returns to the clinic highly awake. The doctor safely uses a completely soft, flexible plastic straw to carefully slide the absolute best selected embryo directly up into the center of her warm uterus. This incredibly fast step takes only five painless minutes and requires absolutely no numbing medicine. Two weeks later, the clinic runs a simple blood test to happily check if the mother is finally pregnant.
+          </p>
 
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="bg-white border-2 border-blue-200 rounded-xl p-6">
-                    <Activity className="w-10 h-10 text-blue-600 mb-4" />
-                    <h4 className="font-bold text-lg mb-2 text-gray-900">Advanced Technology</h4>
-                    <p className="text-gray-600 text-sm">
-                      Latest IVF/ICSI equipment and techniques imported from leading global manufacturers
-                    </p>
-                  </div>
-                  <div className="bg-white border-2 border-blue-200 rounded-xl p-6">
-                    <Shield className="w-10 h-10 text-blue-600 mb-4" />
-                    <h4 className="font-bold text-lg mb-2 text-gray-900">Safe Procedures</h4>
-                    <p className="text-gray-600 text-sm">
-                      Stringent quality control and safety protocols in our certified laboratory
-                    </p>
-                  </div>
-                  <div className="bg-white border-2 border-blue-200 rounded-xl p-6">
-                    <Heart className="w-10 h-10 text-blue-600 mb-4" />
-                    <h4 className="font-bold text-lg mb-2 text-gray-900">Compassionate Care</h4>
-                    <p className="text-gray-600 text-sm">
-                      Emotional support and guidance throughout your fertility journey
-                    </p>
-                  </div>
-                </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why Finding the Right Laboratory Matters Immensely</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Creating human life outside the human body is highly delicate work. A tiny embryo is incredibly fragile and can easily be destroyed by bad air quality, tiny changes in room temperature, or completely outdated microscope equipment. The air passing through the laboratory must be filtered perfectly clean, far cleaner than a normal hospital operating room.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When families desperately want the highest possible <strong>success rate</strong>, they quickly realize why they need the <strong>Best IVF Center In Delhi</strong>. Choosing a premium clinic fundamentally means choosing a laboratory that spends vast amounts of money strictly on ultra-modern incubation machines and highly strict air filters. It means trusting highly educated scientists who have safely handled thousands of delicate embryos before you arrived. Your financial investment must accurately pay for their endless obsession with perfect laboratory safety.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Protecting Your Heart and Mind</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Infertility silently steals your joy and replaces it heavily with deep secret anxiety. When you finally decide to seek professional medical help, you are already feeling incredibly tired, deeply frustrated, and highly vulnerable emotionally. The very last thing you need is a doctor treating you coldly like a simple number on a long paper list. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Finding a warmly trusted <strong>IVF Center in Lajpat Nagar</strong> ensures that you never feel lost in the chaotic noise. The right medical staff intimately knows your first name, kindly answers your terrified midnight text messages, and holds your shaking hands tightly during the hard waiting days. The medical science truly builds the baby, but the deep human compassion is what quietly protects your tired heart throughout the long journey toward a positive test result.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'Is the egg retrieval surgery very painful?', a: 'No, the entire egg collection procedure is safely performed while you are comfortably asleep using mild sedation medicine. You gently fall asleep, feeling zero pain during the 15-minute procedure. When you wake up, you might feel a tiny bit of mild stomach cramping similar to a light monthly period.' },
+              { q: 'Will I be forced to rest in bed for weeks?', a: 'Modern science heavily discourages strict bed rest. Following your embryo transfer procedure, you simply rest tightly at the clinic for about thirty minutes. Afterward, doctors highly recommend returning politely to your normal daily routine. You just avoid heavy weight lifting or extreme sweaty gym workouts for a few short weeks.' },
+              { q: 'Are test tube babies physically weaker than natural babies?', a: 'Absolutely not. The outdated phrase "test tube baby" simply refers to the location where the egg actually met the sperm. Once the healthy embryo successfully sticks tightly to the mother\'s womb, the pregnancy remains completely normal. The resulting children possess the exact same intelligence, physical health, and beautiful traits as completely naturally conceived children.' },
+              { q: 'What is the real cost of this journey?', a: 'The financial cost strictly depends on the exact amount of daily medicine the mother specifically requires to grow her eggs, combined with the laboratory fees. We promise complete financial transparency upfront so families securely understand the exact numbers without any sudden scary surprises hiding at the finish line.' }
+            ].map((faq, idx) => (
+              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+                  <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <span>{faq.q}</span>
+                </h3>
+                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
               </div>
-            )}
-
-            {activeTab === 'process' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-8 text-gray-900">IVF Treatment Process at Our Test Tube Baby Centre</h2>
-                <p className="text-gray-700 mb-8 text-lg">
-                  Our <strong>IVF experts in Delhi</strong> follow a comprehensive, step-by-step approach to ensure the best possible outcomes for every couple.
-                </p>
-                <div className="space-y-6">
-                  {[
-                    {
-                      step: '01',
-                      title: 'Initial Consultation & Evaluation',
-                      description: 'Comprehensive assessment by our Best IVF Doctor in Delhi, including medical history review, physical examination, and diagnostic tests to create a personalized treatment plan.',
-                      duration: '1-2 visits'
-                    },
-                    {
-                      step: '02',
-                      title: 'Ovarian Stimulation',
-                      description: 'Controlled hormone therapy to stimulate the ovaries to produce multiple eggs. Regular monitoring through ultrasound and blood tests to track follicle development.',
-                      duration: '10-14 days'
-                    },
-                    {
-                      step: '03',
-                      title: 'Egg Retrieval',
-                      description: 'Minimally invasive procedure performed under sedation to collect mature eggs from the ovaries. Conducted in our advanced operation theater.',
-                      duration: '30 minutes procedure'
-                    },
-                    {
-                      step: '04',
-                      title: 'Fertilization (IVF/ICSI)',
-                      description: 'Eggs are fertilized with sperm in our world-class IVF laboratory under the supervision of the Best Embryologist in Delhi. ICSI technique used when required.',
-                      duration: 'Same day'
-                    },
-                    {
-                      step: '05',
-                      title: 'Embryo Culture & Monitoring',
-                      description: 'Embryos are cultured in optimal conditions with 24/7 monitoring by our experienced embryologist team. Development tracked daily for 3-5 days.',
-                      duration: '3-5 days'
-                    },
-                    {
-                      step: '06',
-                      title: 'Embryo Transfer',
-                      description: 'Healthy embryo(s) are carefully transferred into the uterus. This is a painless procedure that takes only a few minutes.',
-                      duration: '15 minutes procedure'
-                    },
-                    {
-                      step: '07',
-                      title: 'Pregnancy Test & Follow-up',
-                      description: 'Blood test performed 12-14 days after transfer to confirm pregnancy. Continued monitoring and support throughout early pregnancy.',
-                      duration: '2 weeks wait'
-                    }
-                  ].map((step, idx) => (
-                    <div key={idx} className="flex gap-6 items-start">
-                      <div className="flex-shrink-0">
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-xl">
-                          {step.step}
-                        </div>
-                      </div>
-                      <div className="flex-1 bg-gray-50 rounded-xl p-6">
-                        <div className="flex items-start justify-between mb-3">
-                          <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
-                          <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
-                            {step.duration}
-                          </span>
-                        </div>
-                        <p className="text-gray-700 leading-relaxed">{step.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {activeTab === 'success' && (
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-3xl font-bold mb-6 text-gray-900">Success Factors at Pravi Global IVF Delhi</h2>
-                  <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                    As the <strong>Best IVF Centre in Delhi</strong>, our success is built on multiple factors that work together to give you the best possible chance of achieving pregnancy.
-                  </p>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-8 shadow-lg">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <Microscope className="w-6 h-6 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900">World-Class Laboratory</h3>
-                    </div>
-                    <ul className="space-y-3">
-                      {[
-                        'State-of-the-art IVF lab with controlled environment',
-                        'Advanced embryo culture systems',
-                        'HEPA filtered air quality control',
-                        'Latest ICSI and micromanipulation equipment',
-                        '24/7 embryologist monitoring'
-                      ].map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-8 shadow-lg">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <Users className="w-6 h-6 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900">Expert Medical Team</h3>
-                    </div>
-                    <ul className="space-y-3">
-                      {[
-                        'Best IVF Doctor in Delhi with 18+ years experience',
-                        'Best Embryologist in Delhi - 5000+ ICSI procedures',
-                        'Specialized fertility nurses and counselors',
-                        'International training and certifications',
-                        'Continuous professional development'
-                      ].map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-8 shadow-lg">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <Globe className="w-6 h-6 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900">Global Standards</h3>
-                    </div>
-                    <ul className="space-y-3">
-                      {[
-                        'International collaboration with leading centers',
-                        'World-class IVF/ICSI technology',
-                        'Evidence-based treatment protocols',
-                        'Regular quality audits and improvements',
-                        'Adherence to international guidelines'
-                      ].map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-8 shadow-lg">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <Heart className="w-6 h-6 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900">Personalized Care</h3>
-                    </div>
-                    <ul className="space-y-3">
-                      {[
-                        'Customized treatment protocols for each patient',
-                        'Regular monitoring and adjustments',
-                        'Emotional support and counseling',
-                        'Transparent communication throughout',
-                        'Post-treatment care and guidance'
-                      ].map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {activeTab === 'faqs' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions About IVF</h2>
-                <div className="space-y-4">
-                  {[
-                    {
-                      q: 'What makes Pravi Global IVF the Best IVF Centre in Delhi?',
-                      a: 'We combine 18+ years of expertise, world-class laboratory infrastructure, internationally trained specialists, and personalized care. Our team includes the Best IVF Doctor in Delhi (Dr. Monica Sachdev) and Best Embryologist in Delhi (Dr. Rit Shukla), with over 5000 successful ICSI procedures. We maintain 24/7 embryologist support and follow international protocols.'
-                    },
-                    {
-                      q: 'What is the success rate of IVF at your Test Tube Baby Centre?',
-                      a: 'Success rates depend on various factors including age, cause of infertility, and individual health conditions. Our center maintains high success rates due to our advanced technology, experienced team, and personalized protocols. During your consultation, we provide detailed success rate statistics relevant to your specific situation.'
-                    },
-                    {
-                      q: 'How long does the complete IVF treatment take?',
-                      a: 'A complete IVF cycle typically takes 4-6 weeks from the start of medication to embryo transfer. This includes ovarian stimulation (10-14 days), egg retrieval, fertilization, embryo culture (3-5 days), and transfer. The pregnancy test is done 12-14 days after transfer.'
-                    },
-                    {
-                      q: 'Is IVF treatment painful?',
-                      a: 'Most IVF procedures involve minimal discomfort. Injections during stimulation may cause slight discomfort. Egg retrieval is performed under sedation, so you won\'t feel pain during the procedure. Embryo transfer is generally painless and doesn\'t require anesthesia. Our team ensures your comfort throughout the process.'
-                    },
-                    {
-                      q: 'What is the difference between IVF and ICSI?',
-                      a: 'IVF involves placing sperm and eggs together for natural fertilization, while ICSI (Intracytoplasmic Sperm Injection) involves directly injecting a single sperm into each egg. ICSI is recommended for male factor infertility or when previous IVF attempts had poor fertilization. Our embryologist determines the best technique for your case.'
-                    },
-                    {
-                      q: 'What is the cost of IVF treatment in Delhi?',
-                      a: 'IVF costs vary based on individual requirements, medications needed, and additional procedures. We offer transparent pricing and flexible payment options. During your free consultation, we provide a detailed cost breakdown tailored to your treatment plan. Contact us at +91 800 915 0040 for specific pricing information.'
-                    },
-                    {
-                      q: 'Do you offer free consultation at your IVF Centre in Delhi?',
-                      a: 'Yes, we offer free initial consultations where our IVF experts assess your condition, discuss treatment options, and create a personalized plan. You can book your consultation by calling +91 800 915 0040 or visiting our clinic at 41, Lajpat Nagar, Delhi.'
-                    },
-                    {
-                      q: 'What are your clinic timings?',
-                      a: 'We are open Monday to Saturday from 10:00 AM to 6:00 PM. Our embryology lab operates 24/7 to ensure optimal care for embryos. For emergencies or urgent queries, you can contact us anytime.'
-                    },
-                    {
-                      q: 'What is the qualification of your IVF doctors?',
-                      a: 'Dr. Monica Sachdev, our Medical Director, holds MBBS, DNB (Obs & Gynae), MRCOG, FICOG, and Fellowship in Reproductive Medicine from Germany. She has 18+ years of experience. Dr. Rit Shukla, our Chief Embryologist, has 18 years of experience with over 5000 successful ICSI procedures and international collaborations.'
-                    },
-                    {
-                      q: 'Do you provide embryo freezing facilities?',
-                      a: 'Yes, we have advanced cryopreservation facilities for embryo, egg, and sperm freezing. Our world-class laboratory maintains optimal conditions for long-term storage, giving you flexibility in your treatment timeline.'
-                    }
-                  ].map((faq, idx) => (
-                    <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-blue-300 transition-all">
-                      <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
-                        <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                        <span>{faq.q}</span>
-                      </h3>
-                      <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+            ))}
           </div>
         </div>
       </div>

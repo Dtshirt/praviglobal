@@ -68,7 +68,7 @@ export default function OCIPage() {
       experience: "15+ years experience",
       role: "Clinical Director",
       specialty: "IVF & Reproductive Medicine",
-      image: "/images/dr-ankita.jpeg",
+      image: "/images/dr-ankita.png",
     },
     {
       name: "Dr. Sakshi Tandon",

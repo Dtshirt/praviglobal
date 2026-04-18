@@ -19,8 +19,8 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
@@ -55,10 +55,10 @@ export default function AboutPage() {
                 Our state-of-the-art IVF center offers customized treatment plans designed around each patient’s medical history, lifestyle, and emotional needs. From the first consultation to a confirmed pregnancy, our expert team walks with you at every step—with empathy, transparency, and constant support.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-With over 15 years of experience and thousands of successful pregnancies, Pravi Global IVF continues to set new benchmarks in fertility care across Delhi and Kanpur, India. Our strong focus on ethical practices, honest guidance, patient education, and affordable excellence has earned the trust of families from across the region. <br />
+                With over 15 years of experience and thousands of successful pregnancies, Pravi Global IVF continues to set new benchmarks in fertility care across Delhi and Kanpur, India. Our strong focus on ethical practices, honest guidance, patient education, and affordable excellence has earned the trust of families from across the region. <br />
 
-Because at Pravi Global IVF, your dream of parenthood is our mission.
-                </p>
+                Because at Pravi Global IVF, your dream of parenthood is our mission.
+              </p>
 
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-blue-50 p-6 rounded-xl">
@@ -75,7 +75,7 @@ Because at Pravi Global IVF, your dream of parenthood is our mission.
             <div className="relative">
               <div className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/visit-clinic-bg.jpg"
+                  src="/images/visit-clinic-bg.jpeg"
                   alt="Pravi IVF Facility"
                   fill
                   className="object-cover"
@@ -101,9 +101,9 @@ Because at Pravi Global IVF, your dream of parenthood is our mission.
               </div>
               <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                To provide accessible, affordable, and advanced fertility treatments with the highest standards of 
-                medical care and ethical practices. We strive to make the journey to parenthood as smooth and 
-                supportive as possible for every family we serve, combining clinical excellence with compassionate 
+                To provide accessible, affordable, and advanced fertility treatments with the highest standards of
+                medical care and ethical practices. We strive to make the journey to parenthood as smooth and
+                supportive as possible for every family we serve, combining clinical excellence with compassionate
                 understanding.
               </p>
             </div>
@@ -114,8 +114,8 @@ Because at Pravi Global IVF, your dream of parenthood is our mission.
               </div>
               <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
               <p className="text-blue-100 leading-relaxed text-lg">
-                To be recognized as the most trusted fertility center in India, known for our clinical excellence, 
-                patient-centered approach, and commitment to helping families grow. We envision a future where every 
+                To be recognized as the most trusted fertility center in India, known for our clinical excellence,
+                patient-centered approach, and commitment to helping families grow. We envision a future where every
                 couple has access to the fertility care they need, backed by cutting-edge research and innovation.
               </p>
             </div>
@@ -157,7 +157,7 @@ Because at Pravi Global IVF, your dream of parenthood is our mission.
                 <p className="text-gray-700 font-medium mb-4">
                   MBBS, DNB (Obs & Gynae), MRCOG, FICOG, Fellow Rep.Med.
                 </p>
-                
+
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p className="text-lg">
                     Dr. Monica Sachdev is a renowned Senior IVF Consultant and Obstetrics & Gynecology Specialist with over 18 years of experience in managing infertility. With a distinguished fellowship in IVF and Reproductive Medicine, she is an expert in advanced fertility treatments and high-risk pregnancy management. Currently, she serves as the Medical Director & Senior Consultant at Pravi Global IVF, New Delhi & Kanpur, where she performs cutting-edge IVF procedures, offering personalized care to couples striving for parenthood
@@ -171,7 +171,7 @@ Because at Pravi Global IVF, your dream of parenthood is our mission.
                       <li>Diplomate of Reproductive Medicine from Kiel, Germany</li>
                       <li>MBBS, DNB (Obs & Gynae), MRCOG, FICOG, Fellow Rep.Med.</li>
                     </ul>
- 
+
                   </p>
                 </div>
 
@@ -207,8 +207,8 @@ Because at Pravi Global IVF, your dream of parenthood is our mission.
               const icons = { Award, Shield, Heart, CheckCircle, Users, Clock };
               const Icon = icons[item.icon];
               return (
-                <div 
-                  key={idx} 
+                <div
+                  key={idx}
                   className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
                 >
                   <div className="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">

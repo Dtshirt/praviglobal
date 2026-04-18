@@ -132,93 +132,86 @@ const FemaleInfertilityPage = () => {
         </div>
       </div>
 
-      {/* Tabs Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="border-b border-gray-200 bg-gray-50">
-            <div className="flex overflow-x-auto">
-              {[
-                { id: 'overview', label: 'About Female Infertility' },
-                { id: 'causes', label: 'Common Causes' },
-                { id: 'treatments', label: 'Treatment Options' },
-                { id: 'faqs', label: 'FAQs' }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
-                      ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                    }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-          </div>
+      {/* Comprehensive SEO Content Section */}
+      <div className="bg-white py-16 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
+          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What is Female Infertility?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Having a baby is a big dream for many women. But sometimes, the journey takes longer than expected. Female infertility means a woman tries to get pregnant for a full year but does not succeed. If you are over 35 years old, this time shrinks to six months. Infertility is not a rare issue. Millions of women face it every year. It is a medical problem, not a personal failure.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Infertility can feel like a heavy weight on your heart. It brings sadness, stress, and fear. Many women wrongly blame themselves. But the truth is, the human body is very complex. There are many steps needed to make a baby. If just one step goes wrong, pregnancy will not happen. As the <strong>Best IVF Center In Delhi</strong>, we want you to know you are never alone. Medical science has strong answers. With the right help, most women can and do become happy mothers.
+          </p>
 
-          <div className="p-8 md:p-12">
-            {activeTab === 'overview' && (
-              <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Understanding Female Infertility</h2>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  Female infertility refers to the inability to conceive after a year of unprotected intercourse. It can result from hormonal issues, ovulation problems, blocked fallopian tubes, endometriosis, or uterine conditions.
-                </p>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  At Pravi Global IVF Delhi, we identify the cause through advanced diagnostics and provide targeted treatments to restore natural fertility or assist through ART (Assisted Reproductive Technology).
-                </p>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Common Causes of Female Infertility</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            To fix the problem, we must first find out exactly why it is happening. The female body acts like a perfect clock. Every month, many parts work together.
+          </p>
+          <ul className="text-gray-700 leading-relaxed mb-6 space-y-4">
+            <li><strong>1. Ovulation Problems:</strong> This is the most common cause. Every month, your ovary must drop a healthy egg. If it does not, there is no egg for the sperm to meet. Conditions like PCOS (Polycystic Ovary Syndrome) stop eggs from growing properly. Hormonal imbalance can also freeze the clock.</li>
+            <li><strong>2. Blocked Fallopian Tubes:</strong> The fallopian tubes are tiny roads. They carry the egg securely from the ovary down to the womb. Sometimes, past infections or surgeries cause thick scars. These scars block the road completely. If the road is blocked, the sperm and egg can never ever meet.</li>
+            <li><strong>3. Uterine Fibroids and Polyps:</strong> The uterus (or womb) is where the baby lives and grows. Sometimes, small pieces of muscle or skin grow inside the womb. These are called fibroids or polyps. They can make the womb a hard place for an embryo to attach and grow safely.</li>
+            <li><strong>4. Endometriosis:</strong> This is a condition where the skin that should grow inside the womb grows outside on other organs instead. It causes a lot of deep pain during periods. It also makes getting pregnant very difficult.</li>
+            <li><strong>5. Age Factor:</strong> As a woman gets older, her egg supply naturally drops. The quality of the remaining eggs also goes down quietly. This is completely natural, but it does make it harder to have a baby after age 35.</li>
+            <li><strong>6. Lifestyle and Daily Habits:</strong> Sometimes, everyday habits quietly hurt fertility. Being heavily overweight or deeply underweight can completely stop your monthly periods. High daily stress, smoking cigarettes, or drinking too much alcohol can also poison your eggs. Simply eating healthy foods, walking daily, and lowering stress can powerfully boost your pregnancy chances naturally.</li>
+          </ul>
 
-            {activeTab === 'causes' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Common Causes of Female Infertility</h2>
-                <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Ovulation disorders (PCOS, hormonal imbalance)</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Fallopian tube blockage or damage</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Endometriosis or fibroids</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Uterine or cervical abnormalities</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Age-related decline in egg quality</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Lifestyle and stress factors</li>
-                </ul>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">How We Easily Test for Female Infertility</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Testing is the key to finding the right cure. Many women feel scared of testing. They worry it will hurt or cost too much. We promise that our tests are very gentle and clear. We take things one fast step at a time.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            First, we talk with you. We ask simple questions about your monthly periods, past health, and daily life. Next, we do a basic physical health check. We often ask for simple blood tests. These tests check your hormones perfectly. They tell us exactly if you are dropping eggs correctly. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            We also use smooth ultrasound machines. This test uses quiet sound waves to look inside your belly securely. It shows us perfect pictures of your ovaries and your womb. It is totally painless. Sometimes, we use a special X-ray called an HSG. For this test, we safely put a little dye inside your womb. This dye perfectly outlines your fallopian tubes to see clearly if they are blocked. 
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            It is also very important to test your partner. We always suggest a simple sperm test for the man. In many cases, both partners might have a small issue at the exact same time. Checking both of you firmly saves time and deeply reduces future heartbreak. Knowing the full truth from both sides creates the fastest road to success.
+          </p>
 
-            {activeTab === 'treatments' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Treatment Options at Pravi Global IVF</h2>
-                <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Ovulation Induction & Hormonal Therapy</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Intrauterine Insemination (IUI)</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> In Vitro Fertilization (IVF)</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Hysteroscopy & Laparoscopy for Uterine Correction</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Egg Freezing & Donor Programs</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Lifestyle and Nutritional Counseling</li>
-                </ul>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Treatment Options to Build Your Family</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            After we find the root cause, we confidently offer many ways to fix it. We never guess. We only offer exactly what your body truly needs.
+          </p>
+          <ul className="text-gray-700 leading-relaxed mb-6 space-y-4">
+            <li><strong>Fertility Medicines:</strong> If your body is not dropping eggs properly, we use simple, safe pills. These medicines gently wake up your ovaries. They help eggs grow perfectly and drop on time. This is often the first and cheapest step.</li>
+            <li><strong>IUI (Intrauterine Insemination):</strong> If the simple pills are not enough, IUI is a great next step. For this, we take the very best, fastest sperm from your partner. We place it directly inside your womb at the exact perfect time. It gives the sperm a massive head start.</li>
+            <li><strong>IVF (In Vitro Fertilization):</strong> If tubes are blocked or other methods fail, IVF offers huge hope. For IVF, we safely collect a few healthy eggs from your body. We carefully mix them with sperm in our extremely clean lab. Once they grow into strong tiny babies (embryos), we gently place them back into your warm womb. IVF has helped millions build happy homes.</li>
+            <li><strong>Gentle Surgery:</strong> If you have fibroids, polyps, or blocked tubes, we can often fix them with quick, safe surgery. We use tiny cameras that leave almost no marks. You can often go securely home the same day.</li>
+          </ul>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            As a top <strong>IVF Center in Lajpat Nagar</strong>, we are deeply proud of our high success rates. We offer every advanced treatment right here under one single roof.
+          </p>
 
-            {activeTab === 'faqs' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions About Female Infertility</h2>
-                <div className="space-y-4">
-                  {[
-                    { q: 'How is female infertility diagnosed?', a: 'Through tests like hormonal profiling, ultrasound, HSG (tube test), and laparoscopy, depending on the condition.' },
-                    { q: 'Can infertility be treated naturally?', a: 'In mild cases, lifestyle changes and ovulation tracking may help. For others, medical treatments are more effective.' },
-                    { q: 'When should I see a fertility specialist?', a: 'If you’re under 35 and have tried for a year without success, or over 35 and tried for 6 months, consult a specialist.' },
-                    { q: 'Is IVF the only solution?', a: 'No, treatments vary depending on the cause. IVF is one option among several, including IUI and medication-based therapies.' }
-                  ].map((faq, idx) => (
-                    <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
-                      <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
-                        <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                        <span>{faq.q}</span>
-                      </h3>
-                      <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
-                    </div>
-                  ))}
-                </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why Choose Our Compassionate Care?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Dealing with fertility issues is deeply emotional. It is hard to find peace when you feel broken. We believe that loving kindness is just as vital as good medicine. Our expert doctors and certified nurses give you real time. We answer every single question. We never rush your visits. We use the most advanced, clean safety labs to protect your future family. We explain every cost up front clearly so you never have bad surprises. Our entire promise is honest, ethical care for you.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            We deeply know that treating infertility can make you feel sad, angry, or exhausted. Because of this, we also carefully offer emotional counseling. Our trained counselors listen warmly to your fears and hold your hand during tough moments. They teach you simple ways to relax and breathe. Healing the mind is just as powerful as healing the body.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Having a baby is a journey of extreme courage. Taking the first step feels hard, but you do not have to struggle in silence. Reach out to our deeply caring experts today. Together, we can find the hidden answers, safely fix the problem, and proudly welcome a beautiful new life into your arms.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'How is female infertility exactly diagnosed?', a: 'Through very simple medical tests like hormonal blood typing, clear ultrasound pictures, HSG (safe tube test), and light laparoscopy, depending entirely on your condition.' },
+              { q: 'Can infertility be treated completely naturally?', a: 'In mild cases, simple lifestyle changes, health diets, and careful ovulation tracking may help. For others, safe medical treatments are much faster and more effective.' },
+              { q: 'When exactly should I see a fertility specialist?', a: 'If you are under 35 years old and have tried for a full year without success, or if you are over 35 and tried for just 6 months, you should loudly consult a trusted specialist.' },
+              { q: 'Is IVF the only real solution?', a: 'Absolutely not. Treatments vary greatly depending on the exact cause. IVF is just one option among many, including safe IUI and gentle medication-based therapies.' }
+            ].map((faq, idx) => (
+              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+                  <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <span>{faq.q}</span>
+                </h3>
+                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
               </div>
-            )}
+            ))}
           </div>
         </div>
       </div>

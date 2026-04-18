@@ -135,104 +135,98 @@ const FollicularMonitoringPage = () => {
         </div>
       </div>
 
-      {/* Tabs Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="border-b border-gray-200 bg-gray-50">
-            <div className="flex overflow-x-auto">
-              {[
-                { id: 'overview', label: 'About Follicular Monitoring' },
-                { id: 'process', label: 'Procedure Steps' },
-                { id: 'benefits', label: 'Benefits' },
-                { id: 'faqs', label: 'FAQs' }
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-8 py-4 font-semibold whitespace-nowrap transition-all ${activeTab === tab.id
-                      ? 'text-blue-600 border-b-3 border-blue-600 bg-white'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                    }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-          </div>
+      {/* Comprehensive SEO Content Section */}
+      <div className="bg-white py-16 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
+          
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">What is Follicular Monitoring?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Having a baby is a wonderful journey. But sometimes, knowing exactly when to try can be confusing. Every single month, a woman's body prepares to create a new life. Deep inside her ovaries, tiny fluid-filled sacs start to grow. These small sacs are called follicles. Inside each healthy follicle hides one tiny egg.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Follicular monitoring is a very simple and safe way to watch these eggs grow. A doctor uses a special, quiet ultrasound machine. This machine takes clear pictures of the inside of your body. It acts like a powerful magnifying glass. The doctor watches the follicles get bigger day by day. When a follicle reaches exactly the right size, it breaks open and safely releases the egg. This event is called ovulation.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Knowing the exact hour this happens is pure magic for pregnancy. It completely removes all the stressful guessing. It tells you and your doctor the exact best time to try for a baby. It is a very easy test, but it offers huge answers.
+          </p>
 
-          <div className="p-8 md:p-12">
-            {activeTab === 'overview' && (
-              <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">What is Follicular Monitoring?</h2>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  Follicular monitoring is a series of ultrasound scans performed during a woman’s menstrual cycle to track the growth and development of ovarian follicles. It helps determine the exact time of ovulation for planned conception or assisted reproductive procedures like IUI and IVF.
-                </p>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  At Pravi Global IVF Delhi, our fertility experts perform real-time ultrasound tracking to monitor hormonal response, follicle size, and endometrial thickness — ensuring optimal timing for pregnancy.
-                </p>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why is Tracking Your Cycle So Important?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Timing is everything when trying to have a baby. A released egg only lives for a very short time—usually just 12 to 24 hours. The male sperm can live safely inside a woman's body for up to five days. If the sperm is not already waiting when the egg drops, pregnancy simply will not happen.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            For many women, the body's natural clock does not work perfectly. Some women have very long periods. Some women skip months entirely. Conditions like PCOS (Polycystic Ovary Syndrome) make the clock very confused. The body might try to grow an egg but stop halfway. Trying to get pregnant with a confused clock can take endless years.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            This is exactly why tracking your cycle with medical scans is so important. It gives you a perfect roadmap. We do not just guess based on how you feel or what a phone app tells you. We look directly at the actual egg.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            As the proud <strong>Best IVF Center In Delhi</strong>, we strongly rely on this test for nearly every patient. If you are trying naturally at home, we tell you the exact best day. If you are using safe treatments like IUI (where we put fast sperm directly inside you) or amazing IVF, we must know exactly when to act. If we move too fast, the egg is not ripe. If we move too slow, the egg is completely gone. Follicular monitoring perfectly bridges this gap. It turns a stressful guessing game into an exact, highly successful science.
+          </p>
 
-            {activeTab === 'process' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Follicular Monitoring Procedure</h2>
-                <div className="space-y-6">
-                  {[
-                    { step: '01', title: 'Cycle Day 2–3: Baseline Scan', desc: 'Initial ultrasound to check resting follicles and baseline hormones.' },
-                    { step: '02', title: 'Cycle Day 9–11: Follicle Growth Tracking', desc: 'Monitoring follicle size and number as they grow in response to hormonal stimulation.' },
-                    { step: '03', title: 'Cycle Day 12–14: Ovulation Prediction', desc: 'Determining the optimal time for ovulation and scheduling IUI or intercourse.' },
-                    { step: '04', title: 'Post-Ovulation Scan', desc: 'Confirming egg release and corpus luteum formation for successful ovulation.' }
-                  ].map((step, idx) => (
-                    <div key={idx} className="flex gap-6 items-start">
-                      <div className="flex-shrink-0">
-                        <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-xl">
-                          {step.step}
-                        </div>
-                      </div>
-                      <div className="flex-1 bg-gray-50 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-                        <p className="text-gray-700 leading-relaxed">{step.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Exactly How is the Test Done?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Many women hear the word "monitoring" and feel silently scared. They imagine painful hospital tests and big needles. We promise you, this test is so simple and totally painless.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            First, there is absolutely no blood taken and no sharp needles used. You will walk into a very warm, private, and dimly lit room. You simply lay down calmly on a soft bed. Our doctor uses a very small, smooth scanning wand called a transvaginal ultrasound. It is lightly covered with cool, clean gel. It is gently placed just slightly inside the body. Because it is so close to your ovaries, it sends perfect, crystal-clear pictures directly to a TV screen.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Most women say it feels exactly like a normal, simple checkup. The whole scan takes less than ten fast minutes. You can securely ask questions while watching the awesome screen. You literally get to see the tiny home where your baby will start!
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Usually, we ask you to visit the clinic three to five times during your monthly cycle. We usually start scanning around the 9th day of your period. You come back every two days. We carefully measure the egg sac with a tiny digital ruler on the screen. We watch it grow from the size of a tiny pea to the size of a grape.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            When the follicle reaches about 18 to 22 millimeters, we smile brightly. We know it is fully mature and perfectly ready to pop. This easy process gives you complete control over your own beautiful body.
+          </p>
 
-            {activeTab === 'benefits' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Benefits of Follicular Monitoring</h2>
-                <ul className="space-y-3 text-gray-700 leading-relaxed">
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Detects ovulation accurately</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Helps in timing intercourse or IUI precisely</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Prevents premature ovulation or missed cycles</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Monitors endometrial thickness for implantation</li>
-                  <li><CheckCircle2 className="inline text-green-600 mr-2" /> Improves success rate of fertility treatments</li>
-                </ul>
-              </div>
-            )}
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Checking the Nest (The Endometrium)</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Making a good egg is only half of the journey. Once the strong egg meets the fast sperm, it forms a tiny embryo. This new baby must find a safe, soft place to sleep and grow. That place is the inner lining of your womb, smartly called the endometrium.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            During your ultrasound scan, we do not just stare at your eggs. We also carefully measure this vital womb lining. Think of it like making a warm bed. If the bed sheets are too thin or completely flat, the baby cannot attach securely. If we clearly see the lining is not thick enough during the scan, we can fix it easily. Our expert doctors simply give you safe, gentle vitamins and medicines to quickly thicken the soft bed before the egg drops.
+          </p>
 
-            {activeTab === 'faqs' && (
-              <div>
-                <h2 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions About Follicular Monitoring</h2>
-                <div className="space-y-4">
-                  {[
-                    { q: 'Is follicular monitoring painful?', a: 'No, the procedure involves simple transvaginal ultrasound scans and is completely painless.' },
-                    { q: 'How many scans are needed per cycle?', a: 'Typically, 3–5 scans are done in one cycle to track follicle growth and confirm ovulation.' },
-                    { q: 'Can it help with natural conception?', a: 'Yes, follicular tracking helps couples plan intercourse during the most fertile period for natural conception.' },
-                    { q: 'When is follicular monitoring recommended?', a: 'It’s advised for women undergoing fertility treatments like IUI, IVF, or those with irregular cycles.' }
-                  ].map((faq, idx) => (
-                    <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
-                      <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
-                        <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                        <span>{faq.q}</span>
-                      </h3>
-                      <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
-                    </div>
-                  ))}
-                </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Who Should Get This Test Done?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Not everyone needs this test right away. But if you have been trying warmly for over a year, it is a very smart puzzle piece. We highly recommend this exact test if you have totally unpredictable periods or suffer from terrible PCOS.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            If you are taking strong fertility pills to help you grow more eggs, monitoring is secretly mandatory. We must securely watch to make sure the pills are safely working. We also need to know if you are growing too many eggs at once to keep you fully safe.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Additionally, if you are planning an IUI treatment, this scan is the absolute heart of the plan. As a caring <strong>IVF Center in Lajpat Nagar</strong>, we believe deeply in patient safety. We use these scans to proudly protect your health while forcefully pushing your success rates as high as humanly possible. Transparency and deep care drive our clinic.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">World-Class Accuracy For Your Success</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            A scan is truly only as good as the smart doctor reading it. In our highly advanced clinic, we use the very latest 3D and 4D bright ultrasound machines. These amazing machines catch tiny details that older machines totally miss.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Our expert fertility specialists proudly read these scans themselves. They carefully explain every single step to you. We happily print the pictures for you to hold. When you leave our clinic safely, you know exactly what is happening inside your own body. You clearly know what pill to take, what day to try, and exactly what to expect next.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Do not let another precious month simply waste away in dark confusion. Take beautiful control of your family's future today. A painless ten-minute test can safely open the brave door to a complete lifetime of happy motherhood. Reach out to our caring team today and easily track your way to success.
+          </p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'Is follicular monitoring painful?', a: 'No, the procedure involves a simple transvaginal ultrasound scan. It uses a very slim, smooth wand. It is completely painless and takes only five to ten minutes to finish.' },
+              { q: 'How many scans are needed per cycle?', a: 'Typically, you will need 3 to 5 easy scans in one single cycle. We start around day 9 of your period and scan every two days to carefully track the exact growth.' },
+              { q: 'Can it help with natural conception?', a: 'Yes, absolutely. Tracking effectively helps couples simply plan intercourse during the single most fertile 24-hour period. It removes all guessing for natural conception.' },
+              { q: 'When is follicular monitoring highly recommended?', a: 'It is strongly advised for women undergoing any fertility treatments like IUI or IVF, or for women with highly irregular cycles and PCOS.' }
+            ].map((faq, idx) => (
+              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+                  <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                  <span>{faq.q}</span>
+                </h3>
+                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
               </div>
-            )}
+            ))}
           </div>
         </div>
       </div>

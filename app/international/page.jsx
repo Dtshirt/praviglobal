@@ -68,7 +68,7 @@ export default function PraviIVFLanding() {
       experience: "15+ Years",
       role: "Clinical Director",
       specialty: "IVF & Reproductive Medicine",
-      image: "/images/dr-ankita.jpeg",
+      image: "/images/dr-ankita.png",
     },
     {
       name: "Dr. Sakshi Tandon",

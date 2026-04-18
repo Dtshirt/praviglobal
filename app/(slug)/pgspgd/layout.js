@@ -7,7 +7,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/pgspgd/",
+    canonical: "https://praviglobalivf.com/pgspgd",
   },
   openGraph: {
     title: "PGS & PGD Testing in Delhi | Pravi Global IVF Polyclinic",
