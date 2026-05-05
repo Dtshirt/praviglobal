@@ -1,13 +1,11 @@
-'use client';
-import React, { useState } from 'react';
-import {
+import React from 'react';
+import { 
   FlaskRound,
   CheckCircle2,
   Clock,
   Users,
   Award,
   Phone,
-  Mail,
   Calendar,
   Heart,
   Shield,
@@ -16,88 +14,81 @@ import {
   MapPin,
   Star,
   TrendingUp,
-  Activity,
   Baby,
-  Globe
+  Activity,
+  Globe,
+  Stethoscope,
+  Dna
 } from 'lucide-react';
 
 const ICSIServicePage = () => {
-  const [activeTab, setActiveTab] = useState('overview');
-
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
-        </div>
         <div className="max-w-7xl mx-auto px-4 py-16 md:py-24 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in">
               <div className="flex items-center gap-2 mb-4">
-                <Award className="w-8 h-8 text-yellow-400" />
-                <span className="text-blue-100 font-semibold">Advanced ICSI Fertility Treatment</span>
+                <Dna className="w-8 h-8 text-yellow-400" />
+                <span className="text-blue-100 font-semibold tracking-wide uppercase text-sm">Advanced Embryology Solutions</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                ICSI Treatment at Pravi Global IVF Delhi
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                ICSI Treatment at Pravi IVF Delhi
               </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-blue-100">
-                High-Precision Fertility Care with Proven Results
-              </h2>
-              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Pravi Global IVF Delhi offers world-class ICSI (Intracytoplasmic Sperm Injection) treatment — a breakthrough in assisted reproductive technology that helps couples overcome severe male infertility and achieve successful pregnancies.
+              <p className="text-lg text-blue-100 mb-8 leading-relaxed max-w-xl">
+                Overcome severe male infertility with ICSI — a high-precision fertility technique that ensures fertilization even with minimal sperm. Our expert embryologists at Pravi IVF Delhi have successfully performed over 5000+ ICSI procedures with world-class success rates.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
+                <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
                   Book Free Consultation
                 </button>
-                <a href="tel:+918009150040" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2">
+                <a href="tel:+918009150040" className="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   +91 800 915 0040
                 </a>
               </div>
-              <div className="flex items-center gap-6 text-sm">
+              <div className="flex items-center gap-6 text-sm font-medium text-blue-50">
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
+                  <MapPin className="w-4 h-4 text-yellow-400" />
                   <span>Lajpat Nagar, Delhi</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
+                  <Clock className="w-4 h-4 text-yellow-400" />
                   <span>Mon-Sat: 10 AM - 6 PM</span>
                 </div>
               </div>
             </div>
-
             <div className="hidden md:block">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
-                      <Star className="w-8 h-8 text-blue-900" />
+              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
+                <div className="space-y-8">
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Star className="w-7 h-7 text-blue-900" />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">5000+</div>
-                      <div className="text-blue-100">Successful ICSI Cases</div>
+                      <div className="text-3xl font-bold text-white">5000+</div>
+                      <div className="text-blue-100 font-medium">Successful ICSI</div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center">
-                      <Microscope className="w-8 h-8 text-blue-900" />
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-green-400 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Microscope className="w-7 h-7 text-blue-900" />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">Advanced</div>
-                      <div className="text-blue-100">Embryology Lab</div>
+                      <div className="text-3xl font-bold text-white">Precision</div>
+                      <div className="text-blue-100 font-medium">Micromanipulation</div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-pink-400 rounded-full flex items-center justify-center">
-                      <Baby className="w-8 h-8 text-blue-900" />
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-pink-400 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Baby className="w-7 h-7 text-blue-900" />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">High</div>
-                      <div className="text-blue-100">Pregnancy Success Rate</div>
+                      <div className="text-3xl font-bold text-white">High</div>
+                      <div className="text-blue-100 font-medium">Fertilization Rate</div>
                     </div>
                   </div>
                 </div>
@@ -107,116 +98,193 @@ const ICSIServicePage = () => {
         </div>
       </div>
 
-      {/* Why Choose Us */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Why Choose Pravi Global IVF for ICSI Treatment?
-          </h2>
-          <p className="text-lg text-gray-600">Precision, Experience, and Global IVF Standards</p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {[
-            { icon: Microscope, title: 'High-Tech Lab', desc: 'State-of-the-art ICSI and IVF facilities' },
-            { icon: Users, title: 'Experienced Experts', desc: 'Led by Dr. Rit Shukla & Dr. Monica Sachdev' },
-            { icon: FlaskRound, title: 'Precision Technology', desc: 'Micromanipulation under advanced microscopes' },
-            { icon: Heart, title: 'Personalized Care', desc: 'Tailored treatment plans for every couple' }
-          ].map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div key={idx} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
-                  <Icon className="w-7 h-7 text-white" />
+      {/* Trust Indicators */}
+      <div className="bg-gray-50 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 py-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Pravi IVF is the Best ICSI Centre in Delhi</h2>
+            <p className="text-gray-600">Unparalleled expertise in assisted reproductive technologies</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: Microscope, title: 'High-End Lab', desc: 'Equipped with the latest Narishige micromanipulators' },
+              { icon: Users, title: 'Expert Team', desc: 'Led by North India\'s most experienced embryologists' },
+              { icon: Shield, title: 'Quality Control', desc: 'Rigorous monitoring of embryo culture conditions' },
+              { icon: Heart, title: 'Success Focus', desc: 'Personalized selection of the best individual sperm' }
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                  <item.icon className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Comprehensive SEO Content Section */}
-      <div className="bg-white py-16 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
-          
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">What is ICSI and How Does It Actually Work?</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            When trying to grow a beautiful family, nature usually expects millions of tiny sperm cells to bravely swim toward one single female egg. Only the fastest, absolute strongest swimmer gets to win the race and fertilize the egg. In standard IVF treatments, doctors simply copy this natural race in a glass dish. They place the retrieved egg in the middle of thousands of active sperm, hoping that one strong swimmer naturally breaks through the egg's outer shell on its own.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            However, sometimes the sperm are simply too tired, too few in number, or not shaped correctly to win this difficult natural race. When this happens, fertilization completely fails, which can be absolutely heartbreaking for couples hoping for a baby.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            This is exactly where the modern medical miracle of ICSI comes in! ICSI stands for Intracytoplasmic Sperm Injection. It is an amazing scientific method that completely removes the need for the swimming race. Instead of hoping a sperm breaks into the egg, our highly skilled scientists look through a very powerful microscope. They carefully search to find just one single, perfect, incredibly healthy sperm. Once they find the absolute champion, they use a microscopic glass needle—thinner than a human hair—to gently inject that one perfect sperm directly into the exact center of the mother's egg.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            It guarantees that the sperm successfully reaches its final destination. By physically putting the sperm inside the egg, the chances of creating a beautiful, healthy embryo suddenly become incredibly high, even when male infertility seemed like an impossible roadblock.
-          </p>
+      {/* Main Content Area */}
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        <div className="grid lg:grid-cols-3 gap-16">
+          <div className="lg:col-span-2 space-y-16">
+            {/* SEO Content 1: Introduction */}
+            <section className="prose prose-lg max-w-none">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">ICSI Treatment: Turning Obstacles into Parenthood</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Intracytoplasmic Sperm Injection (ICSI) is a specialized form of IVF that has revolutionized the treatment of male infertility. Unlike conventional IVF, where fertilization happens naturally in a dish, ICSI involves the direct injection of a single, high-quality sperm into a mature egg. At Pravi IVF, we utilize this high-precision technique to overcome challenges such as low sperm count, poor motility, or fertilization failures in previous IVF cycles.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                By bypassing the natural barriers to fertilization, ICSI significantly increases the chances of creating healthy embryos. Our state-of-the-art laboratory in Lajpat Nagar, Delhi, is designed to provide the perfect environment for this delicate procedure, ensuring that every step is handled with the utmost scientific rigour and care.
+              </p>
+            </section>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Who Actually Needs This Special Treatment?</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Infertility is not always a female health issue. In fact, nearly half of all couples struggling to successfully get pregnant are secretly battling male factor infertility. Because male health issues rarely show clear outside symptoms, many men are totally shocked when a simple lab test reveals a problem.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            You might strongly need ICSI treatment if a routine semen analysis shows any of three common issues. First is a low sperm count. This simply means there are not enough swimmers in the pool to mount a strong attack on the egg. Second is poor motility. This means the sperm might be alive, but they are swimming in circles, swimming backward, or barely moving at all. They simply exhaust themselves before ever reaching the egg. Third is poor morphology. This means the sperm are shaped strangely. They might have two heads, a bent tail, or a crooked body, making it physically impossible for them to properly drill through the egg's tough outer shell.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            ICSI is also famously recommended if you have tried standard IVF before and zero eggs successfully fertilized. It is beautifully used for men who have had a past vasectomy, as doctors can safely take sleeping sperm directly from the testicles using a tiny, painless needle. It is highly effective for couples using frozen sperm, which often wakes up a bit tired and needs extra help. Furthermore, for older couples trying to get pregnant quickly, this advanced method prevents delays and immediately maximizes the chances of success on the very first try.
-          </p>
+            {/* Content Section 2: Detailed Process */}
+            <section className="bg-blue-50 rounded-3xl p-8 md:p-12 border border-blue-100">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                <Activity className="text-blue-600" />
+                The ICSI Procedure Explained
+              </h2>
+              <div className="space-y-10">
+                {[
+                  { step: '01', title: 'Egg Preparation', desc: 'Mature eggs are retrieved from the mother and carefully prepared by removing the surrounding cumulus cells to assess their health.' },
+                  { step: '02', title: 'Sperm Selection', desc: 'Our embryologists use high-magnification microscopes to select the absolute healthiest, most mobile sperm from the partner\'s sample.' },
+                  { step: '03', title: 'Microsurgical Injection', desc: 'Using a specialized glass needle, the selected sperm is gently injected directly into the cytoplasm of the mature egg.' },
+                  { step: '04', title: 'Embryo Development', desc: 'The fertilized eggs are cultured in advanced incubators, where we monitor their growth into blastocyst embryos over 3-5 days.' },
+                  { step: '05', title: 'Embryo Transfer', desc: 'The healthiest embryos are selected and gently transferred into the mother\'s uterus to initiate a healthy pregnancy.' }
+                ].map((item, idx) => (
+                  <div key={idx} className="flex gap-6 group">
+                    <span className="text-4xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">{item.step}</span>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The Step-by-Step Lab Journey</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            The ICSI process magically begins exactly like a normal IVF cycle. The mother carefully takes safe hormone medications for roughly ten days. This kindly asks her ovaries to produce multiple mature, healthy eggs instead of just the usual one. Once the eggs are beautifully mature and safely resting inside the female body, the doctor performs a very short, painless procedure while the mother is comfortably asleep to gently retrieve them.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            While the mother is resting safely, the father provides his sperm sample. Our brilliant laboratory team takes this sample and gently washes it inside a high-tech machine called a centrifuge. This washing process separates the dead or tired sperm from the highly active, healthy ones.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Next comes the absolute magic. An expert embryologist sits down at a highly advanced microscope that makes the tiny cells look thousands of times bigger. Using incredibly tiny robotic joysticks that control microscopic glass tools, the scientist carefully holds the soft, round female egg perfectly still. Using another joystick, they carefully catch the single best-looking sperm by its tail. They draw this sperm into a tiny glass needle.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            With incredibly steady hands, the scientist gently pushes the very tip of the microscopic needle through the outer wall of the egg and gracefully injects the single sperm perfectly inside. They repeat this amazing delicate process for every single mature egg retrieved that day. The newly fertilized eggs are then placed into a warm, dark, highly protected incubator that safely acts exactly like a mother's natural womb. For the next five days, these cells magically divide and grow into beautiful blastocyst embryos, powerfully ready to be transferred safely into the mother for a healthy pregnancy.
-          </p>
+            {/* SEO Content 3: Depth & Science */}
+            <section className="prose prose-lg max-w-none">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why ICSI is a Game-Changer for Male Infertility</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Male factor infertility accounts for nearly 50% of all fertility cases. ICSI was specifically developed to address severe sperm issues that conventional IVF could not solve. At our **Fertility Clinic in Delhi**, we routinely perform ICSI for couples dealing with:
+              </p>
+              <ul className="grid md:grid-cols-2 gap-4 text-sm text-gray-600 list-none p-0">
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Very low sperm count (Oligospermia)
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Poor sperm movement (Asthenospermia)
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  High numbers of abnormal sperm
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Sperm retrieved via TESA/PESA
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Anti-sperm antibodies
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Frozen sperm samples
+                </li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mt-10">
+                The precision required for ICSI is immense. A single mistake during the injection can damage the egg. This is why the expertise of your embryology team is the most critical factor in your success. Our team, led by **Dr. Rit Shukla**, has performed over 5000+ ICSI procedures, maintaining one of the highest fertilization and pregnancy rates in North India.
+              </p>
+            </section>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why Precision and Excellence Matter Deeply</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Performing this incredible microscopic task safely requires a massive amount of intense skill, very steady hands, and incredibly expensive, advanced laboratory equipment. The glass needle used to physically inject the sperm is so incredibly tiny that you cannot even clearly see it with your plain naked eye. If the scientist pushes too hard or accidentally holds the egg too tightly, the delicate human egg can be instantly destroyed.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            This is exactly why choosing the right clinic is the most important decision you will make. As the proud <strong>Best IVF Center In Delhi</strong>, we invest incredibly heavily in maintaining a world-class embryology laboratory. Our high-magnification microscopes allow our veteran scientists to clearly see the deeply hidden internal structures of both the sperm and the egg. Our incubators are strictly monitored twenty-four hours a day to guarantee the air quality and temperature remain absolutely perfect for growing embryos. When you carefully combine world-class modern technology with decades of passionate human medical expertise, your chances of finally taking a beautiful baby safely home skyrocket.
-          </p>
+            {/* Deep SEO Expert Content Section */}
+            <section className="prose prose-lg max-w-none bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">The ICSI Advantage: Precision Medicine in Embryology</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Intracytoplasmic Sperm Injection (ICSI) is not just a procedure; it is a masterclass in microscopic precision. At Pravi IVF, we recognize that for many couples, the hurdle to parenthood is a single, silent biological barrier. ICSI is the key that unlocks that barrier. By allowing our expert embryologists to select the absolute best-performing sperm and introduce it directly into the egg, we eliminate the variables of natural fertilization that often lead to disappointment in conventional IVF cycles.
+              </p>
+              
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Mastering the Micromanipulation Process</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                The success of ICSI is deeply dependent on the tools and the hands that use them. Our laboratory in Lajpat Nagar, Delhi, is equipped with the latest Narishige micromanipulators, which allow for sub-micron accuracy. Every injection is performed under high-magnification optics, ensuring that the egg's delicate structure is preserved while the sperm is introduced. This level of technical mastery is what has allowed us to achieve consistent fertilization rates of 80% and higher, even in the most challenging cases of male infertility.
+              </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Feeling Emotionally Supported Through Male Infertility</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Learning that male infertility is blocking your dream of expanding your family can cause a deep amount of hidden emotional pain and secret stress. Many men silently feel highly embarrassed or deeply confused when test results come back poor. It is completely normal to feel sad, but it is vitally important to gracefully understand that male infertility is merely a minor medical roadblock, not a personal failure. It is actually incredibly common, naturally affecting millions of wonderful men around the world today.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Our entire compassionate medical team completely understands this heavy emotional burden. We strictly provide deeply private, highly respectful, and incredibly supportive care for both partners together. Choosing to work with an experienced <strong>IVF Center in Lajpat Nagar</strong> beautifully guarantees that you will never be treated like just another simple medical file. We take the appropriate time to gently sit down with you, carefully explain every single scientific detail of your lab results, and wonderfully answer all of your worried questions without rushing. From the very first simple blood test perfectly to the final, magical day you safely hear your new baby’s tiny heartbeat clearly on the ultrasound screen, we gracefully walk right beside you.
-          </p>
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Overcoming Severe Male Factor Infertility</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                In the past, conditions like Azoospermia (zero sperm in the ejaculate) or severe Oligospermia (very low count) meant that a couple's only hope was donor sperm. ICSI has changed that narrative forever. Through advanced retrieval techniques like TESA and PESA, we can often find viable sperm directly from the source. Because ICSI requires only one healthy sperm per egg, these microscopic samples are more than enough to create a family. We are proud to have helped thousands of fathers achieve biological parenthood who were once told it was impossible.
+              </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Moving Forward With Beautiful Confidence</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            You do not have to struggle in the dark with infertility anymore. With incredible, modern microscopic technology beautifully available to absolutely perfectly solve almost every known sperm problem immediately, building your sweet family is physically closer right now than it has ever completely been. If standard biology is firmly blocking your path, our amazing science can instantly step in and beautifully finish the exact job.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            We safely invite you to comfortably visit our peaceful clinic for a private, totally relaxed consultation. Our expert doctors will carefully review your history, perform any necessary simple lab tests, and brilliantly create a highly personalized, uniquely customized treatment plan specifically designed to maximize your pregnancy success. Your brand new exciting journey boldly toward happy parenthood can finally officially begin today with immense confidence and clear direction.
-          </p>
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Beyond Movement: The Importance of Sperm Morphology</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Most basic sperm tests only look at count and motility. However, at Pravi IVF, we go deeper. We understand that the structural integrity of the sperm—its morphology—is a critical factor in embryo development. During the ICSI process, our embryologists spend hours meticulously screening the sample at 400x magnification. We look for the most "perfect" sperm, ensuring that the genetic material being introduced is of the highest possible quality. This attention to detail is what leads to stronger embryos and healthier pregnancies.
+              </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions About ICSI</h2>
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">ICSI vs. Conventional IVF: Making the Right Choice</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                While conventional IVF is a wonderful tool, it relies on the sperm's ability to penetrate the egg's outer layer (the zona pellucida) on its own. If the sperm is weak or the egg's layer is tough, fertilization will fail. This "total fertilization failure" is an emotional trauma we strive to prevent. We often recommend ICSI proactively for couples with unexplained infertility or those using frozen eggs, as it provides a higher level of certainty and control over the fertilization stage.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">The Science of Oocyte Activation</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Fertilization is more than just the meeting of two cells; it is a complex biochemical reaction. Sometimes, even with a successful injection, the egg needs a gentle "nudge" to begin the process of division. Our embryology team is trained in advanced oocyte activation techniques, which can be integrated into the ICSI protocol for couples with a history of poor fertilization. This ensures that every possible scientific avenue is explored to give your embryos the best start in life.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Transparency and Trust in the Lab</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                We understand that the work happening inside our lab is a mystery to most patients. That's why we prioritize transparency. We provide detailed reports on fertilization success and embryo quality, and our senior embryologists are always available to discuss the technical aspects of your cycle. We believe that when you understand the care and precision going into your treatment, it builds the trust necessary for a successful partnership.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Your Future, Our Precision</h3>
+              <p className="text-gray-700 leading-relaxed">
+                At Pravi IVF, ICSI is more than just a lab technique; it is a commitment to your future. We combine world-class technology with a deeply personalized approach, ensuring that your treatment plan is as unique as your biological profile. By choosing the best ICSI centre in Delhi, you are choosing a team that refuses to settle for anything less than perfection in the pursuit of your dream of parenthood.
+              </p>
+            </section>
+          </div>
+
+          {/* Right Sidebar */}
+          <div className="lg:col-span-1 space-y-8">
+            <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-8 text-white shadow-xl sticky top-32">
+              <h3 className="text-xl font-bold mb-4">Start Your Journey</h3>
+              <p className="text-blue-100 text-sm mb-8">Get expert advice on ICSI from our senior consultants.</p>
+              <div className="space-y-4">
+                <a href="tel:+918009150040" className="flex items-center gap-4 bg-white/10 p-4 rounded-xl hover:bg-white/20 transition-colors">
+                  <Phone className="w-5 h-5 text-yellow-400" />
+                  <span className="font-bold">+91 800 915 0040</span>
+                </a>
+                <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-4 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2">
+                  <Calendar className="w-5 h-5" />
+                  Free Consultation
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="bg-gray-50 py-20 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Common Questions About ICSI</h2>
+            <p className="text-gray-600">Expert clarity for your fertility concerns</p>
+          </div>
           <div className="space-y-4">
             {[
-              { q: 'Does ICSI carry any risks to the baby?', a: 'ICSI is a globally recognized, highly safe medical procedure that has been beautifully used for decades. The vast absolute majority of babies wonderfully born carefully through this advanced method are perfectly healthy, loudly crying, highly happy children, completely entirely identical in health to easily naturally conceived babies.' },
-              { q: 'Does this hurt more than normal IVF?', a: 'Not at all. For the mother, the physical medical process feels exactly identical to a normal IVF cycle. You wonderfully take the same exact safe medications and undergo the wildly exact same completely painless, deeply sleepy egg retrieval procedure. The only tiny difference happens entirely secretly across the hallway quietly inside the scientific laboratory where the expert scientists work their magic.' },
-              { q: 'What is the exact success rate?', a: 'Success rates beautifully strongly depend exactly on the mother\'s current precise age and her overall physical egg quality. However, brilliantly using this advanced microscopic method typically powerfully results in an incredible 70% to 80% successful fertilization rate exactly in the lab.' },
-              { q: 'How much time does it take?', a: 'The entire physical medical cycle usually safely takes roughly about wonderfully four nicely to smoothly six wonderful weeks securely from smoothly taking the heavily first starting medication firmly to brightly officially firmly having the healthy beautiful embryo successfully gracefully safely transferred precisely warmly safely back perfectly natively deeply into your soft warm waiting womb.' }
+              { q: 'Is ICSI safe for the future child?', a: 'Yes. Thousands of babies have been born globally via ICSI, and extensive medical studies confirm they are just as healthy as naturally conceived children. The procedure only assists in the fertilization stage.' },
+              { q: 'Does ICSI guarantee fertilization?', a: 'While no medical procedure can offer a 100% guarantee, ICSI typically results in a 70% to 85% fertilization rate, which is significantly higher than conventional IVF in cases of male infertility.' },
+              { q: 'How is ICSI different from conventional IVF?', a: 'In conventional IVF, sperm and eggs are placed together in a dish for natural fertilization. In ICSI, a single sperm is manually injected into each egg by an embryologist using a microscopic needle.' },
+              { q: 'Is ICSI more expensive than IVF?', a: 'ICSI is an additional laboratory technique performed as part of an IVF cycle. While there is an additional fee for the precision work involved, it often saves costs in the long run by reducing the number of cycles needed for success.' }
             ].map((faq, idx) => (
-              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+              <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-colors">
+                <h3 className="font-bold text-gray-900 mb-3 flex items-start gap-3">
                   <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
                   <span>{faq.q}</span>
                 </h3>
-                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
+                <p className="text-gray-600 ml-9 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -224,23 +292,23 @@ const ICSIServicePage = () => {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-16">
+      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Start Your ICSI Journey with Pravi Global IVF
+          <h2 className="text-4xl font-bold mb-6">
+            Experience the Precision of Pravi IVF
           </h2>
-          <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            Take the next step towards parenthood — consult our fertility experts today for personalized ICSI treatment in Delhi.
+          <p className="text-xl text-blue-100 mb-10 leading-relaxed">
+            Don\'t let male infertility stand in your way. Our advanced ICSI protocols are designed to give you the highest possible chance of success.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a
-              href="tel:+918009150040"
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
+          <div className="flex flex-wrap justify-center gap-4">
+            <a 
+              href="tel:+918009150040" 
+              className="bg-yellow-400 text-blue-900 px-10 py-5 rounded-full font-bold hover:bg-yellow-500 transition-all shadow-xl hover:shadow-2xl flex items-center gap-3 text-xl"
             >
               <Phone className="w-6 h-6" />
-              Call +91 800 915 0040
+              Call Now: +91 800 915 0040
             </a>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2 text-lg">
+            <button className="bg-white text-blue-600 px-10 py-5 rounded-full font-bold hover:bg-blue-50 transition-all flex items-center gap-3 text-xl">
               <Calendar className="w-6 h-6" />
               Book Free Consultation
             </button>

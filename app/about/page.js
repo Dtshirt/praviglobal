@@ -4,14 +4,14 @@ import { Award, Shield, Heart, CheckCircle, Users, Clock, Target, Eye, ArrowRigh
 import { whyChooseUs } from '@/lib/data';
 
 export const metadata = {
-  title: 'About Us - Our Story, Mission & Vision',
-  description: 'Learn about Pravi IVF and Fertility Center, our expert team, state-of-the-art facilities, and our commitment to helping families grow.',
+  title: "About Us | Best IVF Centre in Delhi | Pravi IVF",
+  description: "Learn about Pravi IVF, our expert team, state-of-the-art facilities, and our commitment to helping families grow. Book your consultation today.",
   openGraph: {
     title: 'About Pravi IVF - Our Story & Mission',
     description: 'Leading fertility center with 15+ years of excellence in reproductive medicine',
   },
   alternates: {
-    canonical: 'https://praviglobalivf.com/about',
+    canonical: 'https://praviglobalivf.com/about/',
   }
 };
 

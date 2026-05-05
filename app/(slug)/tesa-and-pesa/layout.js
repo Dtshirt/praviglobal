@@ -1,13 +1,13 @@
 export const metadata = {
-  title: "TESA & PESA Treatment in Delhi | Pravi Global IVF Polyclinic",
+  title: "TESA & PESA Treatment in Delhi | Sperm Retrieval | Pravi IVF",
   description:
-    "Pravi Global IVF Polyclinic offers advanced TESA and PESA treatment in Delhi for men facing infertility issues. Expert and safe sperm retrieval procedures to support IVF and ICSI fertility treatments.",
+    "Advanced TESA & PESA treatment in Delhi at Pravi IVF. Safe and expert sperm retrieval procedures to support IVF and ICSI. Book your consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/tesa-and-pesa",
+    canonical: "https://praviglobalivf.com/tesa-and-pesa/",
   },
   openGraph: {
     title: "TESA & PESA Treatment in Delhi | Pravi Global IVF Polyclinic",
@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/tesa-pesa-treatment.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "TESA and PESA Treatment in Delhi - Pravi Global IVF Polyclinic",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "TESA & PESA Treatment in Delhi | Pravi Global IVF Polyclinic",
     description:
       "Advanced TESA & PESA procedures in Delhi at Pravi Global IVF Polyclinic for men with infertility. Safe sperm retrieval methods to assist in IVF and ICSI treatments.",
-    images: ["/images/tesa-pesa-treatment.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 

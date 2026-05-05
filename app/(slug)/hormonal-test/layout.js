@@ -1,23 +1,23 @@
 export const metadata = {
-  title: "Hormonal Test for Fertility | Best IVF Center In Delhi | Pravi Global IVF",
+  title: "Hormonal Test for Fertility in Delhi | Pravi IVF",
   description:
-    "Get highly accurate hormonal tests at Pravi Global IVF Polyclinic, a leading IVF Center in Lajpat Nagar. We expertly diagnose male and female fertility issues.",
+    "Highly accurate hormonal tests at Pravi IVF to diagnose male and female fertility issues.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: `https://praviglobalivf.com/hormonal-test`,
+    canonical: `https://praviglobalivf.com/hormonal-test/`,
   },
   openGraph: {
     title: "Hormonal Test for Fertility | Pravi Global IVF Polyclinic Delhi",
     description:
-      "Get highly accurate hormonal tests at Pravi Global IVF Polyclinic, a leading IVF Center in Lajpat Nagar. We expertly diagnose male and female fertility issues.",
-    url: `https://praviglobalivf.com/hormonal-test`,
+      "Highly accurate hormonal tests at Pravi IVF to diagnose male and female fertility issues.",
+    url: `https://praviglobalivf.com/hormonal-test/`,
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/hormonal-test.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Hormonal Test for Fertility at Pravi Global IVF Polyclinic Delhi",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Hormonal Test for Fertility | Pravi Global IVF Polyclinic Delhi",
     description:
       "Get advanced hormonal test services in Delhi at Pravi Global IVF Polyclinic for evaluating fertility and reproductive health.",
-    images: ["/images/hormonal-test.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
       {
         "@type": "MedicalWebPage",
         "@id": "https://praviglobalivf.com/hormonal-test/#webpage",
-        "url": "https://praviglobalivf.com/hormonal-test",
+        "url": "https://praviglobalivf.com/hormonal-test/",
         "name": "Hormonal Test for Fertility",
         "headline": "Hormonal Testing for Male and Female Infertility",
         "about": {

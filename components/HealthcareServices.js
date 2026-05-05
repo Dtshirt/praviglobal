@@ -54,7 +54,7 @@ const HealthcareServices = () => {
       onClick: () => console.log('Homecare clicked'),
     },
     {
-      id: 'international-patients?',
+      id: 'international-patients',
       icon: <User className="w-7 h-7" />,
       title: 'International Patients?',
       url: '/international',
@@ -63,7 +63,7 @@ const HealthcareServices = () => {
   ];
 
   return (
-    <div className="w-full my-14 mx-auto">
+    <div className="w-full my-2 mx-auto">
       {/* Horizontal scroll container */}
       <div className="overflow-x-auto hide-scrollbar scroll-smooth pb-4">
         <div className="flex gap-3 md:gap-4 min-w-max md:min-w-0 md:flex-wrap md:justify-center">
@@ -77,7 +77,7 @@ const HealthcareServices = () => {
                 transition-all duration-200 justify-center hover:shadow-lg flex-shrink-0
                 min-w-[250px] md:min-w-0
                 ${service.isPrimary
-                    ? 'bg-[#005353] text-white hover:bg-[##004b4b]'
+                    ? 'bg-[#005353] text-white hover:bg-[#004b4b]'
                     : 'bg-white text-gray-700 hover:bg-[#004b4b] hover:text-white shadow-sm'
                   }
               `}

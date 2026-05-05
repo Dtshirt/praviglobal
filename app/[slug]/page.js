@@ -1,6 +1,8 @@
 import dbConnect from "@/lib/dbConnect";
 import Post from "@/models/Post";
 import BlogClient from "./BlogClient";
+import Link from "next/link";
+import { FileX, ArrowLeft } from "lucide-react";
 
 // Reading time function
 function calculateReadingTime(content) {
@@ -10,41 +12,41 @@ function calculateReadingTime(content) {
 }
 
 // 🟦 Generate dynamic SEO metadata
-// export async function generateMetadata({ params }) {
-//   const { slug } = await params;
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
 
-//   await dbConnect();
+  await dbConnect();
 
-//   const post = await Post.findOne({ slug, status: "published" }).lean();
-//   if (!post) return {};
+  const post = await Post.findOne({ slug, status: "published" }).lean();
+  if (!post) return {};
 
-//   return {
-//     title: post.metaTitle || post.title,
-//     description: post.metaDescription || "",
-//     alternates: {
-//       canonical: `https://praviglobalivf.com/blogs/${post.slug}`,
-//     },
-//     openGraph: {
-//       title: post.metaTitle || post.title,
-//       description: post.metaDescription || "",
-//       url: `https://praviglobalivf.com/blogs/${post.slug}`,
-//       images: [
-//         {
-//           url: post.featuredImage || "/images/og-image.jpg",
-//           width: 1200,
-//           height: 630,
-//         },
-//       ],
-//       type: "article",
-//     },
-//     twitter: {
-//       card: "summary_large_image",
-//       title: post.metaTitle || post.title,
-//       description: post.metaDescription || "",
-//       images: [post.featuredImage || "/images/og-image.jpg"],
-//     },
-//   };
-// }
+  return {
+    title: post.metaTitle || post.title,
+    description: post.metaDescription || "",
+    alternates: {
+      canonical: `https://praviglobalivf.com/${post.slug}`,
+    },
+    openGraph: {
+      title: post.metaTitle || post.title,
+      description: post.metaDescription || "",
+      url: `https://praviglobalivf.com/${post.slug}`,
+      images: [
+        {
+          url: post.featuredImage?.url || "/images/og-image.jpg",
+          width: 1200,
+          height: 630,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.metaTitle || post.title,
+      description: post.metaDescription || "",
+      images: [post.featuredImage?.url || "/images/og-image.jpg"],
+    },
+  };
+}
 
 
 export default async function BlogPage({ params }) {
@@ -107,7 +109,38 @@ export default async function BlogPage({ params }) {
     wordCount: post.content?.replace(/<[^>]*>/g, "").split(/\s+/).length || 0,
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://praviglobalivf.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blogs",
+        "item": "https://praviglobalivf.com/blogs"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://praviglobalivf.com/${post.slug}`
+      }
+    ]
+  };
+
   return (
-    <BlogClient blog={response} relatedBlogs={relatedPosts} />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <BlogClient blog={response} relatedBlogs={relatedPosts} />
+    </>
   );
 }

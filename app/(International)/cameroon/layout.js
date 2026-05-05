@@ -1,23 +1,23 @@
 export const metadata = {
-  title: "IVF Treatment for International Patients from Cameroon in Delhi India",
+  title: "IVF Treatment in Delhi for Cameroon Patients | Pravi IVF",
   description:
-    "Pravi Global IVF Polyclinic welcomes international patients from Cameroon for world-class IVF and fertility treatments in Delhi, India. Affordable IVF, ICSI, and egg donation with high success rates and expert care.",
+    "Expert IVF treatment in Delhi for Cameroon patients. Pravi IVF offers high success rates, affordable costs, and full medical visa support. Book your consult.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/cameroon",
+    canonical: "https://praviglobalivf.com/cameroon/",
   },
   openGraph: {
     title: "IVF Treatment for Patients from Cameroon | Pravi Global IVF Polyclinic Delhi",
     description:
-      "Looking for affordable IVF in India from Cameroon? Pravi Global IVF Polyclinic provides international fertility care with advanced IVF, ICSI, and surrogacy services for Cameroonian couples.",
-    url: "https://praviglobalivf.com/cameroon",
+      "Looking for affordable IVF in India from Cameroon? Pravi Global IVF Polyclinic provides international fertility care with advanced IVF, ICSI, and surrogacy services for Cameroon couples.",
+    url: "https://praviglobalivf.com/cameroon/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/ivf-for-Cameroon-patients.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "IVF Treatment for Cameroon Patients - Pravi Global IVF Polyclinic Delhi",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "IVF Treatment for Cameroon Patients | Pravi Global IVF Polyclinic Delhi",
     description:
       "Pravi Global IVF Polyclinic offers world-class fertility treatments for patients from Cameroon. Safe, affordable, and successful IVF and surrogacy care in Delhi, India.",
-    images: ["/images/ivf-for-Cameroon-patients.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 

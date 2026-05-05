@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
-import Footer from '@/components/Footer'; 
+import Footer from '@/components/Footer';
 import MobileFooter from '@/components/MobileFooter';
 import DoctorPopup from '@/components/DoctorPopup';
 import Analytics from '@/components/Analytics';
@@ -12,10 +12,11 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: {
-    default: `Pravi Global IVF Polyclinic - Best IVF Centre in Delhi`, 
+    default: `Best IVF Centre in Delhi | Expert Fertility Care | Pravi IVF`,
+    template: `%s | Pravi IVF`,
   },
   description:
-    'Pravi Global IVF Polyclinic is the best IVF Center in Delhi offering advanced fertility treatments including IVF, ICSI, IUI, surrogacy, and egg donation.',
+    "Pravi IVF is the best IVF centre in Delhi offering advanced fertility treatments like ICSI, IUI, and more with high success rates. Book your consultation today.",
   keywords:
     'Best IVF centre in Delhi, Top IVF clinic in Delhi, Best fertility clinic in Delhi, IVF hospital in Delhi, IVF treatment in Delhi, Best IVF doctor in Delhi, fertility specialist Delhi, IUI, ICSI, surrogacy, egg freezing, male infertility, female infertility',
   authors: [{ name: 'Pravi Global IVF Polyclinic' }],
@@ -26,7 +27,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://praviglobalivf.com/'),
+  metadataBase: new URL('https://praviglobalivf.com'),
   alternates: {
     canonical: 'https://praviglobalivf.com/',
   },
@@ -34,7 +35,7 @@ export const metadata = {
     title: 'Pravi Global IVF Polyclinic - Best IVF Centre in Delhi',
     description:
       'Looking for the best IVF centre in Delhi? Pravi Global IVF Polyclinic offers IVF, ICSI, IUI, surrogacy, and advanced fertility care with top IVF doctors in Delhi.',
-    url: 'https://praviglobalivf.com/',
+    url: 'https://praviglobalivf.com',
     siteName: 'Pravi Global IVF Polyclinic',
     images: [
       {
@@ -148,18 +149,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        <script 
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(mapSchema) }}
-      />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(mapSchema) }}
+        />
       </head>
       <body className={inter.className}>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-lg z-[100]">
+          Skip to main content
+        </a>
         <Header />
-        <main className="min-h-screen"> 
+        <main id="main-content" className="min-h-screen">
           {children}
         </main>
         <Analytics />

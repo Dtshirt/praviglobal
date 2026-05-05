@@ -28,6 +28,15 @@ async function getAllPosts() {
 }
 
 
+export const metadata = {
+  title: 'Fertility & IVF Blogs | Expert Insights | Pravi IVF',
+  description: 'Read the latest fertility insights, IVF success tips, and expert medical guides from Pravi IVF. Stay informed on your journey to parenthood.',
+  alternates: {
+    canonical: 'https://praviglobalivf.com/blogs/',
+  }
+};
+
+
 export default async function BlogsPage() {
   
   const featuredPosts = await getPosts() 

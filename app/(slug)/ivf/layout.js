@@ -1,23 +1,23 @@
 export const metadata = {
-  title: "IVF Treatment in Delhi | Best IVF Center In Delhi",
+  title: "Best IVF Treatment in Delhi | Expert Care | Pravi IVF",
   description:
-    "Looking for highly-rated IVF treatment in Delhi? Pravi Global IVF Polyclinic is your trusted IVF Center in Lajpat Nagar offering safe, effective options.",
+    "Looking for affordable IVF treatment in Delhi? Pravi IVF offers high success rates with advanced technology and expert doctors. Book your consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/ivf",
+    canonical: "https://praviglobalivf.com/ivf/",
   },
   openGraph: {
-    title: "IVF Treatment in Delhi | Best IVF Center In Delhi",
+    title: "IVF Treatment in Delhi | Pravi Global IVF",
     description:
-      "Pravi Global IVF Polyclinic provides advanced in vitro fertilization services to help couples conceive and faithfully build their families safely.",
-    url: "https://praviglobalivf.com/ivf",
+      "Pravi Global IVF Polyclinic provides advanced in vitro fertilization services to help couples conceive and build their families safely.",
+    url: "https://praviglobalivf.com/ivf/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/ivf-treatment.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "IVF Treatment in Delhi - Pravi Global IVF Polyclinic",
@@ -28,10 +28,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IVF Treatment in Delhi | Best IVF Center In Delhi",
+    title: "IVF Treatment in Delhi | Pravi Global IVF",
     description:
       "Get world-class IVF treatment in Delhi at Pravi Global IVF Polyclinic. Experienced fertility experts and personalized care.",
-    images: ["/images/ivf-treatment.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         "description": "Leading IVF Center in Lajpat Nagar offering widely trusted, highly advanced In Vitro Fertilization (IVF) treatments.",
         "url": "https://praviglobalivf.com",
         "logo": "https://praviglobalivf.com/logo.png",
-        "image": "https://praviglobalivf.com/images/ivf-treatment.jpg",
+        "image": "https://praviglobalivf.com/images/og-image.jpg",
         "telephone": "+918009150040",
         "address": {
           "@type": "PostalAddress",
@@ -76,7 +76,7 @@ export default function RootLayout({ children }) {
         "@type": "MedicalWebPage",
         "name": "In Vitro Fertilization (IVF) Guide",
         "description": "A comprehensive EEAT-compliant patient guide detailing the IVF treatment process, embryo transfers, and overcoming blocked fallopian tubes.",
-        "url": "https://praviglobalivf.com/ivf",
+        "url": "https://praviglobalivf.com/ivf/",
         "about": {
           "@type": "MedicalProcedure",
           "name": "In Vitro Fertilization (IVF)",

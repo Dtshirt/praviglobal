@@ -1,23 +1,23 @@
 export const metadata = {
-  title: "Egg Freezing in Delhi | Best IVF Center In Delhi",
+  title: "Egg Freezing in Delhi | Fertility Preservation | Pravi IVF",
   description:
-    "Preserve your fertility with advanced egg freezing in Delhi at Pravi Global IVF Polyclinic. As a trusted IVF Center in Lajpat Nagar, we offer safe oocyte cryopreservation.",
+    "Preserve your fertility with advanced egg freezing in Delhi at Pravi IVF. Safe oocyte cryopreservation with expert reproductive specialists. Book your consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/egg-freezing",
+    canonical: "https://praviglobalivf.com/egg-freezing/",
   },
   openGraph: {
     title: "Egg Freezing in Delhi | Best IVF Center In Delhi",
     description:
       "Pravi Global IVF Polyclinic offers advanced egg freezing (oocyte cryopreservation) in Delhi for women who wish to preserve fertility securely. Safe and effective fertility choices.",
-    url: "https://praviglobalivf.com/egg-freezing",
+    url: "https://praviglobalivf.com/egg-freezing/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/egg-freezing.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Egg Freezing in Delhi - Pravi Global IVF Polyclinic",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Egg Freezing in Delhi | Best IVF Center In Delhi",
     description:
       "Explore egg freezing in Delhi at Pravi Global IVF Polyclinic. Preserve your fertility with safe oocyte cryopreservation and expert reproductive specialists.",
-    images: ["/images/egg-freezing.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         "description": "Leading IVF Center in Lajpat Nagar offering advanced, secure oocyte cryopreservation and egg freezing treatments for proactive fertility preservation.",
         "url": "https://praviglobalivf.com",
         "logo": "https://praviglobalivf.com/logo.png",
-        "image": "https://praviglobalivf.com/images/egg-freezing.jpg",
+        "image": "https://praviglobalivf.com/images/og-image.jpg",
         "telephone": "+918009150040",
         "address": {
           "@type": "PostalAddress",
@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
         "@type": "MedicalWebPage",
         "name": "Egg Freezing and Oocyte Cryopreservation Guide",
         "description": "Comprehensive EEAT-compliant guide on egg freezing, vitrification technology, process steps, and preserving your fertility for future family planning.",
-        "url": "https://praviglobalivf.com/egg-freezing",
+        "url": "https://praviglobalivf.com/egg-freezing/",
         "about": {
           "@type": "MedicalProcedure",
           "name": "Egg Freezing (Oocyte Cryopreservation)",

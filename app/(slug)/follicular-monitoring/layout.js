@@ -1,23 +1,23 @@
 export const metadata = {
-  title: "Follicular Monitoring in Delhi | Best IVF Center In Delhi",
+  title: "Follicular Monitoring in Delhi | Ovulation Tracking | Pravi IVF",
   description:
-    "Pravi Global IVF Polyclinic offers advanced follicular monitoring in Delhi. As a trusted IVF Center in Lajpat Nagar, we track ovulation accurately via ultrasound for high conception success.",
+    "Advanced follicular monitoring in Delhi at Pravi IVF. Accurate ovulation tracking via ultrasound for high conception success. Book your consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/follicular-monitoring",
+    canonical: "https://praviglobalivf.com/follicular-monitoring/",
   },
   openGraph: {
-    title: "Follicular Monitoring in Delhi | Best IVF Center In Delhi",
+    title: "Follicular Monitoring in Delhi | Pravi Global IVF",
     description:
       "Get precise follicular monitoring in Delhi at Pravi Global IVF Polyclinic. Our fertility experts use ultrasound tracking to monitor ovulation and improve your chances of conception.",
-    url: "https://praviglobalivf.com/follicular-monitoring",
+    url: "https://praviglobalivf.com/follicular-monitoring/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/follicular-monitoring.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Follicular Monitoring in Delhi - Pravi Global IVF Polyclinic",
@@ -28,10 +28,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Follicular Monitoring in Delhi | Best IVF Center In Delhi",
+    title: "Follicular Monitoring in Delhi | Pravi Global IVF",
     description:
       "Accurate follicular monitoring in Delhi by expert fertility specialists at Pravi Global IVF Polyclinic. Track ovulation and optimize conception with advanced ultrasound scans.",
-    images: ["/images/follicular-monitoring.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         "description": "Leading IVF Center in Lajpat Nagar providing advanced follicular monitoring and ultrasound tracking to maximize your chances of pregnancy.",
         "url": "https://praviglobalivf.com",
         "logo": "https://praviglobalivf.com/logo.png",
-        "image": "https://praviglobalivf.com/images/follicular-monitoring.jpg",
+        "image": "https://praviglobalivf.com/images/og-image.jpg",
         "telephone": "+918009150040",
         "address": {
           "@type": "PostalAddress",
@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
         "@type": "MedicalWebPage",
         "name": "Follicular Monitoring Ultrasound Guide",
         "description": "Comprehensive EEAT-compliant guide on follicular monitoring, predicting ovulation, tracking cycles, and boosting natural or assisted conception.",
-        "url": "https://praviglobalivf.com/follicular-monitoring",
+        "url": "https://praviglobalivf.com/follicular-monitoring/",
         "about": {
           "@type": "MedicalTest",
           "name": "Follicular Monitoring Ultrasound"

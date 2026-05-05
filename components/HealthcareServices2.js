@@ -1,137 +1,72 @@
+'use client';
 import React from 'react';
-import { Mars as Male, Venus as Female, Beaker, FlaskRound, Syringe, Dna } from 'lucide-react';
+import { 
+  Mars as Male, 
+  Venus as Female, 
+  Beaker, 
+  FlaskRound, 
+  Syringe, 
+  Dna, 
+  Baby, 
+  Library, 
+  Microscope, 
+  Target 
+} from 'lucide-react';
 import Link from 'next/link';
 
 export default function HealthcareServices2() {
   const services = [
-    {
-      id: 1,
-      title: 'Male Fertility',
-      icon: Male,
-      bgColor: 'bg-gradient-to-br from-[#005353] to-[#004b4b]',
-      textColor: 'text-white',
-      url:'/male-infertility',
-      featured: true
-    },
-    {
-      id: 2,
-      title: 'Female Fertility',
-      icon: Female,
-      bgColor: 'bg-white',
-      textColor: 'text-gray-700',
-      url:'/female-infertility',
-      featured: false
-    },
-    {
-      id: 3,
-      title: 'IVF',
-      icon: FlaskRound,
-      bgColor: 'bg-white',
-      textColor: 'text-gray-700',
-      url:'/ivf',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'IUI',
-      icon: Syringe,
-      bgColor: 'bg-white',
-      textColor: 'text-gray-700',
-      url:'/iui',
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'ICSI',
-      icon: Dna,
-      bgColor: 'bg-white',
-      textColor: 'text-gray-700',
-      url:'/icsi',
-      featured: false
-    },
-    {
-      id: 6,
-      title: 'PGS/PGD',
-      icon: Beaker,
-      bgColor: 'bg-white',
-      textColor: 'text-gray-700',
-      url:'/pgspgd',
-      featured: false
-    }
+    { id: 1, title: 'Male Fertility', icon: Male, url:'/male-infertility', color: 'bg-teal-50 text-teal-600' },
+    { id: 2, title: 'Female Fertility', icon: Female, url:'/female-infertility', color: 'bg-pink-50 text-pink-600' },
+    { id: 3, title: 'IVF', icon: FlaskRound, url:'/ivf', color: 'bg-blue-50 text-blue-600' },
+    { id: 4, title: 'IUI', icon: Syringe, url:'/iui', color: 'bg-amber-50 text-amber-600' },
+    { id: 5, title: 'ICSI', icon: Dna, url:'/icsi', color: 'bg-indigo-50 text-indigo-600' },
+    { id: 6, title: 'PGS/PGD', icon: Beaker, url:'/pgspgd', color: 'bg-rose-50 text-rose-600' },
+    { id: 7, title: 'Surrogacy', icon: Baby, url:'/surrogacy', color: 'bg-purple-50 text-purple-600' },
+    { id: 8, title: 'ART Bank', icon: Library, url:'/art-bank', color: 'bg-emerald-50 text-emerald-600' },
+    { id: 9, title: 'PGT-A/M/SR', icon: Microscope, url:'/pgt', color: 'bg-cyan-50 text-cyan-600' },
+    { id: 10, title: 'Micro TESE', icon: Target, url:'/micro-tese', color: 'bg-orange-50 text-orange-600' }
   ];
 
   return (
-    <div className="   py-4 sm:py-2 sm:px-2 md:px-2 lg:py-3">
-      <div className="max-w-7xl mx-auto px-10"> 
+    <div className="w-full bg-white py-2">
+      <div className="max-w-7xl mx-auto px-4">
         
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-6">
+        {/* GRID LAYOUT: 2 Rows of 5 items each (Matching User Image) */}
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-y-10 gap-x-4 md:gap-x-8">
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <Link href={service.url} key={service.id} className="w-full">
-                <div
-                key={service.id}
-                className={`
-                  ${service.bgColor}
-                  rounded-3xl p-4 sm:p-6 lg:p-4
-                  shadow-lg hover:shadow-2xl
-                  transform transition-all duration-300 ease-in-out
-                  hover:scale-105 hover:-translate-y-2
-                  cursor-pointer
-                  group
-                  relative
-                  overflow-hidden
-                `}
+              <Link 
+                href={service.url} 
+                key={service.id} 
+                className="group flex flex-col items-center transition-all duration-300"
               >
-                {/* Hover overlay effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl" />
-                
-                {/* Content */}
-                <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[120px] sm:min-h-[140px] lg:min-h-[160px]">
-                  {/* Icon */}
+                {/* SQUARE CONTAINER: Exactly like the image */}
+                <div className={`
+                  w-20 h-20 md:w-24 md:h-24 rounded-[28px] 
+                  bg-white border border-gray-200 shadow-sm
+                  flex items-center justify-center
+                  transition-all duration-300
+                  group-hover:shadow-lg group-hover:border-gray-300 group-hover:-translate-y-1
+                `}>
+                  {/* Detailed/Colorful Icon housing */}
                   <div className={`
-                    mb-3 sm:mb-4 p-2 sm:p-3 rounded-2xl
-                    ${service.featured 
-                      ? 'bg-white/20 group-hover:bg-white/30' 
-                      : 'bg-[#e6f4f4] group-hover:bg-[#cce9e9]'
-                    }
-                    transition-all duration-300
-                    transform group-hover:scale-110 group-hover:rotate-6
+                    w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center
+                    ${service.color} transition-transform duration-300 group-hover:scale-110
                   `}>
-                    <Icon 
-                      className={`
-                        w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10
-                        ${service.featured ? 'text-white' : 'text-[#005353]'}
-                        transition-transform duration-300
-                      `}
-                      strokeWidth={2}
-                    />
+                    <Icon strokeWidth={2} className="w-6 h-6 md:w-8 md:h-8" />
                   </div>
-                  
-                  {/* Title */}
-                  <p className={`
-                    ${service.textColor}
-                    text-center font-semibold text-xs sm:text-sm lg:text-base
-                    transition-all duration-300
-                    group-hover:scale-105
-                  `}>
-                    {service.title}
-                  </p>
                 </div>
-
-                {/* Decorative elements */}
-                {service.featured && (
-                  <>
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-500" />
-                    <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/10 rounded-full -ml-8 -mb-8 group-hover:scale-150 transition-transform duration-500" />
-                  </>
-                )}
-              </div>
-                </Link>
+                
+                {/* TITLE BELOW THE SQUARE: Exactly like the image */}
+                <span className="mt-3 text-[11px] md:text-[13px] font-bold text-gray-800 text-center leading-tight max-w-[90px] md:max-w-[110px] group-hover:text-teal-700 transition-colors">
+                  {service.title}
+                </span>
+              </Link>
             );
           })}
         </div>
- 
       </div>
     </div>
   );

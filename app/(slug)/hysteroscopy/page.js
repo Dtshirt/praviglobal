@@ -1,102 +1,95 @@
-'use client';
-import React, { useState } from 'react';
-import {
-  Microscope,
+import React from 'react';
+import { 
+  FlaskRound,
   CheckCircle2,
   Clock,
   Users,
   Award,
   Phone,
-  Mail,
   Calendar,
   Heart,
   Shield,
-  Activity,
+  Microscope,
   ChevronRight,
   MapPin,
   Star,
   TrendingUp,
-  FlaskRound,
-  Globe
+  Baby,
+  Activity,
+  Globe,
+  Stethoscope,
+  Video,
+  Monitor
 } from 'lucide-react';
 
 const HysteroscopyServicePage = () => {
-  const [activeTab, setActiveTab] = useState('overview');
-
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
-        </div>
         <div className="max-w-7xl mx-auto px-4 py-16 md:py-24 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in">
               <div className="flex items-center gap-2 mb-4">
-                <Award className="w-8 h-8 text-yellow-400" />
-                <span className="text-blue-100 font-semibold">Expert Hysteroscopy Procedures</span>
+                <Video className="w-8 h-8 text-yellow-400" />
+                <span className="text-blue-100 font-semibold tracking-wide uppercase text-sm">Precision Uterine Diagnostics</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                Hysteroscopy at Pravi Global IVF Delhi
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                Hysteroscopy Treatment in Delhi
               </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-blue-100">
-                Accurate Diagnosis & Treatment for Uterine Health
-              </h2>
-              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Pravi Global IVF Delhi offers advanced hysteroscopy procedures using high-definition endoscopic technology for both diagnostic and therapeutic purposes. Our expert gynecologists provide safe, painless, and precise evaluations of uterine conditions affecting fertility and menstrual health.
+              <p className="text-lg text-blue-100 mb-8 leading-relaxed max-w-xl">
+                Identify and resolve uterine issues with advanced hysteroscopy. At Pravi IVF Delhi, we use high-definition endoscopic technology to diagnose and treat conditions affecting fertility with zero incisions and rapid recovery.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
+                <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
                   Book Free Consultation
                 </button>
-                <a href="tel:+918009150040" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2">
+                <a href="tel:+918009150040" className="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   +91 800 915 0040
                 </a>
               </div>
-              <div className="flex items-center gap-6 text-sm">
+              <div className="flex items-center gap-6 text-sm font-medium text-blue-50">
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
+                  <MapPin className="w-4 h-4 text-yellow-400" />
                   <span>Lajpat Nagar, Delhi</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
+                  <Clock className="w-4 h-4 text-yellow-400" />
                   <span>Mon-Sat: 10 AM - 6 PM</span>
                 </div>
               </div>
             </div>
-
             <div className="hidden md:block">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
-                      <Star className="w-8 h-8 text-blue-900" />
+              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
+                <div className="space-y-8">
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Monitor className="w-7 h-7 text-blue-900" />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">18+</div>
-                      <div className="text-blue-100">Years Experience</div>
+                      <div className="text-3xl font-bold text-white">HD</div>
+                      <div className="text-blue-100 font-medium">Visualization</div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center">
-                      <Microscope className="w-8 h-8 text-blue-900" />
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-green-400 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Activity className="w-7 h-7 text-blue-900" />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">Advanced</div>
-                      <div className="text-blue-100">Endoscopy Setup</div>
+                      <div className="text-3xl font-bold text-white">Minimally</div>
+                      <div className="text-blue-100 font-medium">Invasive</div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-pink-400 rounded-full flex items-center justify-center">
-                      <Heart className="w-8 h-8 text-blue-900" />
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-pink-400 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Clock className="w-7 h-7 text-blue-900" />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">Safe</div>
-                      <div className="text-blue-100">Day-Care Procedure</div>
+                      <div className="text-3xl font-bold text-white">30 Min</div>
+                      <div className="text-blue-100 font-medium">Procedure</div>
                     </div>
                   </div>
                 </div>
@@ -106,111 +99,167 @@ const HysteroscopyServicePage = () => {
         </div>
       </div>
 
-      {/* Why Choose Us */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Why Choose Pravi Global IVF for Hysteroscopy?
-          </h2>
-          <p className="text-lg text-gray-600">Precision diagnosis, expert care, and cutting-edge technology</p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {[
-            { icon: Microscope, title: 'Modern Equipment', desc: 'High-resolution camera for clear visualization' },
-            { icon: Users, title: 'Expert Gynecologists', desc: 'Performed by senior fertility specialists' },
-            { icon: Shield, title: 'Safe & Minimally Invasive', desc: 'No cuts, quick recovery, minimal discomfort' },
-            { icon: Heart, title: 'Comprehensive Care', desc: 'From diagnosis to treatment – under one roof' }
-          ].map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div key={idx} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
-                  <Icon className="w-7 h-7 text-white" />
+      {/* Trust Indicators */}
+      <div className="bg-gray-50 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 py-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Excellence in Gynecological Endoscopy</h2>
+            <p className="text-gray-600">Why Pravi IVF is the preferred centre for Hysteroscopy in Delhi</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: Microscope, title: 'HD Endoscopy', desc: 'Crystal clear visualization of the uterine cavity' },
+              { icon: Shield, title: 'Zero Incision', desc: 'Performed through natural openings with no cuts' },
+              { icon: Users, title: 'Expert Surgeons', desc: 'Led by Delhi\'s most experienced fertility specialists' },
+              { icon: Heart, title: 'Fast Recovery', desc: 'Day-care procedure with same-day discharge' }
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                  <item.icon className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Comprehensive SEO Content Section */}
-      <div className="bg-white py-16 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
-          
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">What Exactly is a Hysteroscopy?</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            When trying to figure out why a woman is having trouble getting pregnant or why she is experiencing very heavy bleeding, a doctor needs to look closely inside the womb. The womb is officially called the uterus. It is the safe, warm home where a baby grows during a healthy pregnancy.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            A hysteroscopy is a simple, safe way for doctors to clearly see the deeply hidden inside of this tiny home. Instead of just helplessly guessing what is wrong based on your symptoms, the doctor uses a very special, thin tool called a hysteroscope. This amazing tool is about as incredibly thin as a standard pencil. It has a very bright light and a tiny, powerful digital camera secured on the absolute very end of it.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            The doctor gently slides this tiny camera directly through your body's natural opening (the cervix) and straight into the womb. Because of the brilliantly bright camera, the doctor can easily see everything completely clearly on a large, high-definition television screen located right inside the operating room. There are absolutely zero painful cuts on your outside stomach and absolutely no heavy stitches to heal from later. It is a brilliant, entirely safe way to honestly see exactly what is secretly happening deeply inside your own reproductive body.
-          </p>
+      {/* Main Content Area */}
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        <div className="grid lg:grid-cols-3 gap-16">
+          <div className="lg:col-span-2 space-y-16">
+            {/* SEO Content 1: Introduction */}
+            <section className="prose prose-lg max-w-none">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Advanced Hysteroscopy: Clear Answers for Uterine Health</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Hysteroscopy is a transformative medical procedure that allows doctors to look directly inside the uterus using a thin, lighted tube called a hysteroscope. At Pravi IVF, the leading **Hysteroscopy Centre in Delhi**, we utilize this minimally invasive technique to diagnose and treat a variety of conditions that can impact fertility, cause abnormal bleeding, or lead to recurrent miscarriages.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                By providing a high-definition view of the uterine cavity, hysteroscopy eliminates the guesswork associated with traditional imaging. Whether you are preparing for an IVF cycle or seeking a solution for heavy menstrual cycles, our expert team in Lajpat Nagar ensures a precise, safe, and comfortable experience.
+              </p>
+            </section>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why Might You Suddenly Need This Important Test?</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Your womb is supposed to be perfectly smooth and clean on the inside, beautifully acting just like a soft, deflated balloon. But sometimes, tiny hidden problems can magically start to grow in there. These annoying problems can easily cause deep daily pain, heavily unpredictable bleeding, or totally block the start of a beautiful natural pregnancy.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            You might urgently need a hysteroscopy if you are currently having deeply unexplained trouble getting pregnant. If a naturally fertilized egg proudly enters a bumpy, uneven, or partially blocked womb, it simply cannot stick properly to the inner wall to safely grow. You might also completely need this highly awesome diagnostic test if you have totally unpredictable monthly periods or if you intensely bleed way too heavily during every single menstrual cycle.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Sometimes, women deeply suffer from tiny, soft growths hanging safely inside the sensitive womb. These soft growths are medically and warmly called polyps or fibroids. Other times, highly sticky scar tissue, often called strong adhesions, can totally glue the soft, delicate walls of the uterus completely together. This incredibly sadly happens quite often after a past heavy infection or from recovering from a highly difficult past surgery.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Many times, as the highly trusted <strong>Best IVF Center In Delhi</strong>, we effectively use this powerful medical procedure directly just before officially starting an amazing IVF journey. We fiercely want to medically guarantee that the warm future baby home is absolutely one hundred percent perfectly ready and safe before we carefully place a tiny, precious embryo inside you. Doing a very fast hysteroscopy first incredibly powerfully boosts the final, glorious chances of a completely wonderfully successful, healthy pregnancy. It makes completely sure that absolutely nothing is silently hiding in the complete dark to spoil your beautiful, long-time baby dreams.
-          </p>
+            {/* Content Section 2: Detailed Process */}
+            <section className="bg-blue-50 rounded-3xl p-8 md:p-12 border border-blue-100">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                <Activity className="text-blue-600" />
+                When is Hysteroscopy Recommended?
+              </h2>
+              <div className="space-y-10">
+                {[
+                  { step: '01', title: 'Diagnostic Hysteroscopy', desc: 'Used to investigate the cause of abnormal bleeding, recurrent miscarriages, or unexplained infertility by directly visualizing the uterine walls.' },
+                  { step: '02', title: 'Removing Polyps & Fibroids', desc: 'Small growths inside the uterus can be safely and instantly removed through the hysteroscope without any abdominal incisions.' },
+                  { step: '03', title: 'Resolving Adhesions', desc: 'Asherman’s Syndrome or uterine scarring can be surgically corrected to restore the healthy lining required for embryo implantation.' },
+                  { step: '04', title: 'Septum Correction', desc: 'Congenital uterine abnormalities like a septum can be repaired to increase the chances of a successful, full-term pregnancy.' },
+                  { step: '05', title: 'Pre-IVF Evaluation', desc: 'We often perform a quick check to ensure the "baby\'s home" is perfectly smooth and ready before proceeding with an embryo transfer.' }
+                ].map((item, idx) => (
+                  <div key={idx} className="flex gap-6 group">
+                    <span className="text-4xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">{item.step}</span>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Exactly How is the Procedure Safely Done?</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Hearing you need a completely new medical procedure can easily feel totally scary on the inside. But please kindly relax and deeply breathe! This is genuinely one of the easiest, amazingly fastest, and absolutely safest procedures available in modern medicine today. We will gladly walk you safely through every single wonderfully easy step here at our clinic.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            First, you will visit our highly clean, wonderfully happy medical clinic on a perfectly scheduled morning. You do not ever need to stay loudly overnight in a scary, cold, crowded hospital ward. You literally get to go securely deeply home onto your own couch the exactly same day. When it is beautifully time for the short test to properly begin, you will calmly step into a very private, softly quiet room. Our highly trained expert doctors will safely give you very mild, gentle medicine so you instantly feel deeply sleepy and super physically relaxed.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            When you are fully nicely asleep and strongly resting peacefully without any worry, the careful specialist doctor simply slowly glides the deeply tiny lighted camera gently directly into the lovely lower opening of your cervix. To perfectly completely cleanly see every hidden dark corner safely, we very gently push a tiny, controlled bit of purely clean medical water safely into the deeply hidden womb. This soft clear water gently perfectly smoothly opens the completely flat womb precisely exactly like a slowly filling soft smooth water balloon, happily giving the exact smart doctor a crystal totally clear, massive, wonderfully beautiful view directly onto the television screen.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            If the smart expert doctor amazingly finds a tiny hidden bad polyp or some wildly sticky scary scar tissue while bravely looking proudly around your beautiful uterus, they can instantly magically surgically fix it right then and deeply there in precisely exactly the same single visit! The deeply amazing tiny smart camera tool wonderfully has hidden, tiny micro-sized surgical scissors and amazingly gentle little wire loops securely hiding inside it. Instead of sadly securely forcing you to forcefully return roughly for a completely new, powerfully hard, entirely separate surgery day, we cleanly correctly safely fully thoroughly perfectly gently remove the small deeply annoying medical problem instantly without any extra drama or pain. The extremely entire total easy process honestly takes only fifteen to absolutely fast thirty total painless minutes. It is basically a totally powerfully brilliant pure two-for-one entirely safely wonderfully smart medical deal: a completely deep incredibly bright clear lovely look and an instantly amazingly perfectly fast lovely fix perfectly gracefully combined securely strictly totally exactly properly together.
-          </p>
+            {/* SEO Content 3: Depth & Science */}
+            <section className="prose prose-lg max-w-none">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">A Seamless and Pain-Free Experience</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                One of the greatest benefits of modern hysteroscopy is that it is performed through the body\'s natural openings, meaning there are no surgical cuts or scars. At our **Fertility Clinic in Delhi**, we prioritize patient comfort. The procedure is typically performed under mild sedation or local anesthesia, ensuring you remain completely pain-free throughout the 15-to-30-minute process.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Our medical director, **Dr. Monica Sachdev**, utilizes the latest in endoscopic instrumentation to ensure maximum precision. Because the procedure is "day-care," you can return home just a few hours after your appointment and resume your normal daily activities by the next morning. This rapid recovery, combined with the definitive answers provided by the procedure, makes hysteroscopy an invaluable tool in reproductive medicine.
+              </p>
+            </section>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Diagnostic vs Operative Hysteroscopy Explained</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            In the medical world, doctors basically use two different important words to strictly describe exactly what they are actively doing deeply inside the lovely womb during this fast test. Understanding these two beautiful words will naturally totally help you securely feel completely bravely wonderfully powerfully in proudly strong control of your highly amazing deeply incredible amazing fiercely incredibly deeply powerfully highly fiercely completely exactly totally medical wildly heavily smoothly beautifully health journey.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            The first medical word you might hear is "Diagnostic." This simply means the doctor is looking around to clearly understand exactly what is wrong. They might check the overall size of your womb, look closely for any tiny bumps on the pink walls, or see if the entrance to your fallopian tubes is clear. They are simply acting like a detective, gathering visual information to safely plan the best next medical steps for you.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            The second important word is "Operative." This means the doctor is actually fixing the hidden problem during the exact same look inside. For example, if they find a small polyp blocking the way, they will easily remove it using the same thin camera tool right then and there. Operating immediately means you don't have to schedule a second surgery later, getting your womb ready for a healthy baby much faster. 
-          </p>
+            {/* Deep SEO Expert Content Section */}
+            <section className="prose prose-lg max-w-none bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Mastering Hysteroscopy: A Window into Uterine Health</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                The uterus is the cradle of life, and ensuring its health is a primary goal of reproductive medicine. At Pravi IVF, we believe that every woman deserves absolute clarity regarding her reproductive health. Hysteroscopy is the most advanced tool we have to achieve that clarity. By providing a direct, high-definition view of the uterine environment, we can identify and resolve issues that might otherwise remain hidden, ensuring that your path to pregnancy is clear and supported by the best science has to offer.
+              </p>
+              
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">The Science of Direct Visualization</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                While ultrasound and MRI are wonderful diagnostic tools, they are essentially "interpretations" of what is happening inside the body. Hysteroscopy, on the other hand, provides direct visualization. Our clinic in Lajpat Nagar is equipped with ultra-thin, high-definition scopes that allow us to see the uterine lining in microscopic detail. This resolution allows our specialists to identify subtle abnormalities—such as small polyps, filmy adhesions, or minor inflammation (endometritis)—that can significantly impact embryo implantation but are often missed by standard imaging.
+              </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">What is the Honest Recovery Like?</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            After the quick test is over, you will safely wake up resting in a very soft, comfortable recovery chair. At our comfortable <strong>IVF Center in Lajpat Nagar</strong>, our sweet nursing team will gently offer you hot tea and a small snack while your body wakes up. You might feel a tiny bit of mild cramping in your belly. This soft cramping feels almost exactly like a normal, light menstrual period starting.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            You might also notice a very small amount of light spotting or bleeding when you use the restroom. This is totally normal and purely caused by the tiny camera lightly brushing against the soft inner walls of your womb. We recommend bringing a normal sanitary pad with you to the clinic. Within just two to four hours of arriving, you will confidently walk out of our front doors feeling well. You can comfortably go home, rest on your couch, and easily resume your normal, daily work activities the very next morning without any heavy pain.
-          </p>
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Zero Incision, Rapid Recovery</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                One of the most remarkable aspects of hysteroscopy is that it is a "natural orifice" surgery. This means there are no incisions on your abdomen, no stitches to worry about, and zero surgical scarring. The procedure is performed through the cervix, making it a minimally invasive day-care experience. Most of our patients are able to walk out of the clinic just a few hours after the procedure and return to their normal lives the very next day. This rapid recovery makes hysteroscopy an ideal tool for busy women who want definitive answers without the downtime of major surgery.
+              </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions</h2>
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Addressing Asherman’s Syndrome and Uterine Scarring</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Uterine scarring, also known as Asherman’s Syndrome, can be a significant barrier to both conception and healthy pregnancy. These adhesions can bind the uterine walls together, preventing the growth of a healthy lining. Through operative hysteroscopy, our expert surgeons can precisely resolve these adhesions, restoring the natural volume and health of the uterine cavity. By using specialized microsurgical instruments, we ensure that we only address the scarred tissue, preserving the healthy underlying lining for future pregnancy.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Correcting Congenital Anomalies: The Uterine Septum</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Some women are born with structural variations in their uterus, such as a septum—a wall of tissue that divides the cavity. While a septum doesn't typically prevent conception, it can significantly increase the risk of miscarriage or preterm labor. Hysteroscopic septum resection is a highly effective procedure that removes this barrier, restoring the uterus to its optimal shape. At Pravi IVF, we have a high success rate in these corrective surgeries, helping women achieve the healthy, full-term pregnancies they’ve always dreamed of.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">E-E-A-T: Trusting Delhi’s Best Hysteroscopy Specialists</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                When it comes to your reproductive health, you deserve the best. Our medical team, led by Dr. Monica Sachdev, brings over 18 years of experience in gynecological endoscopy. Our authority is built on thousands of successful diagnostic and operative procedures and a commitment to utilizing the most advanced technology available globally. Our reputation as the best hysteroscopy centre in Delhi is a testament to our dedication to providing ethical, transparent, and results-oriented care to every patient.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Preparing the "Baby’s Home" for IVF</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                For our IVF patients, we often recommend a "mock" or diagnostic hysteroscopy before an embryo transfer. We call this "preparing the baby's home." By ensuring that the uterine environment is smooth, healthy, and free of any minor issues, we significantly improve the chances of a successful implantation. This proactive step is part of our commitment to "smart fertility"—using every scientific tool available to maximize your success on the first try.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Your Partnership for Success</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Choosing Pravi IVF for your hysteroscopy means choosing a partner dedicated to your long-term health and fertility. We combine clinical excellence with a deeply personalized touch, ensuring that you are informed, supported, and empowered throughout your journey. From your initial consultation to your post-operative follow-up, our team is with you every step of the way, providing the expertise and the care you need to achieve your dream of parenthood.
+              </p>
+            </section>
+          </div>
+
+          {/* Right Sidebar */}
+          <div className="lg:col-span-1 space-y-8">
+            <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-8 text-white shadow-xl sticky top-32">
+              <h3 className="text-xl font-bold mb-4">Book Your Procedure</h3>
+              <p className="text-blue-100 text-sm mb-8">Consult with our senior surgeons to discuss your uterine health.</p>
+              <div className="space-y-4">
+                <a href="tel:+918009150040" className="flex items-center gap-4 bg-white/10 p-4 rounded-xl hover:bg-white/20 transition-colors">
+                  <Phone className="w-5 h-5 text-yellow-400" />
+                  <span className="font-bold">+91 800 915 0040</span>
+                </a>
+                <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-4 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2">
+                  <Calendar className="w-5 h-5" />
+                  Request Callback
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="bg-gray-50 py-20 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-gray-600">Expert answers on Hysteroscopy in Delhi</p>
+          </div>
           <div className="space-y-4">
             {[
-              { q: 'Is hysteroscopy painful?', a: 'The procedure is performed under local or mild general anesthesia, making it painless and comfortable for the patient.' },
-              { q: 'How long does it take?', a: 'A diagnostic hysteroscopy takes about 15–30 minutes, while operative procedures may take slightly longer.' },
-              { q: 'Is hospitalization required?', a: 'No. Hysteroscopy is a day-care procedure, and you can go home within a few hours.' },
-              { q: 'When can I resume normal activities?', a: 'Most women can resume daily activities within 24 hours after the procedure.' }
+              { q: 'Is Hysteroscopy a major surgery?', a: 'No, hysteroscopy is considered a minimally invasive day-care procedure. It is performed through natural body openings with no incisions on the abdomen.' },
+              { q: 'Will I feel any pain during the procedure?', a: 'You will be under mild sedation or local anesthesia, so you will not feel any pain. Most patients report only mild cramping similar to a period afterward.' },
+              { q: 'How long do I need to stay in the hospital?', a: 'Hysteroscopy is a same-day procedure. You will typically be ready to go home 2 to 4 hours after the procedure is finished.' },
+              { q: 'When can I expect results from the test?', a: 'The doctor can often give you immediate visual feedback on what was seen. If a biopsy was taken, those results typically take a few days to process in the lab.' }
             ].map((faq, idx) => (
-              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+              <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-colors">
+                <h3 className="font-bold text-gray-900 mb-3 flex items-start gap-3">
                   <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
                   <span>{faq.q}</span>
                 </h3>
-                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
+                <p className="text-gray-600 ml-9 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -218,23 +267,23 @@ const HysteroscopyServicePage = () => {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-16">
+      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Book Your Hysteroscopy at Pravi Global IVF Delhi
+          <h2 className="text-4xl font-bold mb-6">
+            Get the Clarity You Deserve
           </h2>
-          <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            Get accurate diagnosis and effective treatment from Delhi’s leading fertility specialists using world-class hysteroscopy technology.
+          <p className="text-xl text-blue-100 mb-10 leading-relaxed">
+            Our expert diagnostic team is here to help you uncover the answers to your health concerns. Schedule your hysteroscopy consultation today.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a
-              href="tel:+918009150040"
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
+          <div className="flex flex-wrap justify-center gap-4">
+            <a 
+              href="tel:+918009150040" 
+              className="bg-yellow-400 text-blue-900 px-10 py-5 rounded-full font-bold hover:bg-yellow-500 transition-all shadow-xl hover:shadow-2xl flex items-center gap-3 text-xl"
             >
               <Phone className="w-6 h-6" />
-              Call +91 800 915 0040
+              Call Now: +91 800 915 0040
             </a>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2 text-lg">
+            <button className="bg-white text-blue-600 px-10 py-5 rounded-full font-bold hover:bg-blue-50 transition-all flex items-center gap-3 text-xl">
               <Calendar className="w-6 h-6" />
               Book Free Consultation
             </button>

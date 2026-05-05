@@ -4,6 +4,15 @@ import { useState } from 'react';
 import { Calendar, Clock, User, Phone, Mail, MessageSquare, CheckCircle, AlertCircle } from 'lucide-react';
 import { services, doctors } from '@/lib/data';
 
+export const metadata = {
+  title: "Book Appointment | Best IVF Centre in Delhi | Pravi IVF",
+  description: "Schedule your consultation with top fertility specialists at Pravi IVF. Take the first step towards your parenthood journey today.",
+  alternates: {
+    canonical: "https://praviglobalivf.com/book-appointment/",
+  },
+};
+
+
 export default function BookAppointmentPage() {
   const [formData, setFormData] = useState({
     name: '',

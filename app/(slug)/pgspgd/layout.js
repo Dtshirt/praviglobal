@@ -1,26 +1,20 @@
 export const metadata = {
-  title: "PGS & PGD Testing in Delhi | Pravi Global IVF Polyclinic",
-  description:
-    "Pravi Global IVF Polyclinic offers advanced PGS and PGD testing in Delhi to identify genetic abnormalities in embryos before implantation. Improve IVF success rates and ensure healthy pregnancies with expert care.",
-  robots: {
-    index: true,
-    follow: true,
-  },
+  title: "PGS & PGD Testing in Delhi | Genetic Screening | Pravi IVF",
+  description: "Advanced PGS & PGD testing in Delhi at Pravi IVF. Identify genetic abnormalities and improve IVF success rates with expert care. Book your consultation today.",
   alternates: {
-    canonical: "https://praviglobalivf.com/pgspgd",
+    canonical: "https://praviglobalivf.com/pgspgd/",
   },
   openGraph: {
-    title: "PGS & PGD Testing in Delhi | Pravi Global IVF Polyclinic",
-    description:
-      "Get advanced Preimplantation Genetic Screening (PGS) and Diagnosis (PGD) in Delhi at Pravi Global IVF Polyclinic. Our experts use cutting-edge genetic testing to select healthy embryos and reduce the risk of genetic disorders.",
+    title: "PGS & PGD Testing in Delhi | Pravi IVF",
+    description: "Get advanced Preimplantation Genetic Screening (PGS) and Diagnosis (PGD) in Delhi at Pravi IVF. Our experts use cutting-edge genetic testing to select healthy embryos.",
     url: "https://praviglobalivf.com/pgspgd/",
-    siteName: "Pravi Global IVF Polyclinic",
+    siteName: "Pravi IVF",
     images: [
       {
-        url: "/images/pgs-pgd-testing.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "PGS PGD Testing in Delhi - Pravi Global IVF Polyclinic",
+        alt: "PGS PGD Testing in Delhi - Pravi IVF",
       },
     ],
     locale: "en_IN",
@@ -28,10 +22,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PGS & PGD Testing in Delhi | Pravi Global IVF Polyclinic",
-    description:
-      "Ensure healthy embryo selection with PGS & PGD testing in Delhi at Pravi Global IVF Polyclinic. Advanced genetic screening to boost IVF success and prevent inherited disorders.",
-    images: ["/images/pgs-pgd-testing.jpg"],
+    title: "PGS & PGD Testing in Delhi | Pravi IVF",
+    description: "Ensure healthy embryo selection with PGS & PGD testing in Delhi at Pravi IVF. Advanced genetic screening to boost IVF success.",
+    images: ["/images/og-image.jpg"],
   },
 };
 

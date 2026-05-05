@@ -9,6 +9,7 @@ import 'react-phone-input-2/lib/style.css';
 import HealthcareServices from '@/components/HealthcareServices';
 import HealthcareServices2 from '@/components/HealthcareServices2';
 import Link from 'next/link';
+import InternationalSeoContent from '@/components/InternationalSeoContent';
 
 export default function PraviIVFLanding() {
   const [phone, setPhone] = useState('');
@@ -142,7 +143,7 @@ export default function PraviIVFLanding() {
     "Second opinion consultations"
   ];
 
-  const country = "united-state";
+  const country = "united-states";
   const codeC = 'us';
 
   return (
@@ -275,13 +276,13 @@ export default function PraviIVFLanding() {
                     <option selected={country == 'iraq' ? true : ''} value="iraq">Iraq</option>
                     <option selected={country == 'kazakhstan' ? true : ''} value="kazakhstan">Kazakhstan</option>
                     <option selected={country == 'maldives' ? true : ''} value="maldives">Maldives</option>
-                    <option selected={country == 'myanmarq' ? true : ''} value="myanmarq">Myanmar</option>
+                    <option selected={country == 'myanmar' ? true : ''} value="myanmar">Myanmar</option>
                     <option selected={country == 'oman' ? true : ''} value="oman">Oman</option>
                     <option selected={country == 'pakistan' ? true : ''} value="pakistan">Pakistan</option>
                     <option selected={country == 'sri-lanka' ? true : ''} value="sri-lanka">Sri Lanka</option>
                     <option selected={country == 'tajikistan' ? true : ''} value="tajikistan">Tajikistan</option>
                     <option selected={country == 'uzbekistan' ? true : ''} value="uzbekistan">Uzbekistan</option>
-                    <option selected={country == 'united-state' ? true : ''} value='united-state'>United States</option>
+                    <option selected={country == 'united-states' ? true : ''} value='united-states'>United States</option>
                     <option selected={country == 'australia' ? true : ''} value='australia'>Australia</option>
                     <option selected={country == 'yemen' ? true : ''} value="yemen">Yemen</option>
                     <option selected={country == 'other' ? true : ''} value='other'>Other</option>
@@ -444,13 +445,14 @@ export default function PraviIVFLanding() {
             </div>
             <div className="mt-10 pt-8 border-t border-slate-200 text-center">
               <p className="text-slate-600 mb-6">Have questions about a specific treatment?</p>
-              <button className="bg-gradient-to-r bg-[#004b4b] to-[#005353]hover:from-[#003939] hover:to-[#004242] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+              <button className="bg-gradient-to-r bg-[#004b4b] to-[#005353] hover:from-[#003939] hover:to-[#004242] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200">
                 Speak with a Specialist
               </button>
             </div>
           </div>
         </div>
       </section>
+      <InternationalSeoContent country="United States" />
     </div>
   );
 }

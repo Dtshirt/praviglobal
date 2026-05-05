@@ -3,18 +3,6 @@ import { Heart, Users, Shield, CheckCircle, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { services } from '@/lib/data';
 
-export const metadata = {
-  title: 'Fertility Services - IVF, ICSI, IUI & More',
-  description: 'Comprehensive fertility treatments including IVF, ICSI, IUI, egg freezing, male and female infertility treatment, surrogacy, and genetic testing.',
-  openGraph: {
-    title: 'Fertility Services at Pravi IVF',
-    description: 'Complete range of advanced fertility treatments tailored to your needs',
-  },
-  alternates: {
-    canonical: 'https://praviglobalivf.com/services',
-  }
-};
-
 const iconMap = {
   Heart: Heart,
   Users: Users,

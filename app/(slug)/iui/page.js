@@ -1,13 +1,11 @@
-'use client';
-import React, { useState } from 'react';
-import {
+import React from 'react';
+import { 
   FlaskRound,
   CheckCircle2,
   Clock,
   Users,
   Award,
   Phone,
-  Mail,
   Calendar,
   Heart,
   Shield,
@@ -16,88 +14,81 @@ import {
   MapPin,
   Star,
   TrendingUp,
+  Baby,
   Activity,
   Globe,
-  Baby
+  Stethoscope,
+  Syringe
 } from 'lucide-react';
 
 const IUIServicePage = () => {
-  const [activeTab, setActiveTab] = useState('overview');
-
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
-        </div>
         <div className="max-w-7xl mx-auto px-4 py-16 md:py-24 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-fade-in">
               <div className="flex items-center gap-2 mb-4">
                 <Award className="w-8 h-8 text-yellow-400" />
-                <span className="text-blue-100 font-semibold">Best IUI Treatment in Delhi</span>
+                <span className="text-blue-100 font-semibold tracking-wide uppercase text-sm">Affordable Fertility Solutions</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                IUI Treatment at Pravi Global IVF Delhi
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                IUI Treatment at Pravi IVF Delhi
               </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-blue-100">
-                Affordable, Safe & Effective Fertility Care
-              </h2>
-              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                At Pravi Global IVF Delhi, we offer advanced Intrauterine Insemination (IUI) treatments — a simple, safe, and effective fertility procedure that helps couples achieve pregnancy naturally with medical support.
+              <p className="text-lg text-blue-100 mb-8 leading-relaxed max-w-xl">
+                Start your parenthood journey with IUI — a safe, minimally invasive, and affordable fertility procedure. At Pravi IVF Delhi, we combine expert ovulation tracking with advanced sperm washing techniques to maximize your chances of natural conception.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
+                <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
                   Book Free Consultation
                 </button>
-                <a href="tel:+918009150040" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2">
+                <a href="tel:+918009150040" className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   +91 800 915 0040
                 </a>
               </div>
-              <div className="flex items-center gap-6 text-sm">
+              <div className="flex items-center gap-6 text-sm font-medium text-blue-50">
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
+                  <MapPin className="w-4 h-4 text-yellow-400" />
                   <span>Lajpat Nagar, Delhi</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
+                  <Clock className="w-4 h-4 text-yellow-400" />
                   <span>Mon-Sat: 10 AM - 6 PM</span>
                 </div>
               </div>
             </div>
-
             <div className="hidden md:block">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
-                      <Star className="w-8 h-8 text-blue-900" />
+              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
+                <div className="space-y-8">
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Star className="w-7 h-7 text-blue-900" />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">18+</div>
-                      <div className="text-blue-100">Years of Experience</div>
+                      <div className="text-3xl font-bold text-white">Safe</div>
+                      <div className="text-blue-100 font-medium">Non-Surgical</div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center">
-                      <TrendingUp className="w-8 h-8 text-blue-900" />
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-green-400 rounded-2xl flex items-center justify-center shadow-lg">
+                      <TrendingUp className="w-7 h-7 text-blue-900" />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">High</div>
-                      <div className="text-blue-100">Success Rate</div>
+                      <div className="text-3xl font-bold text-white">High</div>
+                      <div className="text-blue-100 font-medium">Success Rate</div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-pink-400 rounded-full flex items-center justify-center">
-                      <Baby className="w-8 h-8 text-blue-900" />
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-pink-400 rounded-2xl flex items-center justify-center shadow-lg">
+                      <Syringe className="w-7 h-7 text-blue-900" />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">Safe</div>
-                      <div className="text-blue-100">Fertility Procedure</div>
+                      <div className="text-3xl font-bold text-white">Pain-Free</div>
+                      <div className="text-blue-100 font-medium">Quick Procedure</div>
                     </div>
                   </div>
                 </div>
@@ -107,108 +98,194 @@ const IUIServicePage = () => {
         </div>
       </div>
 
-      {/* Why Choose Us */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Why Choose Pravi Global IVF Delhi for IUI?
-          </h2>
-          <p className="text-lg text-gray-600">Expertise, Advanced Technology, and Compassionate Care.</p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {[
-            { icon: Microscope, title: 'Modern Lab', desc: 'Equipped for accurate semen preparation and analysis' },
-            { icon: Users, title: 'Expert Doctors', desc: 'Led by highly experienced fertility specialists' },
-            { icon: Heart, title: 'Personalized Plans', desc: 'Tailored IUI cycles for individual needs' },
-            { icon: Globe, title: 'International Protocols', desc: 'World-class fertility standards & safety' }
-          ].map((item, idx) => {
-            const Icon = item.icon;
-            return (
-              <div key={idx} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
-                  <Icon className="w-7 h-7 text-white" />
+      {/* Trust Indicators */}
+      <div className="bg-gray-50 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 py-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Us for IUI in Delhi?</h2>
+            <p className="text-gray-600">Specialized care for couples starting their fertility path</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: Microscope, title: 'Andrology Lab', desc: 'Advanced sperm processing for maximum concentration' },
+              { icon: Activity, title: 'Precision Timing', desc: 'Expert follicular monitoring for perfect synchronization' },
+              { icon: Shield, title: 'Safety First', desc: 'Minimally invasive with zero recovery time' },
+              { icon: Heart, title: 'Patient Centric', desc: 'Transparent costs and personalized guidance' }
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                  <item.icon className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.desc}</p>
+                <h3 className="font-bold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Comprehensive SEO Content Section */}
-      <div className="bg-white py-16 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-blue">
-          
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">What Exactly is IUI (Intrauterine Insemination)?</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            When a couple begins trying to have a baby, they quickly learn that human biology depends heavily on perfect timing and quite a bit of physical luck. The male sperm cells must successfully travel a very long, difficult physical journey all the way from the bottom of the female cervix up to the distant fallopian tubes. They must brave that distance, hoping to bump into a beautifully mature female egg exactly on the correct day of the month. If anything naturally goes wrong during this exhausting trip, the pregnancy simply fails.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Intrauterine Insemination, broadly known in the medical world simply as IUI, is an incredibly smart, simple medical procedure designed to skip the hardest part of that physical journey. Instead of asking the tiny sperm to swim the entire massive distance through the thick natural mucus of the cervix on their own, a trained medical doctor uses a tiny, completely soft plastic tube. 
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            The doctor gently slides this perfectly soft tube past the cervix and places a highly concentrated amount of the best, fastest-swimming sperm directly into the very top of the mother's warm uterus. By placing the healthy sperm simply inches away from the awaiting female egg exactly at the perfect time of ovulation, the natural chances of a successful pregnancy increase dramatically. It is identical to giving Mother Nature a very helpful, supportive physical push directly forward.
-          </p>
+      {/* Main Content Area */}
+      <div className="max-w-7xl mx-auto px-4 py-20">
+        <div className="grid lg:grid-cols-3 gap-16">
+          <div className="lg:col-span-2 space-y-16">
+            {/* SEO Content 1: Introduction */}
+            <section className="prose prose-lg max-w-none">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Understanding IUI: A Simple Path to Parenthood</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Intrauterine Insemination (IUI), commonly known as artificial insemination, is a fertility treatment that involves placing processed sperm directly inside the uterus at the time of ovulation. At Pravi IVF, the leading **IUI Centre in Delhi**, we recommend this procedure as a first line of treatment for many couples facing unexplained infertility or mild male factor issues.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                The primary goal of IUI is to increase the number of healthy sperm that reach the fallopian tubes, thereby increasing the chance of fertilization. Unlike more complex treatments like IVF, IUI works in harmony with your body’s natural processes, providing just the right amount of medical assistance to overcome minor biological hurdles.
+              </p>
+            </section>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why and When Do Doctors Recommend IUI?</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            When hopeful couples first step into a fertility clinic seeking professional help, doctors rarely immediately jump into performing highly complicated treatments like advanced IVF. Instead, they strongly prefer starting with much simpler, less physically invasive options. 
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            IUI is famous as the absolute best starting point for couples suffering from unexplained infertility. This frustrating condition simply means that all the medical blood tests look incredibly great, the internal bodily tubes remain open, yet nothing works as it should. Providing the sperm with a massive head start completely solves this invisible distance problem.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            It is also highly recommended if the father has a mildly low sperm count or poor sperm motility. Because the laboratory carefully filters out the tired sperm and physically moves the energetic ones right to the finish line, mild male factor issues are instantly solved. Secondly, it is a brilliant option for women facing mild endometriosis or severe issues with their cervical mucus. Sometimes, the natural mucus completely accidentally acts like a thick wall safely blocking the healthy sperm. IUI magically bypasses this confusing wall entirely.
-          </p>
+            {/* Content Section 2: Detailed Process */}
+            <section className="bg-blue-50 rounded-3xl p-8 md:p-12 border border-blue-100">
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                <Activity className="text-blue-600" />
+                The IUI Treatment Process
+              </h2>
+              <div className="space-y-10">
+                {[
+                  { step: '01', title: 'Ovulation Monitoring', desc: 'We use transvaginal ultrasound (follicular monitoring) to track the growth of your eggs and determine the perfect window for insemination.' },
+                  { step: '02', title: 'Triggering Ovulation', desc: 'Once the follicles are mature, a small hormone injection is given to trigger the release of eggs within 24-36 hours.' },
+                  { step: '03', title: 'Sperm Preparation', desc: 'The partner\'s sperm is processed in our andrology lab to separate the highly mobile, healthy sperm from dead cells and seminal fluid.' },
+                  { step: '04', title: 'Insemination Procedure', desc: 'Using a thin, flexible catheter, the concentrated sperm is gently placed into the uterus. The procedure is non-surgical and takes only minutes.' },
+                  { step: '05', title: 'Two-Week Wait', desc: 'After the procedure, we provide support and follow-up guidance during the period before a pregnancy test can be taken.' }
+                ].map((item, idx) => (
+                  <div key={idx} className="flex gap-6 group">
+                    <span className="text-4xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">{item.step}</span>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The Four Simple Steps of The Process</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Many worried couples feel shocked to wonderfully discover exactly how physically simple and perfectly fast the entire IUI cycle actually is. The medical journey consists of four very quick phases perfectly designed to maximize your bodily potential.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            First is exact scientific ovulation tracking. For a few short days at the start of the female cycle, the doctor carefully monitors the growing female eggs using a painless ultrasound probe. Sometimes they give the mother mild, safe hormone pills to powerfully help encourage the eggs to fully grow. 
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Second is the gentle hormone trigger shot. Once the ultrasound correctly shows that exactly one or two beautiful eggs are fully mature, the doctor gives a tiny, completely harmless injection. This safe hormone magically tells the ovaries to release those healthy eggs exactly thirty-six hours later. 
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Third is the sperm washing phase. The father provides a fresh sperm sample to the clinic laboratory. The expert scientists place this important sample inside a high-speed machine that safely washes away all the dead, slow, or strangely shaped sperm alongside any confusing background debris. All that remains is an incredibly powerful, highly concentrated liquid pool of microscopic champions.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Finally comes the amazingly short insemination procedure. Using the soft, tiny plastic tube, the doctor smoothly injects this clean pool of champion sperm into the uterus. The physical process takes only about ten short minutes to completely finish, and the mother feels absolutely zero surgical pain during the entire event. She simply rests on the warm bed for a quiet moment and then safely drives straight home. 
-          </p>
+            {/* SEO Content 3: Depth & Science */}
+            <section className="prose prose-lg max-w-none">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Who Should Consider IUI?</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                While IUI is a versatile treatment, it is most effective for specific fertility challenges. At our **Fertility Clinic in Lajpat Nagar**, we often suggest IUI for couples dealing with:
+              </p>
+              <ul className="grid md:grid-cols-2 gap-4 text-sm text-gray-600 list-none p-0">
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Unexplained infertility
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Mild male factor infertility
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Cervical mucus issues
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Semen allergy (rare)
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  Ejaculatory dysfunction
+                </li>
+                <li className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                  <CheckCircle2 className="w-5 h-5 text-green-500" />
+                  PCOS related ovulation issues
+                </li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mt-10">
+                The success of IUI depends heavily on the mother having at least one healthy, open fallopian tube. Our diagnostic team performs thorough checks, including HSG (Hysterosalpingography), to ensure that you are an ideal candidate for the procedure, maximizing your chance of success on the first try.
+              </p>
+            </section>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Why the Quality of The Laboratory Matters Deeply</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            The entire secret to a successful IUI cycle relies entirely on the precise medical skills of the laboratory team performing the essential sperm washing. If the lab uses cheap older equipment or careless techniques, they can easily damage the healthy sperm or leave behind dangerous debris that causes stomach cramping and total failure.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            This is strictly why choosing the right medical clinic is essentially the most vital decision you can possibly make. Being recognized as the premier <strong>Best IVF Center In Delhi</strong> requires highly intense dedication to keeping our laboratory spotless and equipped with the world's absolute best medical spinning machines. By trusting highly experienced scientists to perfectly wash and accurately concentrate the sperm sample, your physical chances of hearing a baby's heartbeat drastically rise.
-          </p>
+            {/* Deep SEO Expert Content Section */}
+            <section className="prose prose-lg max-w-none bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Mastering IUI: A Natural Gateway to Parenthood</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Intrauterine Insemination (IUI) is often the first significant step for many couples on their journey toward parenthood. At Pravi IVF, we treat IUI not just as a medical procedure, but as a carefully choreographed synchronization of nature and science. By timing the insemination perfectly with a woman's natural cycle and ensuring the sperm is at its most potent, we significantly enhance the probability of conception without the need for more invasive interventions.
+              </p>
+              
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">The Importance of Follicular Monitoring</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                The success of IUI is deeply rooted in timing. Our specialists at Pravi IVF utilize advanced transvaginal ultrasound monitoring to track the growth of ovarian follicles in real-time. This allowing us to identify the exact moment of peak fertility. By monitoring the thickness of the uterine lining alongside follicle size, we ensure that the internal environment is ideally prepared for the arrival of sperm. This precision eliminates the guesswork that often leads to natural conception failure.
+              </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Staying Positively Calm Through The Entire Journey</h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Facing the unknown roads of fertility treatments can force your mind to feel deeply stressed and heavily chaotic. Attempting to manage a busy career while desperately waiting to finally become a lovely parent is an incredibly heavy emotional burden for absolutely any couple. 
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            However, keeping your body highly relaxed physically improves your biological chances of taking home a baby. We completely understand this, which is why serving as your highly trusted <strong>IVF Center in Lajpat Nagar</strong> means that we naturally prioritize your calm emotional comfort. We respectfully answer your every single worried phone call and hold your shaking hands during the confusing times. From the quiet start to the magical positive pregnancy test, you will strictly never be forced to bravely walk this scary path completely alone.
-          </p>
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Advanced Sperm Preparation Techniques</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                A critical component of a successful IUI cycle is the "washing" and preparation of the sperm. In our state-of-the-art andrology lab, we utilize density gradient centrifugation and swim-up techniques to isolate the most active, high-quality sperm. This process removes seminal fluid, dead cells, and debris that can cause uterine cramping and irritation. The resulting concentrated sample contains a high density of mobile sperm, which are then placed directly where they need to be, bypassing the cervical barrier.
+              </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-16">Frequently Asked Questions About Artificial Insemination</h2>
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Overcoming Cervical and Mild Male Factors</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                IUI is particularly effective for couples where the woman has "hostile" cervical mucus or where the partner has a mildly low sperm count or motility. For many, the cervix can act as a gatekeeper that prevents even healthy sperm from reaching the uterus. IUI effectively "unlocks" this gate, providing a clear path for the sperm to reach the fallopian tubes. This simple bypass can often be all that is needed to achieve a successful pregnancy in cases that have previously been labeled as "unexplained infertility."
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Minimal Intervention, Maximum Support</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                One of the primary benefits of IUI is that it is a non-surgical, relatively pain-free procedure that can be performed in a matter of minutes. At Pravi IVF, we prioritize your comfort, ensuring that the experience is as stress-free as possible. We find that a relaxed patient often responds better to treatment. Our clinical team provides a supportive environment, answering all your questions and guiding you through the "two-week wait" with compassion and professional expertise.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">When to Move from IUI to IVF</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                While IUI is a fantastic first step, we also believe in honest, evidence-based guidance. If a couple does not achieve success within 3 to 6 cycles of IUI, our specialists, led by Dr. Monica Sachdev, will conduct a thorough review. We believe in "smart fertility"—knowing when to persevere and when to transition to more advanced options like IVF to ensure you don't waste precious time or emotional energy. This honest approach is why we are trusted as a leading fertility center in Lajpat Nagar.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Affordability and Accessibility</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                We understand that the cost of fertility treatment can be a significant concern for many families. IUI offers a highly cost-effective alternative to more complex procedures. By providing high-quality IUI services with transparent pricing, we ensure that expert fertility care is accessible to a wider range of patients. We believe that everyone deserves the chance to start a family, regardless of their budget.
+              </p>
+
+              <h3 className="text-2xl font-bold text-blue-700 mb-4">Your Partnership for Success</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Choosing Pravi IVF for your IUI treatment means choosing a partner dedicated to your success. We combine clinical excellence with a deeply personalized touch, ensuring that your treatment plan is tailored to your unique biological needs. From your initial consultation to your positive pregnancy test, our team is with you every step of the way, providing the expertise and support you need to make your dream of parenthood a reality.
+              </p>
+            </section>
+          </div>
+
+          {/* Right Sidebar */}
+          <div className="lg:col-span-1 space-y-8">
+            {/* Quick Contact Card */}
+            <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-8 text-white shadow-xl sticky top-32">
+              <h3 className="text-xl font-bold mb-4">Consult Our Experts</h3>
+              <p className="text-blue-100 text-sm mb-8">Discuss if IUI is the right step for your family.</p>
+              <div className="space-y-4">
+                <a href="tel:+918009150040" className="flex items-center gap-4 bg-white/10 p-4 rounded-xl hover:bg-white/20 transition-colors">
+                  <Phone className="w-5 h-5 text-yellow-400" />
+                  <span className="font-bold">+91 800 915 0040</span>
+                </a>
+                <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-4 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2">
+                  <Calendar className="w-5 h-5" />
+                  Request Call
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="bg-gray-50 py-20 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Common Questions About IUI</h2>
+            <p className="text-gray-600">Clear answers from our fertility specialists</p>
+          </div>
           <div className="space-y-4">
             {[
-              { q: 'Is IUI physically painful?', a: 'No, IUI is a highly quick and completely painless medical procedure. Most happy women state it physically feels roughly identical to a totally normal routine pap smear. A very small number of women might experience incredibly mild standard stomach cramping for a few hours afterward, but nothing strictly severe.' },
-              { q: 'What is the real mathematical success rate?', a: 'The success rate strictly mathematically varies between 15% to 25% perfectly per single cycle, highly heavily depending on the exact maternal age, precise sperm quality, and other important health factors. However, the cumulative odds drastically raise safely if couples attempt multiple rapid cycles.' },
-              { q: 'How physically long does the insemination procedure officially take?', a: 'The entire medical insemination physical process specifically takes only about roughly exactly ten to roughly exactly fifteen extremely short minutes, with absolutely zero need for hard surgical anesthesia or heavy long recovery resting time.' },
-              { q: 'Are there any serious risks to the future growing baby?', a: 'No. This simply gives normal healthy biology a simple medical head start. The resulting born baby is entirely identical strongly in normal health to a naturally safely created child.' }
+              { q: 'Is IUI painful?', a: 'IUI is generally a painless procedure. Most women describe it as feeling very similar to a routine pap smear. There might be some mild cramping during or immediately after the procedure, but it resolves quickly.' },
+              { q: 'How many times can IUI be attempted?', a: 'Most doctors recommend attempting IUI for 3 to 6 cycles. If pregnancy is not achieved within this timeframe, advanced options like IVF may be discussed to improve the chances of success.' },
+              { q: 'What is the success rate of IUI?', a: 'The success rate of IUI averages between 15% to 20% per cycle. Factors such as the woman\'s age and the quality of the sperm significantly impact the outcome.' },
+              { q: 'Do I need bed rest after IUI?', a: 'No, bed rest is not required after IUI. You will be asked to rest at the clinic for about 20-30 minutes, after which you can resume your normal daily activities.' }
             ].map((faq, idx) => (
-              <div key={idx} className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-                <h3 className="font-bold text-lg mb-3 text-gray-900 flex items-start gap-3">
+              <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-blue-200 transition-colors">
+                <h3 className="font-bold text-gray-900 mb-3 flex items-start gap-3">
                   <ChevronRight className="w-6 h-6 text-blue-600 flex-shrink-0" />
                   <span>{faq.q}</span>
                 </h3>
-                <p className="text-gray-700 ml-9 leading-relaxed">{faq.a}</p>
+                <p className="text-gray-600 ml-9 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -216,25 +293,25 @@ const IUIServicePage = () => {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-16">
+      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white py-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Begin Your IUI Journey with Pravi Global IVF
+          <h2 className="text-4xl font-bold mb-6">
+            Begin Your Parenthood Journey Today
           </h2>
-          <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-            Take the first step toward parenthood — book a free IUI consultation with our fertility experts in Delhi.
+          <p className="text-xl text-blue-100 mb-10 leading-relaxed">
+            Take an affordable first step towards your dream of having a baby. Schedule your IUI consultation with our experts in Delhi.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a
-              href="tel:+918009150040"
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 text-lg"
+          <div className="flex flex-wrap justify-center gap-4">
+            <a 
+              href="tel:+918009150040" 
+              className="bg-yellow-400 text-blue-900 px-10 py-5 rounded-full font-bold hover:bg-yellow-500 transition-all shadow-xl hover:shadow-2xl flex items-center gap-3 text-xl"
             >
               <Phone className="w-6 h-6" />
-              Call +91 800 915 0040
+              Call Now: +91 800 915 0040
             </a>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-all flex items-center gap-2 text-lg">
+            <button className="bg-white text-blue-600 px-10 py-5 rounded-full font-bold hover:bg-blue-50 transition-all flex items-center gap-3 text-xl">
               <Calendar className="w-6 h-6" />
-              Book Free Consultation
+              Free Online Consultation
             </button>
           </div>
         </div>

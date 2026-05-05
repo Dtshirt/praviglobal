@@ -1,13 +1,13 @@
 export const metadata = {
-  title: "Male Infertility Treatment in Delhi | Pravi Global IVF Polyclinic",
+  title: "Male Infertility Treatment in Delhi | Expert Care | Pravi IVF",
   description:
-    "Get expert male infertility treatment in Delhi at Pravi Global IVF Polyclinic. We specialize in diagnosing and treating low sperm count, motility issues, and other male fertility problems with advanced techniques like TESA & PESA.",
+    "Expert male infertility treatment in Delhi at Pravi IVF. Specializing in low sperm count, motility issues, TESA & PESA. Book your consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/male-infertility",
+    canonical: "https://praviglobalivf.com/male-infertility/",
   },
   openGraph: {
     title: "Male Infertility Treatment in Delhi | Pravi Global IVF Polyclinic",
@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/male-infertility.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Male Infertility Treatment at Pravi Global IVF Polyclinic Delhi",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Male Infertility Treatment in Delhi | Pravi Global IVF Polyclinic",
     description:
       "Advanced male infertility treatment in Delhi at Pravi Global IVF Polyclinic. Comprehensive diagnosis and modern solutions like TESA & PESA by fertility experts.",
-    images: ["/images/male-infertility.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 

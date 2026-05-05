@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const faqs = [
   {
@@ -104,14 +105,20 @@ export default function HomeSeoContent() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-          IVF Centre in Delhi: A Comprehensive Guide to Advanced Fertility Care and Your Path to Parenthood
+        <h2 className="text-3xl md:text-4xl font-black text-teal-950 mb-8 border-l-4 border-teal-500 pl-6">
+          Pravi Global IVF: The Best IVF Centre in Delhi for Advanced Fertility Solutions
         </h2>
         <p className="mb-4">
-          The journey toward starting a family is one of the most significant and emotional chapters in a person’s life. For many couples facing challenges in conceiving naturally, the search for a reliable <strong>IVF centre in Delhi</strong> becomes a search for hope, medical excellence, and a supportive hand to hold. Infertility currently impacts approximately one in six couples globally, making it a widespread concern that requires not just technical skill but a deep sense of empathy and understanding. Delhi has established itself as a leading destination for fertility treatments, offering a unique combination of world-class technology, experienced specialists, and compassionate care environments that cater to both domestic and international patients.
+          The journey toward starting a family is one of the most significant and emotional chapters in a person’s life. For many couples facing challenges in conceiving naturally, the search for a reliable <Link href="/services" className="text-blue-600 hover:underline font-semibold">IVF centre in Delhi</Link> becomes a search for hope, medical excellence, and a supportive hand to hold. 
+        </p>
+        <p className="mb-4">
+          Infertility currently impacts approximately one in six couples globally, making it a widespread concern that requires not just technical skill but a deep sense of empathy and understanding. Delhi has established itself as a leading destination for fertility treatments, offering a unique combination of world-class technology, experienced specialists, and compassionate care environments that cater to both domestic and international patients.
+        </p>
+        <p className="mb-4">
+          The decision to seek help at an IVF centre in Delhi often comes after months or years of trying, and it is natural to feel a mix of excitement and anxiety. Modern reproductive medicine has advanced to a point where many barriers to pregnancy can be overcome through personalised protocols and state-of-the-art laboratory techniques. 
         </p>
         <p className="mb-8">
-          The decision to seek help at an IVF centre in Delhi often comes after months or years of trying, and it is natural to feel a mix of excitement and anxiety. Modern reproductive medicine has advanced to a point where many barriers to pregnancy can be overcome through personalised protocols and state-of-the-art laboratory techniques. Choosing the right fertility clinic in Delhi involves looking beyond just numbers; it involves finding a team that prioritises transparency, respects the emotional toll of the process, and provides a clear, guided path from the first consultation to the moment a baby is held in your arms.
+          Choosing the right <Link href="/about" className="text-blue-600 hover:underline">fertility clinic in Delhi</Link> involves looking beyond just numbers; it involves finding a team that prioritises transparency, respects the emotional toll of the process, and provides a clear, guided path from the first consultation to the moment a baby is held in your arms.
         </p>
 
         <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Choosing a Leading IVF Centre in Delhi Makes a Difference</h3>
@@ -161,19 +168,25 @@ export default function HomeSeoContent() {
 
         <h3 className="text-2xl font-bold text-gray-900 mb-4">IVF Treatment Process Explained Simply</h3>
         <p className="mb-4">
-          The process of In Vitro Fertilisation (IVF) might seem complex, but at its heart, it is a way to give nature a helping hand. At an <strong>IVF centre in Delhi</strong>, the medical team works to join an egg and sperm in a controlled lab setting, creating an embryo that can then be placed safely into the mother's womb. To make this journey easier to understand, it can be helpful to view it as a series of simple steps designed to maximise the chances of a healthy pregnancy.
+          The process of In Vitro Fertilisation (IVF) might seem complex, but at its heart, it is a way to give nature a helping hand. At an <strong>IVF centre in Delhi</strong>, the medical team works to join an egg and sperm in a controlled lab setting, creating an embryo that can then be placed safely into the mother's womb. 
         </p>
         <p className="mb-4">
-          The first step is often called 'ovarian stimulation'. In a normal month, a woman’s body usually releases just one egg. To increase the chances of success, doctors use gentle hormone medications for about 8 to 14 days to help the ovaries produce more mature eggs. During this time, the patient visits the IVF centre in Delhi for quick monitoring appointments. These visits use simple ultrasound scans and blood tests to check how the eggs are growing, ensuring the medication is working perfectly for the patient’s body.
+          To make this journey easier to understand, it can be helpful to view it as a series of simple steps designed to maximise the chances of a healthy pregnancy. The first step is often called 'ovarian stimulation'. In a normal month, a woman’s body usually releases just one egg. To increase the chances of success, doctors use gentle hormone medications for about 8 to 14 days to help the ovaries produce more mature eggs. 
         </p>
         <p className="mb-4">
-          Once the eggs are ready, a small procedure called 'egg retrieval' is performed. This is a quick and painless process because it is done while the patient is under light sedation or a short sleep. A specialist uses a very thin needle, guided by an ultrasound, to gently collect the eggs from the ovaries. The procedure usually takes only 15 to 20 minutes, and most people can go home to rest after just an hour or two. On the same day, the father provides a sperm sample, which is then carefully cleaned and prepared in the lab to select the strongest and healthiest swimmers.
+          During this time, the patient visits the IVF centre in Delhi for quick monitoring appointments. These visits use simple ultrasound scans and blood tests to check how the eggs are growing, ensuring the medication is working perfectly for the patient’s body. Once the eggs are ready, a small procedure called 'egg retrieval' is performed. 
         </p>
         <p className="mb-4">
-          The third stage is where the "magic" of science happens in the lab. The collected eggs and sperm are combined. In some cases, a single healthy sperm is injected directly into an egg using a method called ICSI (Intracytoplasmic Sperm Injection), which is very helpful if the sperm needs a little extra help to fertilise the egg. The resulting embryos are kept in a special incubator that acts just like a mother’s womb, providing the perfect temperature and nutrients for them to grow for 3 to 5 days.
+          This is a quick and painless process because it is done while the patient is under light sedation or a short sleep. A specialist uses a very thin needle, guided by an ultrasound, to gently collect the eggs from the ovaries. The procedure usually takes only 15 to 20 minutes, and most people can go home to rest after just an hour or two. 
+        </p>
+        <p className="mb-4">
+          On the same day, the father provides a sperm sample, which is then carefully cleaned and prepared in the lab to select the strongest and healthiest swimmers. The third stage is where the "magic" of science happens in the lab. The collected eggs and sperm are combined. 
+        </p>
+        <p className="mb-4">
+          In some cases, a single healthy sperm is injected directly into an egg using a method called <Link href="/icsi" className="text-blue-600 hover:underline font-semibold">ICSI (Intracytoplasmic Sperm Injection)</Link>, which is very helpful if the sperm needs a little extra help to fertilise the egg. The resulting embryos are kept in a special incubator that acts just like a mother’s womb, providing the perfect temperature and nutrients for them to grow for 3 to 5 days.
         </p>
         <p className="mb-8">
-          The final and most exciting step is the embryo transfer. The doctor selects the healthiest embryo and gently places it into the uterus using a very thin, flexible tube. This part of the process is very simple and feels much like a regular check-up or a Pap smear. After the transfer, there is a short wait of about two weeks before a simple blood test confirms if the pregnancy has begun. Throughout these steps, the team at the IVF centre in Delhi provides constant support, answering every question and making sure the patient feels comfortable and informed.
+          The final and most exciting step is the embryo transfer. The doctor selects the healthiest embryo and gently places it into the uterus using a very thin, flexible tube. This part of the process is very simple and feels much like a regular check-up. After the transfer, there is a short wait of about two weeks before a simple blood test confirms if the pregnancy has begun. Throughout these steps, the team at the IVF centre in Delhi provides constant support, answering every question and making sure the patient feels comfortable and informed.
         </p>
 
         <h3 className="text-2xl font-bold text-gray-900 mb-4">The Hub of Excellence: IVF Centre in South Delhi & Lajpat Nagar</h3>
@@ -221,7 +234,7 @@ export default function HomeSeoContent() {
           Choosing a clinic in these areas also means benefiting from a neighbourhood that supports the medical journey. From specialised pharmacies that stock the necessary fertility medications to diagnostic centres that can provide quick test results, the ecosystem of an IVF centre in Lajpat Nagar is designed to make the process as smooth as possible. This integration of convenience and clinical expertise is why South Delhi remains the first choice for many families starting their IVF journey.
         </p>
 
-        <h3 className="text-2xl font-bold text-gray-900 mb-4">Understanding Our IVF Success Rates</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">Understanding Our IVF Success Rates in Delhi</h3>
         <p className="mb-4">
           Success rates are often the first thing people ask about when visiting an IVF centre in Delhi. It is important to know that while numbers can provide a sense of hope, they are influenced by many personal factors such as age, health history, and the cause of infertility. On average, a high-quality fertility clinic Delhi will see a success rate of 35% to 40% per cycle, but these numbers can be much higher for younger patients or those using donor eggs.
         </p>
@@ -261,15 +274,15 @@ export default function HomeSeoContent() {
         </div>
 
         <p className="mb-8">
-          The <strong>best IVF centre in Delhi</strong> will always be honest about these numbers. Transparency is a key part of building trust, and a good clinic will provide a realistic outlook based on your specific medical reports rather than making over-promises. Success is not just a number on a page; it is the result of a dedicated team of embryologists using the latest lab technology to ensure every embryo has the best possible chance to grow.
+          The <strong>best IVF centre in Delhi</strong> will always be honest about these numbers. Transparency is a key part of building trust, and a good clinic will provide a realistic outlook based on your specific medical reports rather than making over-promises. Success is not just a number on a page; it is the result of a dedicated team of embryologists using the latest lab technology to ensure every embryo has the best possible chance to grow. You can explore our <Link href="/success-stories" className="text-blue-600 hover:underline font-semibold">IVF success stories</Link> to see how we have helped thousands of families.
         </p>
 
-        <h3 className="text-2xl font-bold text-gray-900 mb-4">Meet Our Fertility Experts</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-4">Meet Our Fertility Experts Lajpat Nagar, Delhi</h3>
         <p className="mb-4">
-          The heart of any IVF centre in Delhi is its team of experts. These are the doctors, embryologists, and counselors who work together to turn a dream into reality. When you choose a fertility clinic Delhi, you are putting your trust in specialists who often have decades of experience and certifications from prestigious international bodies like the European Society of Human Reproduction and Embryology (ESHRE) or the Indian Fertility Society (IFS).
+          The heart of any IVF centre in Delhi is its team of experts. These are the doctors, embryologists, and counselors who work together to turn a dream into reality. When you choose a <Link href="/doctors" className="text-blue-600 hover:underline">fertility clinic Delhi</Link>, you are putting your trust in specialists who often have decades of experience and certifications from prestigious international bodies like the European Society of Human Reproduction and Embryology (ESHRE) or the Indian Fertility Society (IFS).
         </p>
         <p className="mb-6">
-          A senior <strong>IVF specialist Delhi</strong> will lead the medical team, creating a personalized roadmap for your treatment. These doctors, such as Dr. M. Gouri Devi or Dr. K.D. Nayar, are recognized leaders in the field, known for their skill in handling complex cases and their commitment to ethical care. Behind the scenes in the lab, highly trained embryologists act as "first nannies" to the embryos, monitoring their growth in a safe and sterile environment. This combination of clinical authority and laboratory precision is what sets the best clinics apart.
+          A senior <Link href="/doctors" className="text-blue-600 hover:underline font-semibold">IVF specialist Delhi</Link> will lead the medical team, creating a personalized roadmap for your treatment. These doctors, such as Dr. M. Gouri Devi or Dr. K.D. Nayar, are recognized leaders in the field, known for their skill in handling complex cases and their commitment to ethical care. Behind the scenes in the lab, highly trained embryologists act as "first nannies" to the embryos, monitoring their growth in a safe and sterile environment. This combination of clinical authority and laboratory precision is what sets the best clinics apart.
         </p>
 
         <div className="overflow-x-auto mb-8">

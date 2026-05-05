@@ -3,16 +3,21 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { ArrowRight, Calendar, Heart, Award, Shield, CheckCircle, Users, Clock, ChevronRight, Star, Phone, TrendingUp } from 'lucide-react';
 import { hospitalInfo, services, doctors, testimonials, whyChooseUs, stats } from '@/lib/data';
-import ServiceCard from '@/components/ServiceCard';
-import DoctorCard from '@/components/DoctorCard';
-import TestimonialCard from '@/components/TestimonialCard';
-import ServicesSection from '@/components/ServicesSection';
+
+// Dynamic imports for below-the-fold components
+const DoctorCard = dynamic(() => import('@/components/DoctorCard'), { ssr: true });
+const TestimonialCard = dynamic(() => import('@/components/TestimonialCard'), { ssr: true });
+const HealthcareServices2 = dynamic(() => import('@/components/HealthcareServices2'), { ssr: true });
+const HomeSeoContent = dynamic(() => import('@/components/HomeSeoContent'), { ssr: true });
+const ServiceCard = dynamic(() => import('@/components/ServiceCard'), { ssr: true });
+
 import HealthcareServices from '@/components/HealthcareServices';
-import HealthcareServices2 from '@/components/HealthcareServices2';
 import HeroSlider from '@/components/HeroSlider';
-import HomeSeoContent from '@/components/HomeSeoContent';
+
+const MapSection = dynamic(() => import('@/components/MapSection'), { ssr: true });
 
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -70,16 +75,16 @@ export default function HomePage() {
       {/* <ServicesSection /> */}
 
       {/* About Preview Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <span className="text-blue-600 font-semibold mb-2 block">ABOUT US</span>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Welcome to Pravi Global IVF & Fertility Center
+               Best IVF Centre in Lajpat Nagar, Delhi
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                At Pravi Global IVF and Fertility Center, we understand that the journey to parenthood can be challenging.
+                At Pravi Global IVF best ivf centre in lajpat nagar delhi, we understand that the journey to parenthood can be challenging.
                 Our team of experienced fertility specialists is dedicated to providing personalized, compassionate care
                 using the latest reproductive technologies.
               </p>
@@ -128,7 +133,7 @@ export default function HomePage() {
               <div className="relative h-96 lg:h-full min-h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/visit-clinic-bg.jpeg"
-                  alt="Pravi IVF Clinic"
+                  alt="Best IVF Centre in Delhi - Pravi Global IVF Clinic"
                   fill
                   className="object-cover"
                 />
@@ -150,11 +155,11 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-blue-600 font-semibold mb-2 block">OUR SERVICES</span>
-            <h2 className="section-heading">Comprehensive Fertility Solutions</h2>
+            <h2 className="section-heading">Fertility Solutions in Lajpat Nagar, Delhi</h2>
             <p className="section-subheading mt-4  mx-auto">
               Tailored treatments designed to meet your unique needs and maximize success
             </p>
@@ -175,7 +180,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-blue-600 font-semibold mb-2 block">WHY CHOOSE US</span>
@@ -208,11 +213,11 @@ export default function HomePage() {
       </section>
 
       {/* Doctors Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
+      <section className="py-12 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-blue-600 font-semibold mb-2 block">OUR EXPERTS</span>
-            <h2 className="section-heading">Meet Our Fertility Specialists</h2>
+            <h2 className="section-heading">Meet Our Best IVF Doctors in  Delhi</h2>
             <p className="section-subheading mt-4  mx-auto">
               Highly qualified doctors dedicated to helping you achieve your dream of parenthood
             </p>
@@ -253,12 +258,15 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Map Section */}
+      <MapSection />
+
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-12 md:p-16 shadow-2xl">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to Start Your Journey?
+              Ready to Start Your IVF Journey?
             </h2>
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
               Schedule a consultation with our fertility experts today and take the first step

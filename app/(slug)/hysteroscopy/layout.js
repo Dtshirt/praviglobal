@@ -1,23 +1,23 @@
 export const metadata = {
-  title: "Hysteroscopy Treatment in Delhi | Best IVF Center In Delhi",
+  title: "Hysteroscopy Treatment in Delhi | Expert Care | Pravi IVF",
   description:
-    "Get advanced hysteroscopy treatment in Delhi at Pravi Global IVF Polyclinic. As a trusted IVF Center in Lajpat Nagar, we offer safe minimally invasive procedures.",
+    "Advanced hysteroscopy treatment in Delhi at Pravi IVF. Minimally invasive surgery to diagnose and treat uterine issues. Book your consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/hysteroscopy",
+    canonical: "https://praviglobalivf.com/hysteroscopy/",
   },
   openGraph: {
-    title: "Hysteroscopy Treatment in Delhi | Best IVF Center In Delhi",
+    title: "Hysteroscopy Treatment in Delhi | Pravi Global IVF",
     description:
       "Pravi Global IVF Polyclinic offers diagnostic and operative hysteroscopy in Delhi to detect and safely treat uterine abnormalities, improving fertility outcomes.",
-    url: "https://praviglobalivf.com/hysteroscopy",
+    url: "https://praviglobalivf.com/hysteroscopy/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/hysteroscopy-treatment.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Hysteroscopy Treatment in Delhi - Pravi Global IVF Polyclinic",
@@ -28,10 +28,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hysteroscopy Treatment in Delhi | Best IVF Center In Delhi",
+    title: "Hysteroscopy Treatment in Delhi | Pravi Global IVF",
     description:
       "Looking for hysteroscopy in Delhi? Pravi Global IVF Polyclinic provides advanced diagnostic and therapeutic hysteroscopy to enhance fertility and reproductive health.",
-    images: ["/images/hysteroscopy-treatment.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         "description": "Leading IVF Center in Lajpat Nagar offering advanced, secure diagnostic and operative hysteroscopy treatments to correctly resolve uterine fertility issues.",
         "url": "https://praviglobalivf.com",
         "logo": "https://praviglobalivf.com/logo.png",
-        "image": "https://praviglobalivf.com/images/hysteroscopy-treatment.jpg",
+        "image": "https://praviglobalivf.com/images/og-image.jpg",
         "telephone": "+918009150040",
         "address": {
           "@type": "PostalAddress",
@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
         "@type": "MedicalWebPage",
         "name": "Hysteroscopy Treatment Guide",
         "description": "Comprehensive EEAT-compliant guide on diagnostic and operative hysteroscopy procedures, finding polyps, fibroids, and making the uterus ready for a healthy pregnancy.",
-        "url": "https://praviglobalivf.com/hysteroscopy",
+        "url": "https://praviglobalivf.com/hysteroscopy/",
         "about": {
           "@type": "MedicalProcedure",
           "name": "Hysteroscopy",

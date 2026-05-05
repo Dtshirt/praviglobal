@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Gallery | Pravi Global IVF Polyclinic Delhi",
+  title: "Photo Gallery | IVF Centre Facilities | Pravi IVF",
   description:
-    "Explore the gallery of Pravi Global IVF Polyclinic in Delhi. View our modern IVF lab, advanced fertility equipment, patient facilities, and the compassionate environment where dreams of parenthood come true.",
+    "Explore our modern IVF lab, advanced fertility equipment, and patient facilities at Pravi IVF. A glimpse into our compassionate care environment.",
   robots: {
     index: true,
     follow: true,
@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/gallery-cover.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Gallery - Pravi Global IVF Polyclinic Delhi",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Gallery | Pravi Global IVF Polyclinic Delhi",
     description:
       "View the gallery of Pravi Global IVF Polyclinic, Delhi — modern IVF labs, experienced doctors, advanced fertility equipment, and a caring environment for every couple.",
-    images: ["/images/gallery-cover.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 

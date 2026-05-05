@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 
+
+
 export default function PrivacyPolicy() {
   const [activeSection, setActiveSection] = useState(null);
   const [scrollProgress, setScrollProgress] = useState(0);

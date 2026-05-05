@@ -7,7 +7,7 @@ export default function DoctorCard({ doctor }) {
       <div className="relative h-[350px] overflow-hidden">
         <Image
           src={doctor.image}
-          alt={doctor.name}
+          alt={`${doctor.name} - Best IVF Doctor in Delhi at Pravi Global IVF`}
           // width={400}
           // height={100}
           fill

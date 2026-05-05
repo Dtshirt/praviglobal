@@ -16,15 +16,17 @@ export function BlogCard({ blog }) {
       {/* Blog Thumbnail */}
       <div className="relative h-56 w-full overflow-hidden">
         <Image
-          src={blog.featuredImage.url}              // Image URL or /public path
-          alt={blog.featuredImage.alt}
+          src={blog.featuredImage?.url || '/images/logo2.jpg'}              // Image URL or /public path
+          alt={blog.featuredImage?.alt || blog.title}
           fill
           className="object-cover group-hover:scale-110 transition-transform duration-300"
         />
 
-        <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-          {blog.categories[0]}
-        </div>
+        {blog.categories && blog.categories.length > 0 && (
+          <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+            {blog.categories[0]}
+          </div>
+        )}
       </div>
 
       <div className="p-6">

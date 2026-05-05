@@ -57,7 +57,7 @@ export default function OCIPage() {
     {
       name: "Dr. Monica Sachdev",
       title: "Senior IVF Specialist",
-      experience: "15+ years experience",
+      experience: "18+ years experience",
       role: "Medical Director",
       specialty: "IVF & Embryo Transfer Specialist",
       image: "/images/praviivf68adeb4f45d30_1756228431.png",
@@ -65,7 +65,7 @@ export default function OCIPage() {
     {
       name: "Dr. Ankita",
       title: "Clinical Director & Senior IVF Consultant",
-      experience: "15+ years experience",
+      experience: "6+ years experience",
       role: "Clinical Director",
       specialty: "IVF & Reproductive Medicine",
       image: "/images/dr-ankita.png",

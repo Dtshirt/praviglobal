@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { ArrowLeft, Calendar, Clock, Share2, Facebook, Twitter, Linkedin, Mail, ChevronRight, Tag } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, Share2, Facebook, Twitter, Linkedin, Mail, ChevronRight, Tag, FileX } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -53,7 +53,7 @@ export default function BlogClient({ blog, relatedBlogs }) {
                         <ArrowLeft className="w-5 h-5" /> Back to all articles
                     </a>
 
-                    <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
+                    <h1 className="text-3xl md:text-4xl font-bold mb-4">{blog.title}</h1>
 
                     <div className="flex gap-6">
                         <div className="flex items-center gap-2">
@@ -68,24 +68,48 @@ export default function BlogClient({ blog, relatedBlogs }) {
                             <Clock className="w-5 h-5" />
                             {blog.readingTime} min read
                         </div>
-                    </div>
+                </div>
                 </div>
             </section>
+
+            {/* Hero Image Section */}
+            <div className="max-w-7xl container mx-auto px-4 -mt-12 md:-mt-20">
+                <div className="relative aspect-video md:aspect-[21/9] bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl shadow-2xl overflow-hidden border-8 border-white">
+                    <Image
+                        src={blog.featuredImage?.url || "/images/logo2.jpg"}              // Image URL or /public path
+                        alt={blog.featuredImage?.alt || blog.title}
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                </div>
+            </div>
 
             <div className="container mx-auto px-4 py-12">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
                     {/* Main Content */}
-                    <article className="flex-1 bg-white rounded-2xl shadow-lg p-8 md:p-12">
-                         
-                        {/* Featured Image Placeholder */}
-                        <div className="relative h-80 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center mb-8 overflow-hidden">
-                            <Image
-                                src={blog.featuredImage.url}              // Image URL or /public path
-                                alt={blog.featuredImage.alt}
-                                fill
-                                className="object-cover group-hover:scale-110 transition-transform duration-300"
-                            />
-                        </div>
+                    <article className="flex-1 bg-white rounded-2xl shadow-lg min-w-0">
+                        <div className="p-5 md:p-12">
+                            {/* Breadcrumbs */}
+                            <nav className="flex mb-8 text-sm font-medium text-gray-500" aria-label="Breadcrumb">
+                            <ol className="inline-flex items-center space-x-1 md:space-x-3">
+                                <li className="inline-flex items-center">
+                                    <Link href="/" className="hover:text-blue-600">Home</Link>
+                                </li>
+                                <li>
+                                    <div className="flex items-center">
+                                        <ChevronRight className="w-4 h-4 mx-1" />
+                                        <Link href="/blogs" className="hover:text-blue-600">Blogs</Link>
+                                    </div>
+                                </li>
+                                <li aria-current="page">
+                                    <div className="flex items-center">
+                                        <ChevronRight className="w-4 h-4 mx-1" />
+                                        <span className="ml-1 text-gray-400 line-clamp-1">{blog.title}</span>
+                                    </div>
+                                </li>
+                            </ol>
+                        </nav>
 
                         {/* Article Content */}
                         <div
@@ -93,6 +117,25 @@ export default function BlogClient({ blog, relatedBlogs }) {
                             dangerouslySetInnerHTML={{ __html: blog.content }}
                         />
 
+                        {/* Author Box - EEAT Requirement */}
+                        <div className="mt-12 p-6 md:p-8 bg-blue-50 rounded-2xl flex flex-col md:flex-row items-center gap-6 border border-blue-100">
+                            <div className="relative w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-4 border-white shadow-md">
+                                <Image 
+                                    src="/images/doctors/dr-monica.jpg" 
+                                    alt="Dr. Monica Sachdev" 
+                                    fill 
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div>
+                                <p className="text-sm font-bold text-blue-600 uppercase tracking-wider mb-1">Medical Reviewer</p>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">Dr. Monica Sachdev</h3>
+                                <p className="text-gray-600 text-sm leading-relaxed">
+                                    Dr. Monica Sachdev is a leading IVF specialist in Delhi with over 18 years of experience in reproductive medicine. 
+                                    She is dedicated to providing evidence-based fertility care and has helped thousands of families achieve parenthood.
+                                </p>
+                            </div>
+                        </div>
 
                         {/* Tags */}
                         <div className="mt-12 pt-8 border-t border-gray-200">
@@ -107,7 +150,7 @@ export default function BlogClient({ blog, relatedBlogs }) {
                         </div>
 
                         {/* CTA Section */}
-                        <div className="mt-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white text-center">
+                        <div className="mt-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-6 md:p-8 text-white text-center">
                             <h3 className="text-2xl font-bold mb-3">Ready to Start Your Fertility Journey?</h3>
                             <p className="text-blue-100 mb-6">
                                 Our experienced team at Pravi IVF is here to support you every step of the way
@@ -121,7 +164,8 @@ export default function BlogClient({ blog, relatedBlogs }) {
                                 </a>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
                     {/* Sidebar */}
                     <aside className="lg:w-80 space-y-8">
@@ -191,19 +235,26 @@ export default function BlogClient({ blog, relatedBlogs }) {
                                 <div className="space-y-4">
                                     {relatedBlogs.map((relatedBlog) => (
                                         <a
-                                            key={relatedBlog.id}
-                                            href={`/blogs/${relatedBlog.slug}`}
+                                            key={relatedBlog._id}
+                                            href={`/${relatedBlog.slug}`}
                                             className="block group"
                                         >
                                             <div className="flex gap-3">
-                                                <div className="w-20 h-20 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center text-3xl flex-shrink-0">
-                                                    {relatedBlog.image}
+                                                <div className="w-20 h-20 rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center overflow-hidden flex-shrink-0 relative">
+                                                    <Image 
+                                                        src={relatedBlog.featuredImage?.url || "/images/logo2.jpg"} 
+                                                        alt={relatedBlog.title}
+                                                        fill
+                                                        className="object-cover"
+                                                    />
                                                 </div>
                                                 <div className="flex-1 min-w-0">
                                                     <h4 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 mb-1">
                                                         {relatedBlog.title}
                                                     </h4>
-                                                    <p className="text-xs text-gray-500">{relatedBlog.readTime}</p>
+                                                    <p className="text-xs text-gray-500">
+                                                        {new Date(relatedBlog.createdAt).toLocaleDateString()}
+                                                    </p>
                                                 </div>
                                             </div>
                                         </a>

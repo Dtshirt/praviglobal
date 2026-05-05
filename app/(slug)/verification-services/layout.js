@@ -1,13 +1,13 @@
 export const metadata = {
-  title: "Verification Services in Delhi | Pravi Global IVF Polyclinic",
+  title: "Verification Services in Delhi | Ethical Fertility | Pravi IVF",
   description:
-    "Pravi Global IVF Polyclinic provides secure and transparent verification services in Delhi for donor and surrogacy programs. Ensuring ethical, legal, and confidential fertility treatments for every patient.",
+    "Secure and transparent verification services in Delhi at Pravi IVF. Ensuring ethical and legal compliance for donor and surrogacy programs. Book a consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/verification-services",
+    canonical: "https://praviglobalivf.com/verification-services/",
   },
   openGraph: {
     title: "Verification Services in Delhi | Pravi Global IVF Polyclinic",
@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/verification-services.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Verification Services in Delhi - Pravi Global IVF Polyclinic",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Verification Services in Delhi | Pravi Global IVF Polyclinic",
     description:
       "Trusted verification services in Delhi at Pravi Global IVF Polyclinic for donors and surrogacy programs. Ensuring authenticity, compliance, and patient safety in fertility treatments.",
-    images: ["/images/verification-services.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 

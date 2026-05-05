@@ -18,8 +18,6 @@ import {
 } from 'lucide-react';
 
 const EggFreezingPage = () => {
-  const [activeTab, setActiveTab] = useState('overview');
-
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}

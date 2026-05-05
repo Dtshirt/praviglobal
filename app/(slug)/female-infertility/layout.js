@@ -1,23 +1,23 @@
 export const metadata = {
-  title: "Female Infertility Treatment in Delhi | Best IVF Center In Delhi",
+  title: "Female Infertility Treatment in Delhi | Expert Care | Pravi IVF",
   description:
-    "Pravi Global IVF Polyclinic offers advanced female infertility treatment in Delhi. As a trusted IVF Center in Lajpat Nagar, our specialists safely diagnose and treat PCOS, blocked tubes, and more.",
+    "Advanced female infertility treatment in Delhi at Pravi IVF. Expert diagnosis and care for PCOS, blocked tubes, and more. Book your consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/female-infertility",
+    canonical: "https://praviglobalivf.com/female-infertility/",
   },
   openGraph: {
-    title: "Female Infertility Treatment in Delhi | Best IVF Center In Delhi",
+    title: "Female Infertility Treatment in Delhi | Pravi Global IVF",
     description:
       "Get expert female infertility treatment in Delhi at Pravi Global IVF Polyclinic. Our doctors safely treat PCOS, hormonal imbalance, and reproductive health issues for successful conception.",
-    url: "https://praviglobalivf.com/female-infertility",
+    url: "https://praviglobalivf.com/female-infertility/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/female-infertility.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Female Infertility Treatment in Delhi - Pravi Global IVF Polyclinic",
@@ -28,10 +28,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Female Infertility Treatment in Delhi | Best IVF Center In Delhi",
+    title: "Female Infertility Treatment in Delhi | Pravi Global IVF",
     description:
       "Advanced female infertility treatment in Delhi by experienced fertility doctors at Pravi Global IVF Polyclinic. Diagnosis and treatment for PCOS, hormonal imbalance, and ovulation disorders.",
-    images: ["/images/female-infertility.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         "description": "Leading IVF Center in Lajpat Nagar specializing in comprehensive female infertility treatment, PCOS management, and advanced reproductive care.",
         "url": "https://praviglobalivf.com",
         "logo": "https://praviglobalivf.com/logo.png",
-        "image": "https://praviglobalivf.com/images/female-infertility.jpg",
+        "image": "https://praviglobalivf.com/images/og-image.jpg",
         "telephone": "+918009150040",
         "address": {
           "@type": "PostalAddress",
@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
         "@type": "MedicalWebPage",
         "name": "Female Infertility Treatment Guidelines & Options",
         "description": "Comprehensive EEAT-compliant guide on female infertility, common causes, modern diagnostic testing, and treatment options at Pravi Global IVF.",
-        "url": "https://praviglobalivf.com/female-infertility",
+        "url": "https://praviglobalivf.com/female-infertility/",
         "about": {
           "@type": "MedicalCondition",
           "name": "Female Infertility",

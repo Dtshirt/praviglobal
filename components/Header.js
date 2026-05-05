@@ -45,62 +45,62 @@ export default function Header() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'IVF Success', path: '/success-stories' },
-    { name: 'Services', path: '/services' },
-    { name: 'Doctors', path: '/doctors' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'Contact', path: '/contact' },
-    { name: 'International', path: '/international' }
+    { name: 'IVF Success', path: '/success-stories/' },
+    { name: 'Services', path: '/services/' },
+    { name: 'Doctors', path: '/doctors/' },
+    { name: 'Gallery', path: '/gallery/' },
+    { name: 'Contact', path: '/contact/' },
+    { name: 'International', path: '/international/' }
   ];
 
   const services = [
-    { name: 'Hormonal Test', path: '/hormonal-test', icon: FlaskConical },
-    { name: 'Follicular Monitoring', path: '/follicular-monitoring', icon: Microscope },
-    { name: 'Male Infertility', path: '/male-infertility', icon: Male },
-    { name: 'Female Infertility', path: '/female-infertility', icon: Female },
-    { name: 'IUI', path: '/iui', icon: Syringe },
-    { name: 'IVF', path: '/ivf', icon: FlaskRound },
-    { name: 'ICSI', path: '/icsi', icon: Dna },
-    { name: 'Donor Services', path: '/donor-services', icon: Users },
-    { name: 'Hysteroscopy', path: '/hysteroscopy', icon: Activity },
-    { name: 'Laparoscopy', path: '/laparoscopy', icon: Scissors },
-    { name: 'PGS/PGD', path: '/pgspgd', icon: Beaker },
-    { name: 'TESA & PESA', path: '/tesa-and-pesa', icon: TestTube2 },
-    { name: 'Surrogacy', path: '/surrogacy', icon: Baby },
-    { name: 'Verification Services', path: '/verification-services', icon: ClipboardList }
+    { name: 'Hormonal Test', path: '/hormonal-test/', icon: FlaskConical },
+    { name: 'Follicular Monitoring', path: '/follicular-monitoring/', icon: Microscope },
+    { name: 'Male Infertility', path: '/male-infertility/', icon: Male },
+    { name: 'Female Infertility', path: '/female-infertility/', icon: Female },
+    { name: 'IUI', path: '/iui/', icon: Syringe },
+    { name: 'IVF', path: '/ivf/', icon: FlaskRound },
+    { name: 'ICSI', path: '/icsi/', icon: Dna },
+    { name: 'Donor Services', path: '/donor-services/', icon: Users },
+    { name: 'Hysteroscopy', path: '/hysteroscopy/', icon: Activity },
+    { name: 'Laparoscopy', path: '/laparoscopy/', icon: Scissors },
+    { name: 'PGS/PGD', path: '/pgspgd/', icon: Beaker },
+    { name: 'TESA & PESA', path: '/tesa-and-pesa/', icon: TestTube2 },
+    { name: 'Surrogacy', path: '/surrogacy/', icon: Baby },
+    { name: 'Verification Services', path: '/verification-services/', icon: ClipboardList }
   ];
 
   const successCategories = [
-    { name: 'IVF Success Story', path: '/success-stories/ivf' },
-    { name: 'IUI Success Story', path: '/success-stories/iui' },
-    { name: 'ICSI Success Story', path: '/success-stories/icsi' },
-    { name: 'Low AMH Success Story', path: '/success-stories/low-amh' },
-    { name: 'Surrogacy Success Story', path: '/success-stories/surrogacy' },
-    { name: 'Block Fallopian Tube Success', path: '/success-stories/blocked-fallopian-tube' },
-    { name: 'Low Sperm Count Success', path: '/success-stories/low-sperm-count' },
-    { name: 'Nil Sperm Count Success', path: '/success-stories/nil-sperm-count' },
-    { name: 'By TESA and PESA', path: '/success-stories/tesa-pesa' },
-    { name: 'International Patient Success', path: '/success-stories/international' }
+    { name: 'IVF Success Story', path: '/success-stories/ivf/' },
+    { name: 'IUI Success Story', path: '/success-stories/iui/' },
+    { name: 'ICSI Success Story', path: '/success-stories/icsi/' },
+    { name: 'Low AMH Success Story', path: '/success-stories/low-amh/' },
+    { name: 'Surrogacy Success Story', path: '/success-stories/surrogacy/' },
+    { name: 'Block Fallopian Tube Success', path: '/success-stories/blocked-fallopian-tube/' },
+    { name: 'Low Sperm Count Success', path: '/success-stories/low-sperm-count/' },
+    { name: 'Nil Sperm Count Success', path: '/success-stories/nil-sperm-count/' },
+    { name: 'By TESA and PESA', path: '/success-stories/tesa-pesa/' },
+    { name: 'International Patient Success', path: '/success-stories/international/' }
   ];
 
   const International = [
-    { name: 'Iran', path: '/iran', icon: Globe },
-    { name: 'India', path: '/india', icon: Globe },
-    { name: 'Ethiopia', path: '/ethiopia', icon: Globe },
-    { name: 'Canada', path: '/canada', icon: Globe },
-    { name: 'Cameroon', path: '/cameroon', icon: Globe },
-    { name: 'Australia', path: '/australia', icon: Globe },
-    { name: 'Afghanistan', path: '/afghanistan', icon: Globe },
-    { name: 'Sri Lanka', path: '/sri-lanka', icon: Globe }, 
-    { name: 'Oman', path: '/oman', icon: Globe },
-    { name: 'Myanmar', path: '/myanmar', icon: Globe },
-    { name: 'Maldives', path: '/maldives', icon: Globe },
-    { name: 'Kazakhstan', path: '/kazakhstan', icon: Globe },
-    { name: 'Iraq', path: '/iraq', icon: Globe },
-    { name: 'Yemen', path: '/yemen', icon: Globe },
-    { name: 'Uzbekistan', path: '/uzbekistan', icon: Globe },
-    { name: 'United States', path: '/united-states', icon: Globe },
-    { name: 'Tajikistan', path: '/tajikistan', icon: Globe }
+    { name: 'Iran', path: '/iran/', icon: Globe },
+    { name: 'India', path: '/india/', icon: Globe },
+    { name: 'Ethiopia', path: '/ethiopia/', icon: Globe },
+    { name: 'Canada', path: '/canada/', icon: Globe },
+    { name: 'Cameroon', path: '/cameroon/', icon: Globe },
+    { name: 'Australia', path: '/australia/', icon: Globe },
+    { name: 'Afghanistan', path: '/afghanistan/', icon: Globe },
+    { name: 'Sri Lanka', path: '/sri-lanka/', icon: Globe }, 
+    { name: 'Oman', path: '/oman/', icon: Globe },
+    { name: 'Myanmar', path: '/myanmar/', icon: Globe },
+    { name: 'Maldives', path: '/maldives/', icon: Globe },
+    { name: 'Kazakhstan', path: '/kazakhstan/', icon: Globe },
+    { name: 'Iraq', path: '/iraq/', icon: Globe },
+    { name: 'Yemen', path: '/yemen/', icon: Globe },
+    { name: 'Uzbekistan', path: '/uzbekistan/', icon: Globe },
+    { name: 'United States', path: '/united-states/', icon: Globe },
+    { name: 'Tajikistan', path: '/tajikistan/', icon: Globe }
   ];
 
   return (
@@ -129,7 +129,7 @@ export default function Header() {
       {/* Main Header */}
       <header
         className={`sticky top-0 z-50 transition-all duration-300 text-white ${
-          scrolled ? 'bg-[#005353] shadow-lg text-white' : 'bg-blue-900 backdrop-blur-sm'
+          scrolled ? 'bg-[#005a5a] shadow-lg text-white' : 'bg-[#004242] backdrop-blur-md'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
@@ -149,7 +149,7 @@ export default function Header() {
               {navLinks.map((link) =>
                 link.name === 'Services' ? (
                   <div key={link.name} className="relative group">
-                    <Link href="/services">
+                    <Link href="/services/">
                       <button className="flex items-center text-gray-50 hover:text-white font-medium transition-colors relative">
                         Services
                         <ChevronDown className="h-4 w-4 ml-1" />
@@ -174,7 +174,7 @@ export default function Header() {
                   </div>
                 ) : link.name === 'IVF Success' ? (
                   <div key={link.name} className="relative group">
-                    <Link href="/success-stories">
+                    <Link href="/success-stories/">
                       <button className="flex items-center text-gray-50 hover:text-white font-medium transition-colors relative">
                         IVF Success
                         <ChevronDown className="h-4 w-4 ml-1" />
@@ -183,7 +183,7 @@ export default function Header() {
                     <div className="absolute left-0 -mt-1 w-[350px] bg-white shadow-lg rounded-xl border border-gray-100 opacity-0 group-hover:opacity-100 group-hover:translate-y-1 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
                       <ul className="flex flex-col py-2">
                         <li className="px-4 py-2 border-b border-gray-50 pb-2 mb-1">
-                           <Link href="/success-stories" className="text-sm font-bold text-teal-700 hover:text-teal-800">
+                           <Link href="/success-stories/" className="text-sm font-bold text-teal-700 hover:text-teal-800">
                              All Success Stories
                            </Link>
                         </li>
@@ -203,7 +203,7 @@ export default function Header() {
                   </div>
                 ) : link.name === 'International' ? (
                   <div key={link.name} className="relative group">
-                    <Link href="/international">
+                    <Link href="/international/">
                       <button className="flex items-center text-gray-50 hover:text-white font-medium transition-colors relative">
                         International
                         <ChevronDown className="h-4 w-4 ml-1" />
@@ -216,14 +216,14 @@ export default function Header() {
                         {/* NRI & OCI */}
                         <div className="grid grid-cols-2 gap-2">
                           <Link
-                            href="/nri"
+                            href="/nri/"
                             className="flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-gray-700 bg-green-100 hover:bg-green-200 hover:text-green-700 transition-colors rounded-lg"
                           >
                             <UserCheck className="h-4 w-4 text-green-600" />
                             NRI Patients
                           </Link>
                           <Link
-                            href="/oci"
+                            href="/oci/"
                             className="flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-gray-700 bg-green-100 hover:bg-green-200 hover:text-green-700 transition-colors rounded-lg"
                           >
                             <BadgeCheck className="h-4 w-4 text-green-600" />
@@ -270,7 +270,7 @@ export default function Header() {
             </nav>
 
             {/* CTA Button */}
-            <Link href="/book-appointment" className="hidden md:block btn-primary py-2 px-10 text-white">
+            <Link href="/book-appointment/" className="hidden md:block btn-primary py-2 px-10 text-white">
               Book Appointment
             </Link>
 
@@ -330,7 +330,7 @@ export default function Header() {
                       {ivfSuccessOpen && (
                         <div className="pl-4 mt-2 flex flex-col space-y-2">
                           <Link
-                            href="/success-stories"
+                            href="/success-stories/"
                             className="flex items-center gap-2 text-teal-300 hover:text-teal-100 transition-colors text-sm font-semibold mb-1"
                             onClick={() => setMobileMenuOpen(false)}
                           >
@@ -382,7 +382,7 @@ export default function Header() {
                           {/* NRI & OCI */}
                           <div className="pt-2 border-t border-gray-700 grid grid-cols-2 gap-x-3 gap-y-2">
                             <Link
-                              href="/nri"
+                              href="/nri/"
                               className="flex items-center gap-2 text-gray-50 hover:text-green-400 transition-colors text-sm"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -390,7 +390,7 @@ export default function Header() {
                               NRI
                             </Link>
                             <Link
-                              href="/oci"
+                              href="/oci/"
                               className="flex items-center gap-2 text-gray-50 hover:text-green-400 transition-colors text-sm"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -413,7 +413,7 @@ export default function Header() {
                   )
                 )}
                 <Link
-                  href="/book-appointment"
+                  href="/book-appointment/"
                   className="btn-primary text-center py-2 py-10"
                   onClick={() => setMobileMenuOpen(false)}
                 >

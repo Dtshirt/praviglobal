@@ -25,7 +25,7 @@ export default function TestimonialCard({ testimonial }) {
             fill
             className="object-cover"
           />
-        </div> 
+        </div>
         <div>
           <p className="font-semibold text-gray-900">{testimonial.name}</p>
           <p className="text-sm text-gray-600">{testimonial.location}</p>

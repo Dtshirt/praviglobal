@@ -1,23 +1,23 @@
 export const metadata = {
-  title: "IVF Treatment for International Patients from Afghanistan | Pravi Global IVF Polyclinic Delhi",
+  title: "IVF Treatment in Delhi for Afghanistan Patients | Pravi IVF",
   description:
-    "Pravi Global IVF Polyclinic welcomes international patients from Afghanistan for world-class IVF and fertility treatments in Delhi, India. Affordable IVF, ICSI, and egg donation with high success rates and expert care.",
+    "Seeking the best IVF treatment in Delhi? Pravi IVF offers affordable fertility solutions for Afghanistan patients with high success rates and expert care.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/afghanistan",
+    canonical: "https://praviglobalivf.com/afghanistan/",
   },
   openGraph: {
     title: "IVF Treatment for Patients from Afghanistan | Pravi Global IVF Polyclinic Delhi",
     description:
-      "Looking for affordable IVF in India from Afghanistan? Pravi Global IVF Polyclinic provides international fertility care with advanced IVF, ICSI, and surrogacy services for Afghanistanian couples.",
-    url: "https://praviglobalivf.com/afghanistan",
+      "Looking for affordable IVF in India from Afghanistan? Pravi Global IVF Polyclinic provides international fertility care with advanced IVF, ICSI, and surrogacy services for Afghan couples.",
+    url: "https://praviglobalivf.com/afghanistan/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/ivf-for-Afghanistan-patients.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "IVF Treatment for Afghanistan Patients - Pravi Global IVF Polyclinic Delhi",

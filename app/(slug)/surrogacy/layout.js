@@ -1,13 +1,13 @@
 export const metadata = {
-  title: "Surrogacy Centre in Delhi | Pravi Global IVF Polyclinic",
+  title: "Surrogacy Treatment in Delhi | Ethical Programs | Pravi IVF",
   description:
-    "Pravi Global IVF Polyclinic is a trusted surrogacy centre in Delhi offering legal, ethical, and medically advanced surrogacy programs. Get complete support from expert fertility specialists and experienced surrogates.",
+    "Trusted surrogacy centre in Delhi offering ethical and legal programs. Expert guidance and support for your journey to parenthood. Book a consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/surrogacy",
+    canonical: "https://praviglobalivf.com/surrogacy/",
   },
   openGraph: {
     title: "Surrogacy Centre in Delhi | Pravi Global IVF Polyclinic",
@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/surrogacy-delhi.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Surrogacy Centre in Delhi - Pravi Global IVF Polyclinic",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Surrogacy Centre in Delhi | Pravi Global IVF Polyclinic",
     description:
       "Explore safe and legal surrogacy programs in Delhi at Pravi Global IVF Polyclinic. Experienced fertility doctors and compassionate surrogate support to help you build your family.",
-    images: ["/images/surrogacy-delhi.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 

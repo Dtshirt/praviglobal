@@ -1,13 +1,13 @@
 export const metadata = {
-  title: "Laparoscopy Treatment in Delhi | Pravi Global IVF Polyclinic",
+  title: "Laparoscopy Treatment in Delhi | Expert Surgery | Pravi IVF",
   description:
-    "Pravi Global IVF Polyclinic offers advanced laparoscopy treatment in Delhi for diagnosing and treating infertility, endometriosis, fibroids, and other reproductive issues with minimally invasive surgical techniques.",
+    "Advanced laparoscopy treatment in Delhi at Pravi IVF. Minimally invasive surgery for infertility, endometriosis, and more. Book your consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/laparoscopy",
+    canonical: "https://praviglobalivf.com/laparoscopy/",
   },
   openGraph: {
     title: "Laparoscopy Treatment in Delhi | Pravi Global IVF Polyclinic",
@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/laparoscopy-treatment.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Laparoscopy Treatment in Delhi - Pravi Global IVF Polyclinic",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Laparoscopy Treatment in Delhi | Pravi Global IVF Polyclinic",
     description:
       "Advanced laparoscopy treatment in Delhi at Pravi Global IVF Polyclinic. Diagnose and treat fertility issues, cysts, and endometriosis with minimally invasive procedures.",
-    images: ["/images/laparoscopy-treatment.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 

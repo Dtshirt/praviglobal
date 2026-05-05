@@ -4,50 +4,34 @@ import { Award, GraduationCap, Briefcase, Star, ArrowRight } from 'lucide-react'
 import { doctors } from '@/lib/data';
 import DoctorCard from '@/components/DoctorCard';
 
-export const metadata = {
-  title: "Our IVF Specialists in Delhi | Best Fertility Doctors - Pravi Global IVF Polyclinic",
-  description:
-    "Meet the top IVF specialists in Delhi at Pravi Global IVF Polyclinic — Dr. Monica Sachdev, Dr. Rit Shukla, and Dr. Sakshi Tandon. Experienced fertility experts offering advanced IVF, ICSI, and reproductive care.",
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: "https://praviglobalivf.com/doctors/",
-  },
-  openGraph: {
-    title: "Our IVF Specialists in Delhi | Best Fertility Doctors - Pravi Global IVF Polyclinic",
-    description:
-      "Know your fertility experts — Dr. Monica Sachdev, Dr. Rit Shukla, and Dr. Sakshi Tandon at Pravi Global IVF Polyclinic, Delhi. Leading IVF and reproductive medicine professionals with 18+ years of experience.",
-    url: "https://praviglobalivf.com/doctors/",
-    siteName: "Pravi Global IVF Polyclinic",
-    images: [
-      {
-        url: "/images/ivf-doctors-delhi.jpg",
-        width: 1200,
-        height: 630,
-        alt: "IVF Specialists in Delhi - Pravi Global IVF Polyclinic",
-      },
-    ],
-    locale: "en_IN",
-    type: "profile",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Our IVF Specialists in Delhi | Best Fertility Doctors - Pravi Global IVF Polyclinic",
-    description:
-      "Meet our expert fertility doctors — Dr. Monica Sachdev, Dr. Rit Shukla, and Dr. Sakshi Tandon. Top IVF specialists in Delhi with years of experience in assisted reproduction.",
-    images: ["/images/ivf-doctors-delhi.jpg"],
-  },
-};
-
-
 export default function DoctorsPage() {
+  const physicianSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "Pravi Global IVF Polyclinic",
+    "medicalSpecialty": "Reproductive Medicine",
+    "employee": doctors.map(doctor => ({
+      "@type": "Physician",
+      "name": doctor.name,
+      "medicalSpecialty": doctor.specialty,
+      "description": doctor.qualification,
+      "image": `https://praviglobalivf.com${doctor.image}`,
+      "affiliation": {
+        "@type": "MedicalOrganization",
+        "name": "Pravi Global IVF Polyclinic"
+      }
+    }))
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianSchema) }}
+      />
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden" style={{backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
-      <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
+      <section className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden" style={{ backgroundImage: 'url("/images/ivf-treatment.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='w-full h-full top-0 absolute z-10 bg-gradient-to-r from-blue-600/70 to-blue-800/70' />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2pv4h2v-4pv-2h-4zm0-30V0h-2v4h-4v2pv4h2V6pV4h-4zM6 34v-4pv4H0v2pv4h2v-4pv-2H6zM6 4V0pv4H0v2pv4h2V6pV4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
@@ -81,7 +65,7 @@ export default function DoctorsPage() {
             {doctors.map((doctor, idx) => {
               const isEven = idx % 2 === 0;
               return (
-                <div 
+                <div
                   key={doctor.id}
                   className={`grid lg:grid-cols-5 gap-8 items-start ${isEven ? '' : 'lg:grid-flow-dense'}`}
                 >
@@ -90,7 +74,7 @@ export default function DoctorsPage() {
                       <div className="relative h-112 rounded-2xl overflow-hidden shadow-2xl">
                         <Image
                           src={doctor.image}
-                          alt={doctor.name} 
+                          alt={doctor.name}
                           width={500}
                           height={400}
                           className="object-cover"
@@ -151,9 +135,9 @@ export default function DoctorsPage() {
                       <div className="mb-6">
                         <p className="font-semibold text-gray-900 mb-3">About</p>
                         <p
-  className="text-gray-600 leading-relaxed"
-  dangerouslySetInnerHTML={{ __html: doctor.bio }}
-/>
+                          className="text-gray-600 leading-relaxed"
+                          dangerouslySetInnerHTML={{ __html: doctor.bio }}
+                        />
                       </div>
 
                       <div className="mb-6">

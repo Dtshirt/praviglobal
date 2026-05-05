@@ -1,13 +1,13 @@
 export const metadata = {
-  title: "Donor Services in Delhi | Egg, Sperm & Embryo Donation - Pravi Global IVF Polyclinic",
+  title: "Donor Services in Delhi | Egg & Sperm Donation | Pravi IVF",
   description:
-    "Pravi Global IVF Polyclinic offers trusted donor services in Delhi, including egg donation, sperm donation, and embryo donation. Our ethical and confidential donor programs help couples achieve their dream of parenthood safely.",
+    "Trusted donor services in Delhi at Pravi IVF. Ethical egg, sperm, and embryo donation programs with complete confidentiality. Book your consultation today.",
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://praviglobalivf.com/donor-services",
+    canonical: "https://praviglobalivf.com/donor-services/",
   },
   openGraph: {
     title: "Donor Services in Delhi | Egg, Sperm & Embryo Donation - Pravi Global IVF Polyclinic",
@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Pravi Global IVF Polyclinic",
     images: [
       {
-        url: "/images/donor-services.jpg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Donor Services in Delhi - Pravi Global IVF Polyclinic",
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Donor Services in Delhi | Egg, Sperm & Embryo Donation - Pravi Global IVF Polyclinic",
     description:
       "Ethical and confidential donor services in Delhi including egg, sperm, and embryo donation at Pravi Global IVF Polyclinic. Helping couples achieve parenthood with expert fertility care.",
-    images: ["/images/donor-services.jpg"],
+    images: ["/images/og-image.jpg"],
   },
 };
 
