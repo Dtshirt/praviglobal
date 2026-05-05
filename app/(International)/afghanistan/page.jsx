@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Check, Globe, FileText, Plane, Home, Phone, Mail, MapPin, Calendar, Users, Award, Heart, Loader2, CheckCircle } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
