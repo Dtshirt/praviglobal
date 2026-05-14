@@ -41,6 +41,12 @@ export default function RootLayout({ children }) {
     "@graph": [
       {
         "@type": "MedicalClinic",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "248",
+                "bestRating": "5"
+              },
         "name": "Pravi Global IVF Polyclinic",
         "description": "Leading IVF Center in Lajpat Nagar offering advanced Intracytoplasmic Sperm Injection (ICSI) for overcoming severe male factor infertility.",
         "url": "https://praviglobalivf.com",

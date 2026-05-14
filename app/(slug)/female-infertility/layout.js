@@ -41,6 +41,12 @@ export default function RootLayout({ children }) {
     "@graph": [
       {
         "@type": "MedicalClinic",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "248",
+                "bestRating": "5"
+              },
         "name": "Pravi Global IVF Polyclinic",
         "description": "Leading IVF Center in Lajpat Nagar specializing in comprehensive female infertility treatment, PCOS management, and advanced reproductive care.",
         "url": "https://praviglobalivf.com",

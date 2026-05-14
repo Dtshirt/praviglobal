@@ -100,7 +100,7 @@ export default function Footer() {
             <p className="text-lg font-semibold mb-6">Our Services</p>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service}>
+                <li key={service.url}>
                   <Link
                     href={service.url}
                     className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group"

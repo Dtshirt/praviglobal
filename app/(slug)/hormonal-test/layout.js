@@ -41,6 +41,12 @@ export default function RootLayout({ children }) {
     "@graph": [
       {
         "@type": "MedicalClinic",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "248",
+                "bestRating": "5"
+              },
         "@id": "https://praviglobalivf.com/#clinic",
         "name": "Pravi Global IVF Polyclinic",
         "description": "Best IVF Center In Delhi specialized in comprehensive fertility treatments including advanced hormonal testing.",

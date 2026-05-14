@@ -62,6 +62,21 @@ const nextConfig = {
       }
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.praviglobalivf.com',
+          },
+        ],
+        destination: 'https://praviglobalivf.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },

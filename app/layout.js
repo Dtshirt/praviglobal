@@ -74,7 +74,7 @@ export const metadata = {
 const mapSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
-  "name": "Pravi Global IVF Polyclinic",
+  "name": hospitalInfo.name,
   "alternateName": "Pravi Global IVF & Fertility Center",
   "url": "https://praviglobalivf.com",
   "logo": "https://praviglobalivf.com/logo.png",
@@ -84,8 +84,8 @@ const mapSchema = {
     "name": "Pravi Global IVF Polyclinic Front View"
   },
   "description": "Pravi Global IVF Polyclinic is a premier fertility center in Delhi offering IVF, ICSI, IUI, and advanced reproductive care.",
-  "email": "info@praviglobalivf.in",
-  "telephone": "+91-8009150040",
+  "email": hospitalInfo.email,
+  "telephone": hospitalInfo.phone,
   "priceRange": "₹₹₹",
   "hasMap": "https://maps.app.goo.gl/79RLa9txkQWQ58Jg6",
   "address": {
@@ -114,16 +114,16 @@ const mapSchema = {
   "medicalSpecialty": "ReproductiveEndocrinology",
   "knowsAbout": ["IVF", "ICSI", "IUI", "Surrogacy", "Egg Freezing"],
   "sameAs": [
-    "https://www.facebook.com/www.praviivf.in/",
-    "https://www.instagram.com/ivfpravi/",
-    "https://www.youtube.com/@ivfcentre1Msubscriber",
+    hospitalInfo.social.facebook,
+    hospitalInfo.social.instagram,
+    hospitalInfo.social.youtube,
     "https://www.practo.com/delhi/clinic/pravi-global-ivf-polyclinic-lajpat-nagar-4"
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "157",
-    "bestRating": "5"
+    "ratingValue": hospitalInfo.rating.value.toString(),
+    "reviewCount": hospitalInfo.rating.count.toString(),
+    "bestRating": hospitalInfo.rating.best.toString()
   },
   "review": [
     {
