@@ -22,7 +22,8 @@ export async function POST(req) {
         const Mails = [
           'info@praviivf.in',
           'ritshukla@gmail.com',
-          'deepakbaradwaj933@gmail.com'
+          'deepakbaradwaj933@gmail.com',
+          'praviglobalinfo@praviivf.in'
         ]
 
     await transporter.sendMail({

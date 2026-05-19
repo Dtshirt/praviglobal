@@ -1,12 +1,12 @@
 export const metadata = {
-  title: 'Electronic Witness System (EWS) in IVF | IVF Lab Safety | Pravi IVF',
-  description: 'The Electronic Witness System (EWS) is a safety technology in IVF labs to prevent gamete or embryo mix-ups. Learn how EWS ensures 100% accuracy at Pravi IVF.',
+  title: 'Electronic Witness System in Lajpat Nagar Delhi | Pravi IVF',
+  description: 'Advanced Electronic Witness System (EWS) in Lajpat Nagar, Delhi at Pravi IVF. Guaranteeing 100% lab security, tracking, and specimen accuracy throughout your journey.',
   alternates: {
     canonical: 'https://praviglobalivf.com/electronic-witness-system',
   },
   openGraph: {
-    title: 'Electronic Witness System (EWS) in IVF | Pravi IVF',
-    description: 'Ensure 100% safety and traceability in your IVF journey with our Electronic Witness System. Digital double-checks for your peace of mind.',
+    title: 'Electronic Witness System in Lajpat Nagar Delhi | Pravi IVF',
+    description: 'Advanced Electronic Witness System (EWS) in Lajpat Nagar, Delhi at Pravi IVF. Guaranteeing 100% lab security, tracking, and specimen accuracy throughout your journey.',
     url: 'https://praviglobalivf.com/electronic-witness-system',
     siteName: 'Pravi Global IVF',
     locale: 'en_IN',

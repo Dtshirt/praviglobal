@@ -153,7 +153,7 @@ export default function BlogClient({ blog, relatedBlogs }) {
                         <div className="mt-12 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-6 md:p-8 text-white text-center">
                             <h3 className="text-2xl font-bold mb-3">Ready to Start Your Fertility Journey?</h3>
                             <p className="text-blue-100 mb-6">
-                                Our experienced team at Pravi IVF is here to support you every step of the way
+                                Our friendly team at Pravi IVF is here to stand by you, listen to your story, and help you through every single step.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="https://praviglobalivf.com/book-appointment" className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors">

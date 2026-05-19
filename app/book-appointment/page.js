@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { Calendar, Clock, User, Phone, Mail, MessageSquare, CheckCircle, AlertCircle } from 'lucide-react';
 import { services, doctors } from '@/lib/data';
- 
 
 
 export default function BookAppointmentPage() {

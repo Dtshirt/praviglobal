@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Book Appointment | Best IVF Centre in Delhi | Pravi IVF",
-  description: "Schedule your consultation with top fertility specialists at Pravi IVF. Take the first step towards your parenthood journey today.",
+  title: "Book Appointment | Best IVF Centre in Lajpat Nagar Delhi | Pravi IVF",
+  description: "Schedule your private consultation with top fertility specialists at Pravi IVF in Lajpat Nagar, Delhi. Take your first confident step towards parenthood today.",
   alternates: {
     canonical: "https://praviglobalivf.com/book-appointment/",
   },

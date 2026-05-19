@@ -294,3 +294,17 @@
     margin: 20px 0;
 }
 
+/* Premium High-Contrast Backlink Styling Overrides */
+a.text-blue-600, a.text-rose-600, .blog-content a {
+    color: #e11d48 !important; /* Premium Vibrant Rose-600 */
+    font-weight: 700 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 4px !important;
+    text-decoration-thickness: 2px !important;
+}
+
+a.text-blue-600:hover, a.text-rose-600:hover, .blog-content a:hover {
+    color: #be123c !important; /* Deep Premium Rose-700 */
+    text-decoration-style: solid !important;
+}
+

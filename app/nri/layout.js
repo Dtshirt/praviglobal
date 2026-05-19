@@ -1,7 +1,6 @@
 export const metadata = {
-  title: "NRI Fertility Treatment in Delhi | IVF for NRI Couples - Pravi Global IVF",
-  description:
-    "Trusted IVF care for NRI couples in India. Pravi Global IVF Polyclinic offers advanced fertility treatments including IVF, ICSI, egg donation with online consultation, personalized plans, and dedicated NRI patient support in Delhi.",
+  title: "NRI Fertility Treatment in Lajpat Nagar Delhi | Pravi IVF",
+  description: "Trusted IVF care for NRI couples in India. Pravi Global IVF in Lajpat Nagar, Delhi offers advanced fertility treatments, online consultations, and priority coordinator support.",
   robots: {
     index: true,
     follow: true,
@@ -10,9 +9,8 @@ export const metadata = {
     canonical: "https://praviglobalivf.com/nri",
   },
   openGraph: {
-    title: "NRI Fertility Treatment in Delhi | IVF for NRI Couples - Pravi Global IVF",
-    description:
-      "Planning fertility treatment in India? Pravi Global IVF provides advanced IVF, ICSI, and reproductive care with dedicated support for NRI patients — online consultations, short-cycle IVF, and priority appointments.",
+    title: "NRI Fertility Treatment in Lajpat Nagar Delhi | Pravi IVF",
+    description: "Trusted IVF care for NRI couples in India. Pravi Global IVF in Lajpat Nagar, Delhi offers advanced fertility treatments, online consultations, and priority coordinator support.",
     url: "https://praviglobalivf.com/nri",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
@@ -28,9 +26,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NRI Fertility Treatment in Delhi | IVF for NRI Couples - Pravi Global IVF",
-    description:
-      "Pravi Global IVF offers world-class fertility treatments for NRI couples. Online consultations, short-cycle IVF planning, and dedicated patient coordinators for a stress-free journey.",
+    title: "NRI Fertility Treatment in Lajpat Nagar Delhi | Pravi IVF",
+    description: "Trusted IVF care for NRI couples in India. Pravi Global IVF in Lajpat Nagar, Delhi offers advanced fertility treatments, online consultations, and priority coordinator support.",
     images: ["/images/og-image.jpg"],
   },
 };

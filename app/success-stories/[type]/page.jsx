@@ -92,7 +92,7 @@ export default async function SuccessStoryDynamicPage({ params }) {
         {/* Bottom CTA */}
         <div className="mt-20 max-w-3xl mx-auto bg-white rounded-3xl p-8 sm:p-12 text-center shadow-xl border border-slate-100">
            <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to start your journey?</h2>
-           <p className="text-slate-600 text-lg mb-8">Consult with our expert doctors to understand your best treatment options.</p>
+           <p className="text-slate-600 text-lg mb-8">Book a private chat with our doctors to talk about what's going on and discover the simplest options for you.</p>
            <Link href="/book-appointment" className="inline-block bg-teal-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-teal-700 transition shadow-md hover:shadow-lg">
               Book a Consultation
            </Link>

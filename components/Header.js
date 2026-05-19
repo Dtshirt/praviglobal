@@ -46,7 +46,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'IVF Success', path: '/success-stories/' },
-    { name: 'Services', path: '/services/' },
+    { name: 'Services', path: '/fertility-services-in-lajpat-nagar-delhi/' },
     { name: 'Doctors', path: '/doctors/' },
     { name: 'Gallery', path: '/gallery/' },
     { name: 'Contact', path: '/contact/' },
@@ -54,20 +54,20 @@ export default function Header() {
   ];
 
   const services = [
-    { name: 'Hormonal Test', path: '/hormonal-test/', icon: FlaskConical },
-    { name: 'Follicular Monitoring', path: '/follicular-monitoring/', icon: Microscope },
-    { name: 'Male Infertility', path: '/male-infertility/', icon: Male },
-    { name: 'Female Infertility', path: '/female-infertility/', icon: Female },
-    { name: 'IUI', path: '/iui/', icon: Syringe },
-    { name: 'IVF', path: '/ivf/', icon: FlaskRound },
-    { name: 'ICSI', path: '/icsi/', icon: Dna },
-    { name: 'Donor Services', path: '/donor-services/', icon: Users },
-    { name: 'Hysteroscopy', path: '/hysteroscopy/', icon: Activity },
-    { name: 'Laparoscopy', path: '/laparoscopy/', icon: Scissors },
-    { name: 'PGS/PGD', path: '/pgspgd/', icon: Beaker },
-    { name: 'TESA & PESA', path: '/tesa-and-pesa/', icon: TestTube2 },
-    { name: 'Surrogacy', path: '/surrogacy/', icon: Baby },
-    { name: 'Verification Services', path: '/verification-services/', icon: ClipboardList }
+    { name: 'Hormonal Test', path: '/hormonal-test-in-lajpat-nagar-delhi/', icon: FlaskConical },
+    { name: 'Follicular Monitoring', path: '/follicular-monitoring-in-lajpat-nagar-delhi/', icon: Microscope },
+    { name: 'Male Infertility', path: '/male-infertility-treatment-in-lajpat-nagar-delhi/', icon: Male },
+    { name: 'Female Infertility', path: '/female-infertility-treatment-in-lajpat-nagar-delhi/', icon: Female },
+    { name: 'IUI', path: '/iui-treatment-in-lajpat-nagar-delhi/', icon: Syringe },
+    { name: 'IVF', path: '/ivf-treatment-in-lajpat-nagar-delhi/', icon: FlaskRound },
+    { name: 'ICSI', path: '/icsi-treatment-in-lajpat-nagar-delhi/', icon: Dna },
+    { name: 'Donor Services', path: '/donor-services-in-lajpat-nagar-delhi/', icon: Users },
+    { name: 'Hysteroscopy', path: '/hysteroscopy-treatment-in-lajpat-nagar-delhi/', icon: Activity },
+    { name: 'Laparoscopy', path: '/laparoscopy-surgery-in-lajpat-nagar-delhi/', icon: Scissors },
+    { name: 'PGS/PGD', path: '/pgs-pgd-testing-in-lajpat-nagar-delhi/', icon: Beaker },
+    { name: 'TESA & PESA', path: '/tesa-and-pesa-treatment-in-lajpat-nagar-delhi/', icon: TestTube2 },
+    { name: 'Surrogacy', path: '/surrogacy-treatment-in-lajpat-nagar-delhi/', icon: Baby },
+    { name: 'Verification Services', path: '/verification-services-in-lajpat-nagar-delhi/', icon: ClipboardList }
   ];
 
   const successCategories = [

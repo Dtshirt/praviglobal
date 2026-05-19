@@ -58,7 +58,8 @@ export async function POST(request) {
         const Mails = [
           'info@praviivf.in',
           'ritshukla@gmail.com',
-          'deepakbaradwaj933@gmail.com'
+          'deepakbaradwaj933@gmail.com',
+          'praviglobalinfo@praviivf.in'
         ]
 
     // Log the appointment request (in production, you'd save to database)

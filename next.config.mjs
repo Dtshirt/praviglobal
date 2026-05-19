@@ -65,6 +65,146 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/services/',
+        destination: '/fertility-services-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/about/',
+        destination: '/about-fertility-treatment-in-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/doctors/',
+        destination: '/best-ivf-doctors-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/donor-services/',
+        destination: '/donor-services-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/egg-freezing/',
+        destination: '/egg-freezing-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/female-infertility/',
+        destination: '/female-infertility-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/female-infertility-in-lajpat-nagar-delhi/',
+        destination: '/female-infertility-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/follicular-monitoring/',
+        destination: '/follicular-monitoring-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/hormonal-test/',
+        destination: '/hormonal-test-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/hysteroscopy/',
+        destination: '/hysteroscopy-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/hysteroscopy-in-lajpat-nagar-delhi/',
+        destination: '/hysteroscopy-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/icsi/',
+        destination: '/icsi-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/icsi-in-lajpat-nagar-delhi/',
+        destination: '/icsi-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/iui/',
+        destination: '/iui-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/iui-in-lajpat-nagar-delhi/',
+        destination: '/iui-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/ivf/',
+        destination: '/ivf-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/ivf-in-lajpat-nagar-delhi/',
+        destination: '/ivf-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/laparoscopy/',
+        destination: '/laparoscopy-surgery-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/laparoscopy-in-lajpat-nagar-delhi/',
+        destination: '/laparoscopy-surgery-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/male-infertility/',
+        destination: '/male-infertility-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/male-infertility-in-lajpat-nagar-delhi/',
+        destination: '/male-infertility-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/pgspgd/',
+        destination: '/pgs-pgd-testing-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/pgspgd-in-lajpat-nagar-delhi/',
+        destination: '/pgs-pgd-testing-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/surrogacy/',
+        destination: '/surrogacy-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/surrogacy-in-lajpat-nagar-delhi/',
+        destination: '/surrogacy-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/tesa-and-pesa/',
+        destination: '/tesa-and-pesa-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/tesa-and-pesa-in-lajpat-nagar-delhi/',
+        destination: '/tesa-and-pesa-treatment-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
+        source: '/verification-services/',
+        destination: '/verification-services-in-lajpat-nagar-delhi/',
+        permanent: true,
+      },
+      {
         source: '/:path*',
         has: [
           {

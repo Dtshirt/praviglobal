@@ -182,15 +182,15 @@ export default function PraviIVFLanding() {
               <Award className="w-5 h-5 text-rose-400" />
               <span className="text-sm font-medium text-slate-700">International Center of Excellence</span>
             </div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Turning Your Dream of<br />
-              <span className="text-white">
-                Parenthood into Reality
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Best IVF Centre in Delhi India for<br />
+              <span className="text-emerald-300">
+                International Patients
               </span>
-            </h2>
+            </h1>
             <p className="text-xl text-white mb-10 leading-relaxed">
-              World-class fertility care with personalized support for international patients.
-              Begin your journey with compassion, expertise, and unwavering commitment.
+              Experience the highest success rates with highly affordable IVF in India. 
+              Pravi Global IVF provides world-class fertility care, advanced technology, and complete travel support for international families.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href='https://api.whatsapp.com/send/?phone=+918009150040&text=Hello%21+I+would+like+to+know+more+about+your+services.&type=phone_number&app_absent=0'><button className="bg-[#004b4b] hover:bg-[#004242] text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200">

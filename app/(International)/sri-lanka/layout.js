@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "IVF Treatment in Delhi for Sri Lanka Patients | Pravi IVF",
+  title: "Best IVF Centre in India for Sri Lanka Patients | Affordable IVF",
   description:
-    "Expert IVF treatment in Delhi for patients from Sri Lanka. Pravi IVF offers high success rates, affordable costs, and dedicated support for international couples.",
+    "Looking for the best IVF centre in India? Pravi IVF offers highly successful and affordable IVF treatments for patients from Sri Lanka with advanced care.",
   robots: {
     index: true,
     follow: true,
@@ -10,9 +10,9 @@ export const metadata = {
     canonical: "https://praviglobalivf.com/sri-lanka/",
   },
   openGraph: {
-    title: "IVF Treatment for Patients from Sri Lanka | Pravi Global IVF Polyclinic Delhi",
+    title: "Best IVF Centre in India for Sri Lanka Patients",
     description:
-      "Looking for affordable IVF in India from Sri Lanka? Pravi Global IVF Polyclinic provides international fertility care with advanced IVF, ICSI, and surrogacy services for Sri Lanka couples.",
+      "Pravi Global IVF Polyclinic provides affordable and highly successful IVF in India for Sri Lanka patients. Get advanced fertility care, ICSI, and surrogacy.",
     url: "https://praviglobalivf.com/sri-lanka/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
@@ -20,7 +20,7 @@ export const metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "IVF Treatment for Sri Lanka Patients - Pravi Global IVF Polyclinic Delhi",
+        alt: "Best IVF Treatment in India for Sri Lanka Patients",
       },
     ],
     locale: "en_IN",
@@ -28,10 +28,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IVF Treatment for Sri Lanka Patients | Pravi Global IVF Polyclinic Delhi",
+    title: "Affordable IVF in India for Sri Lanka Patients",
     description:
-      "Pravi Global IVF Polyclinic offers world-class fertility treatments for patients from Sri Lanka. Safe, affordable, and successful IVF and surrogacy care in Delhi, India.",
-    images: ["/images/og-image.jpg"],
+      "Pravi Global IVF Polyclinic offers world-class fertility treatments for patients from Sri Lanka. Safe, affordable, and successful IVF care in Delhi, India.",
+    images: ["/images/ivf-for-sri-lanka-patients.jpg"],
   },
 };
 

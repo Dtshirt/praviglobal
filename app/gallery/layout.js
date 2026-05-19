@@ -1,7 +1,6 @@
 export const metadata = {
-  title: "Photo Gallery | IVF Centre Facilities | Pravi IVF",
-  description:
-    "Explore our modern IVF lab, advanced fertility equipment, and patient facilities at Pravi IVF. A glimpse into our compassionate care environment.",
+  title: "Photo Gallery | IVF Centre in Lajpat Nagar Delhi | Pravi IVF",
+  description: "Explore our modern IVF lab, advanced fertility equipment, and patient facilities at Pravi IVF in Lajpat Nagar, Delhi. Glimpse our compassionate clinical environment.",
   robots: {
     index: true,
     follow: true,
@@ -10,9 +9,8 @@ export const metadata = {
     canonical: "https://praviglobalivf.com/gallery/",
   },
   openGraph: {
-    title: "Gallery | Pravi Global IVF Polyclinic Delhi",
-    description:
-      "Take a visual tour of Pravi Global IVF Polyclinic, Delhi’s leading fertility centre. See our advanced IVF labs, consultation rooms, and world-class facilities designed for comfort and care.",
+    title: "Photo Gallery | IVF Centre in Lajpat Nagar Delhi | Pravi IVF",
+    description: "Explore our modern IVF lab, advanced fertility equipment, and patient facilities at Pravi IVF in Lajpat Nagar, Delhi. Glimpse our compassionate clinical environment.",
     url: "https://praviglobalivf.com/gallery/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
@@ -28,9 +26,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gallery | Pravi Global IVF Polyclinic Delhi",
-    description:
-      "View the gallery of Pravi Global IVF Polyclinic, Delhi — modern IVF labs, experienced doctors, advanced fertility equipment, and a caring environment for every couple.",
+    title: "Photo Gallery | IVF Centre in Lajpat Nagar Delhi | Pravi IVF",
+    description: "Explore our modern IVF lab, advanced fertility equipment, and patient facilities at Pravi IVF in Lajpat Nagar, Delhi. Glimpse our compassionate clinical environment.",
     images: ["/images/og-image.jpg"],
   },
 };

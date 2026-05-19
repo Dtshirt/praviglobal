@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Best IVF Treatment in Delhi | Pravi IVF Center India",
+  title: "Best IVF Centre in India | Affordable IVF Treatments & High Success Rates",
   description:
-    "Leading IVF center in Delhi offering advanced fertility treatments including ICSI, IUI, and surrogacy with high success rates. Book your free consultation now.",
+    "Looking for the best IVF centre in India? Pravi IVF offers highly successful and affordable IVF treatments with advanced clinical care and expert fertility specialists.",
   robots: {
     index: true,
     follow: true,
@@ -10,9 +10,9 @@ export const metadata = {
     canonical: "https://praviglobalivf.com/india/",
   },
   openGraph: {
-    title: "Best IVF Center in Delhi, India | Pravi Global IVF Polyclinic",
+    title: "Best IVF Centre in India | Affordable IVF Treatments",
     description:
-      "Looking for the best IVF center in India? Pravi Global IVF provides world-class fertility care with advanced technology and personalized treatment plans in Delhi.",
+      "Pravi Global IVF Polyclinic provides affordable and highly successful IVF in India. Get advanced fertility care, ICSI, and specialized treatments.",
     url: "https://praviglobalivf.com/india/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
@@ -20,7 +20,7 @@ export const metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Best IVF Center in Delhi India - Pravi Global IVF Polyclinic",
+        alt: "Best IVF Treatment in India",
       },
     ],
     locale: "en_IN",
@@ -28,10 +28,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best IVF Center in Delhi, India | Pravi Global IVF Polyclinic",
+    title: "Affordable IVF in India | Pravi Global IVF Polyclinic",
     description:
-      "Pravi Global IVF Polyclinic offers world-class fertility treatments in India. Safe, affordable, and successful IVF and surrogacy care in Delhi.",
-    images: ["/images/og-image.jpg"],
+      "Pravi Global IVF Polyclinic offers world-class fertility treatments in India. Safe, affordable, and successful IVF care in Delhi.",
+    images: ["/images/ivf-treatment-in-india.jpg"],
   },
 };
 

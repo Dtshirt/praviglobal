@@ -1,12 +1,12 @@
 export const metadata = {
-  title: 'Needle-Free IVF Injection Technology in Delhi | Pravi Global IVF',
-  description: 'Pravi Global IVF Delhi offers advanced needle-free injection technology for IVF and fertility treatments. Experience comfortable, modern fertility care with advanced reproductive technology.',
+  title: 'Needle-Free IVF Injection in Lajpat Nagar Delhi | Pravi IVF',
+  description: 'Painless needle-free IVF injection technology in Lajpat Nagar, Delhi. Pravi Global IVF provides highly comfortable medication delivery for stress-free treatment.',
   alternates: {
     canonical: 'https://praviglobalivf.com/needle-free-ivf-injection',
   },
   openGraph: {
-    title: 'Advanced Needle-Free IVF Injection Technology | Pravi Global IVF',
-    description: 'Experience a more comfortable fertility treatment journey with advanced needle-free medication delivery at Pravi Global IVF.',
+    title: 'Needle-Free IVF Injection in Lajpat Nagar Delhi | Pravi IVF',
+    description: 'Painless needle-free IVF injection technology in Lajpat Nagar, Delhi. Pravi Global IVF provides highly comfortable medication delivery for stress-free treatment.',
     url: 'https://praviglobalivf.com/needle-free-ivf-injection',
     siteName: 'Pravi Global IVF',
     locale: 'en_IN',

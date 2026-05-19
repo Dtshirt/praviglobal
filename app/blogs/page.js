@@ -29,8 +29,8 @@ async function getAllPosts() {
 
 
 export const metadata = {
-  title: 'Fertility & IVF Blogs | Expert Insights | Pravi IVF',
-  description: 'Read the latest fertility insights, IVF success tips, and expert medical guides from Pravi IVF. Stay informed on your journey to parenthood.',
+  title: 'Fertility & IVF Blogs in Lajpat Nagar Delhi | Expert Insights | Pravi IVF',
+  description: 'Read the latest fertility insights, IVF success tips, and expert medical guides from Pravi IVF in Lajpat Nagar, Delhi. Stay informed on your journey to parenthood.',
   alternates: {
     canonical: 'https://praviglobalivf.com/blogs/',
   }

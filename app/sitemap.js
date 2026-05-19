@@ -4,12 +4,13 @@ import Post from '@/models/Post';
 export default async function sitemap() {
   const baseUrl = 'https://praviglobalivf.com';
 
-  // Base routes
+  // Base routes with proper trailing slash matching Next.js trailingSlash: true configuration
   const routes = [
     '',
-    '/about',
-    '/services',
-    '/doctors',
+    '/about-fertility-treatment-in-delhi',
+    '/fertility-services-in-lajpat-nagar-delhi',
+    '/best-ivf-doctors-in-lajpat-nagar-delhi',
+    '/fertility-specialist-in-lajpat-nagar-delhi',
     '/contact',
     '/blogs',
     '/success-stories',
@@ -18,20 +19,22 @@ export default async function sitemap() {
     '/nri',
     '/oci',
     '/book-appointment',
-    '/ivf',
-    '/icsi',
-    '/iui',
-    '/egg-freezing',
-    '/male-infertility',
-    '/female-infertility',
-    '/surrogacy',
-    '/hormonal-test',
-    '/follicular-monitoring',
-    '/hysteroscopy',
-    '/laparoscopy',
-    '/pgspgd',
-    '/tesa-and-pesa',
-    '/verification-services',
+    '/privacy-policy',
+    '/terms',
+    '/ivf-treatment-in-lajpat-nagar-delhi',
+    '/icsi-treatment-in-lajpat-nagar-delhi',
+    '/iui-treatment-in-lajpat-nagar-delhi',
+    '/egg-freezing-in-lajpat-nagar-delhi',
+    '/male-infertility-treatment-in-lajpat-nagar-delhi',
+    '/female-infertility-treatment-in-lajpat-nagar-delhi',
+    '/surrogacy-treatment-in-lajpat-nagar-delhi',
+    '/hormonal-test-in-lajpat-nagar-delhi',
+    '/follicular-monitoring-in-lajpat-nagar-delhi',
+    '/hysteroscopy-treatment-in-lajpat-nagar-delhi',
+    '/laparoscopy-surgery-in-lajpat-nagar-delhi',
+    '/pgs-pgd-testing-in-lajpat-nagar-delhi',
+    '/tesa-and-pesa-treatment-in-lajpat-nagar-delhi',
+    '/verification-services-in-lajpat-nagar-delhi',
     '/best-ivf-centre-in-south-delhi',
     '/best-ivf-centre-in-lajpat-nagar-delhi',
     '/best-ivf-centre-in-saket-delhi',
@@ -54,12 +57,45 @@ export default async function sitemap() {
     '/best-ivf-centre-in-south-extension-delhi',
     '/electronic-witness-system',
     '/needle-free-ivf-injection',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly',
-    priority: route === '' ? 1 : 0.8,
-  }));
+    '/advanced-fertility-care',
+    '/success-stories/ivf',
+    '/success-stories/iui',
+    '/success-stories/icsi',
+    '/success-stories/egg-freezing',
+    '/success-stories/male-infertility',
+    '/success-stories/donor-services',
+    '/success-stories/surrogacy',
+    '/success-stories/low-sperm-count',
+    '/success-stories/nil-sperm-count',
+    '/success-stories/tesa-pesa',
+    '/success-stories/international',
+    '/iran',
+    '/india',
+    '/ethiopia',
+    '/canada',
+    '/cameroon',
+    '/australia',
+    '/afghanistan',
+    '/sri-lanka',
+    '/oman',
+    '/myanmar',
+    '/maldives',
+    '/kazakhstan',
+    '/iraq',
+    '/yemen',
+    '/uzbekistan',
+    '/united-states',
+    '/tajikistan'
+  ].map((route) => {
+    // Append trailing slash to match canonical formats perfectly
+    const path = route === '' ? '/' : `${route}/`;
+    return {
+      url: `${baseUrl}${path}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: route === '' ? 1 : 0.8,
+    };
+  });
 
   // Fetch all blog posts for dynamic sitemap
   let posts = [];
@@ -71,7 +107,7 @@ export default async function sitemap() {
   }
 
   const postRoutes = posts.map((post) => ({
-    url: `${baseUrl}/${post.slug}`,
+    url: `${baseUrl}/${post.slug}/`,
     lastModified: post.updatedAt || new Date(),
     changeFrequency: 'weekly',
     priority: 0.6,

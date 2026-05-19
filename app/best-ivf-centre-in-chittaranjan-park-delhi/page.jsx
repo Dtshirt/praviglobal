@@ -10,49 +10,49 @@ export default function CRParkIVFPage() {
   const treatments = [
     { 
       title: "IVF Treatment In Chittaranjan Park", 
-      slug: "ivf",
+      slug: "ivf-treatment-in-lajpat-nagar-delhi",
       desc: "Our IVF Clinic In CR Park provides world-class IVF Treatment In Chittaranjan Park with a High IVF Success Rate Delhi.",
       longDesc: "When you choose our CR Park centre, you are choosing a team that treats your family as their own. We use the latest in reproductive science to give you the highest chance of holding your baby."
     },
     { 
       title: "IUI Treatment Delhi", 
-      slug: "iui",
+      slug: "iui-treatment-in-lajpat-nagar-delhi",
       desc: "Expert IUI Treatment Delhi at our Fertility Centre In CR Park. A simple and effective first step for Alaknanda families.",
       longDesc: "IUI is often the first real medical step on a fertility journey. We optimize the sperm and time the placement perfectly with your ovulation to maximize the chance of a natural-feeling conception."
     },
     { 
       title: "ICSI Treatment Delhi", 
-      slug: "icsi",
+      slug: "icsi-treatment-in-lajpat-nagar-delhi",
       desc: "Specialized ICSI Treatment Delhi for male fertility factors at our leading IVF Hospital In South Delhi.",
       longDesc: "ICSI has revolutionized the treatment of male factor infertility. By injecting a single healthy sperm directly into the egg, we overcome obstacles that would have otherwise prevented fertilization."
     },
     { 
       title: "Egg Freezing", 
-      slug: "egg-freezing",
+      slug: "egg-freezing-in-lajpat-nagar-delhi",
       desc: "Preserve your future with advanced egg freezing at the best IVF Clinic In CR Park.",
       longDesc: "Don't let the clock dictate your life. Our vitrification technology allows you to freeze your eggs at their peak health, giving you the freedom to start a family when the time is truly right for you."
     },
     { 
       title: "Male Infertility Treatment Delhi", 
-      slug: "male-infertility",
+      slug: "male-infertility-treatment-in-lajpat-nagar-delhi",
       desc: "Compassionate Male Infertility Treatment Delhi in South Delhi. Our IVF Doctor In Chittaranjan Park finds solutions for every family.",
       longDesc: "Infertility is a shared journey. We provide a private, professional environment for men to receive everything from advanced semen analysis to surgical sperm retrieval (TESA/PESA)."
     },
     { 
       title: "Female Infertility Specialist Delhi", 
-      slug: "female-infertility",
+      slug: "female-infertility-treatment-in-lajpat-nagar-delhi",
       desc: "Consult our Female Infertility Specialist Delhi at the Best IVF Clinic In CR Park for personalized fertility care.",
       longDesc: "From tubal blockages to endometriosis, we dig deep to find the 'why' behind your struggles. Our specialists create targeted plans that treat the root cause, not just the symptoms."
     },
     { 
       title: "PCOS Fertility Treatment Delhi", 
-      slug: "female-infertility",
+      slug: "female-infertility-treatment-in-lajpat-nagar-delhi",
       desc: "Specialized PCOS Fertility Treatment Delhi at our IVF Centre In Chittaranjan Park to help you conceive safely.",
       longDesc: "PCOS doesn't mean you can't get pregnant. It just means you need a doctor who understands the delicate hormonal balance required to help your body release healthy eggs."
     },
     { 
       title: "Low AMH Treatment Delhi", 
-      slug: "female-infertility",
+      slug: "female-infertility-treatment-in-lajpat-nagar-delhi",
       desc: "Expert Low AMH Treatment Delhi using customized protocols at our Fertility Clinic In South Delhi.",
       longDesc: "A low egg count is a challenge, not a dead end. We use customized, gentle stimulation protocols designed to make the absolute most of the eggs you have left."
     },

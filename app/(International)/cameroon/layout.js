@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "IVF Treatment in Delhi for Cameroon Patients | Pravi IVF",
+  title: "Best IVF Centre in India for Cameroon Patients | Affordable IVF",
   description:
-    "Expert IVF treatment in Delhi for Cameroon patients. Pravi IVF offers high success rates, affordable costs, and full medical visa support. Book your consult.",
+    "Looking for the best IVF centre in India? Pravi IVF offers highly successful and affordable IVF treatments for patients from Cameroon with advanced care.",
   robots: {
     index: true,
     follow: true,
@@ -10,9 +10,9 @@ export const metadata = {
     canonical: "https://praviglobalivf.com/cameroon/",
   },
   openGraph: {
-    title: "IVF Treatment for Patients from Cameroon | Pravi Global IVF Polyclinic Delhi",
+    title: "Best IVF Centre in India for Cameroon Patients",
     description:
-      "Looking for affordable IVF in India from Cameroon? Pravi Global IVF Polyclinic provides international fertility care with advanced IVF, ICSI, and surrogacy services for Cameroon couples.",
+      "Pravi Global IVF Polyclinic provides affordable and highly successful IVF in India for Cameroon patients. Get advanced fertility care, ICSI, and surrogacy.",
     url: "https://praviglobalivf.com/cameroon/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
@@ -20,7 +20,7 @@ export const metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "IVF Treatment for Cameroon Patients - Pravi Global IVF Polyclinic Delhi",
+        alt: "Best IVF Treatment in India for Cameroon Patients",
       },
     ],
     locale: "en_IN",
@@ -28,10 +28,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IVF Treatment for Cameroon Patients | Pravi Global IVF Polyclinic Delhi",
+    title: "Affordable IVF in India for Cameroon Patients",
     description:
-      "Pravi Global IVF Polyclinic offers world-class fertility treatments for patients from Cameroon. Safe, affordable, and successful IVF and surrogacy care in Delhi, India.",
-    images: ["/images/og-image.jpg"],
+      "Pravi Global IVF Polyclinic offers world-class fertility treatments for patients from Cameroon. Safe, affordable, and successful IVF care in Delhi, India.",
+    images: ["/images/ivf-for-cameroon-patients.jpg"],
   },
 };
 

@@ -1,7 +1,6 @@
 export const metadata = {
   title: "IVF Success Stories | Patient Testimonials | Pravi IVF",
-  description:
-    "Read inspiring success stories and genuine patient testimonials from Pravi IVF. Discover our high success rates in fertility treatments. Real results, happy families.",
+  description: "Read inspiring IVF success stories and patient testimonials at Pravi IVF in Lajpat Nagar, Delhi. Discover our high success rates in treating complex fertility cases.",
   robots: {
     index: true,
     follow: true,
@@ -10,9 +9,8 @@ export const metadata = {
     canonical: "https://praviglobalivf.com/success-stories/",
   },
   openGraph: {
-    title: "IVF Success Stories | Pravi Global IVF Polyclinic",
-    description:
-      "Real stories from real couples. Explore our gallery of success and learn how Pravi Global IVF Polyclinic helps families realize their dreams.",
+    title: "IVF Success Stories | Patient Testimonials | Pravi IVF",
+    description: "Read inspiring IVF success stories and patient testimonials at Pravi IVF in Lajpat Nagar, Delhi. Discover our high success rates in treating complex fertility cases.",
     url: "https://praviglobalivf.com/success-stories/",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
@@ -28,9 +26,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IVF Success Stories | Pravi Global IVF Polyclinic",
-    description:
-      "Witness the joy of parenthood. Inspiring patient testimonials and success stories from Delhi's leading fertility centre.",
+    title: "IVF Success Stories | Patient Testimonials | Pravi IVF",
+    description: "Read inspiring IVF success stories and patient testimonials at Pravi IVF in Lajpat Nagar, Delhi. Discover our high success rates in treating complex fertility cases.",
     images: ["/images/og-image.jpg"],
   },
 };

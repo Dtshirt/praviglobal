@@ -1,7 +1,6 @@
 export const metadata = {
-  title: "Fertility Treatment for OCI Card Holders in India | Pravi Global IVF Delhi",
-  description:
-    "Advanced IVF care for OCI card holders planning fertility treatment in India. Pravi Global IVF offers IVF, ICSI, egg donation, and personalized fertility solutions with dedicated OCI patient support in Delhi.",
+  title: "OCI Fertility Treatment in Lajpat Nagar Delhi | Pravi IVF",
+  description: "Advanced IVF care for OCI card holders planning fertility treatment in India. Pravi Global IVF in Lajpat Nagar, Delhi offers advanced IVF, ICSI, egg donation, and dedicated OCI patient support.",
   robots: {
     index: true,
     follow: true,
@@ -10,9 +9,8 @@ export const metadata = {
     canonical: "https://praviglobalivf.com/oci",
   },
   openGraph: {
-    title: "Fertility Treatment for OCI Card Holders | Pravi Global IVF Delhi",
-    description:
-      "Planning fertility treatment in India as an OCI card holder? Pravi Global IVF provides advanced IVF, ICSI, and reproductive care with fast-track cycles, online consultations, and dedicated international patient support.",
+    title: "OCI Fertility Treatment in Lajpat Nagar Delhi | Pravi IVF",
+    description: "Advanced IVF care for OCI card holders planning fertility treatment in India. Pravi Global IVF in Lajpat Nagar, Delhi offers advanced IVF, ICSI, egg donation, and dedicated OCI patient support.",
     url: "https://praviglobalivf.com/oci",
     siteName: "Pravi Global IVF Polyclinic",
     images: [
@@ -28,9 +26,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fertility Treatment for OCI Card Holders | Pravi Global IVF Delhi",
-    description:
-      "Pravi Global IVF offers world-class fertility treatments for OCI card holders. Fast-track IVF cycles, online consultations, and dedicated coordinators for efficient treatment during your India visit.",
+    title: "OCI Fertility Treatment in Lajpat Nagar Delhi | Pravi IVF",
+    description: "Advanced IVF care for OCI card holders planning fertility treatment in India. Pravi Global IVF in Lajpat Nagar, Delhi offers advanced IVF, ICSI, egg donation, and dedicated OCI patient support.",
     images: ["/images/og-image.jpg"],
   },
 };

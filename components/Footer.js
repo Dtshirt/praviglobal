@@ -6,21 +6,21 @@ import Image from 'next/image';
 export default function Footer() {
   const quickLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
+    { name: 'About Us', path: '/about-fertility-treatment-in-delhi/' },
     { name: 'Blogs', path: '/blogs' },
-    { name: 'Services', path: '/services' },
+    { name: 'Services', path: '/fertility-services-in-lajpat-nagar-delhi/' },
     { name: 'Doctors', path: '/doctors' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' }
   ];
 
   const services = [
-    {service: 'IVF Treatment', url:'/ivf'},
-    {service: 'ICSI', url:'/icsi'},
-    {service: 'IUI', url:'/iui'},
-    {service: 'Egg Freezing', url:'/egg-freezing'},
-    {service: 'Male Infertility', url:'/male-infertility'},
-    {service: 'Surrogacy', url:'/surrogacy'},
+    {service: 'IVF Treatment', url:'/ivf-treatment-in-lajpat-nagar-delhi/'},
+    {service: 'ICSI', url:'/icsi-treatment-in-lajpat-nagar-delhi/'},
+    {service: 'IUI', url:'/iui-treatment-in-lajpat-nagar-delhi/'},
+    {service: 'Egg Freezing', url:'/egg-freezing-in-lajpat-nagar-delhi/'},
+    {service: 'Male Infertility', url:'/male-infertility-treatment-in-lajpat-nagar-delhi/'},
+    {service: 'Surrogacy', url:'/surrogacy-treatment-in-lajpat-nagar-delhi/'},
   ];
 
   return (
@@ -41,10 +41,22 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-3">
               Leading fertility center dedicated to helping families grow with compassion, expertise, and the latest reproductive technologies.
             </p>
-            <ul className='text-sm text-gray-400 mt-0 mb-3'>
-              <li>Best IVF Centre in Delhi</li>
-              <li>Best IVF Centre in Lajpat Nagar</li>
-              <li>Best IVF Centre in South Delhi</li> 
+            <ul className='text-sm text-gray-400 mt-0 mb-3 space-y-1'>
+              <li>
+                <Link href="/" className="hover:text-blue-500 transition-colors">
+                  Best IVF Centre in Delhi
+                </Link>
+              </li>
+              <li>
+                <Link href="/best-ivf-centre-in-lajpat-nagar-delhi/" className="hover:text-blue-500 transition-colors">
+                  Best IVF Centre in Lajpat Nagar
+                </Link>
+              </li>
+              <li>
+                <Link href="/best-ivf-centre-in-south-delhi/" className="hover:text-blue-500 transition-colors">
+                  Best IVF Centre in South Delhi
+                </Link>
+              </li> 
             </ul>
             <div className="flex space-x-4">
               <a
