@@ -133,7 +133,7 @@ const FemaleInfertilityPage = () => {
             <section className="prose prose-lg max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Restoring Hope: Expert Female Infertility Treatment</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Female infertility is a complex medical condition that affects millions of women worldwide. At Pravi IVF, the premier **Female Infertility Treatment Centre in Delhi**, we believe that every woman deserves the chance to experience motherhood. Our clinic, located in the heart of Lajpat Nagar, provides a comprehensive ecosystem for diagnosing and treating all aspects of female reproductive health.
+                Female infertility is a complex medical condition that affects millions of women worldwide. At Pravi IVF, the premier **<a href="https://praviglobalivf.com">Female Infertility Treatment Centre in Delhi</a>**, we believe that every woman deserves the chance to experience motherhood. Our clinic, located in the heart of Lajpat Nagar, provides a comprehensive ecosystem for diagnosing and treating all aspects of female reproductive health.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Our approach is rooted in scientific excellence and compassionate care. We understand that the journey to parenthood can be emotionally taxing, which is why we prioritize a holistic treatment model. By combining advanced diagnostic tools with personalized medical protocols, we aim to uncover the root cause of infertility and create a clear, effective pathway to pregnancy.

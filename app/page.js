@@ -220,7 +220,7 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6.5xl tracking-normal leading-[1.2] text-white font-extrabold">
-                Best IVF Centre in <span className="bg-gradient-to-r from-teal-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">Lajpat Nagar, Delhi</span>
+                Best IVF Centre in <span className="bg-gradient-to-r from-teal-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">Lajpat Nagar Delhi</span>
               </h1>
 
               <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed font-light">

@@ -7,15 +7,16 @@ import { generateOrganizationSchema } from '@/lib/schema';
 
 const inter = Inter({ subsets: ['latin'] });
 
+
 export const metadata = {
   title: {
-    default: `Best IVF Centre in Lajpat Nagar Delhi | Pravi IVF`,
+    default: `Best IVF Centre in Delhi | Expert Fertility Care | Pravi IVF`,
     template: `%s | Pravi IVF`,
   },
   description:
-    "Pravi IVF is the best IVF centre in Lajpat Nagar, Delhi offering advanced fertility treatments like IVF, ICSI, IUI, and more with high success rates. Book a consultation.",
+    "Pravi IVF is the best IVF centre in Delhi offering advanced fertility treatments like ICSI, IUI, and more with high success rates. Book your consultation today.",
   keywords:
-    'Best IVF centre in Lajpat Nagar Delhi, Top IVF clinic in Lajpat Nagar, Best fertility clinic in Lajpat Nagar, IVF hospital in Lajpat Nagar, IVF treatment in Lajpat Nagar Delhi, Best IVF doctor in Lajpat Nagar Delhi, fertility specialist Lajpat Nagar, IUI, ICSI, surrogacy, egg freezing, male infertility, female infertility',
+    'Best IVF centre in Delhi, Top IVF clinic in Delhi, Best fertility clinic in Delhi, IVF hospital in Delhi, IVF treatment in Delhi, Best IVF doctor in Delhi, fertility specialist Delhi, IUI, ICSI, surrogacy, egg freezing, male infertility, female infertility',
   authors: [{ name: 'Pravi Global IVF Polyclinic' }],
   creator: 'Pravi Global IVF Polyclinic',
   publisher: 'Pravi Global IVF Polyclinic',
@@ -29,17 +30,17 @@ export const metadata = {
     canonical: 'https://praviglobalivf.com/',
   },
   openGraph: {
-    title: 'Pravi Global IVF Polyclinic - Best IVF Centre in Lajpat Nagar Delhi',
+    title: 'Pravi Global IVF Polyclinic - Best IVF Centre in Delhi',
     description:
-      'Looking for the best IVF centre in Lajpat Nagar, Delhi? Pravi Global IVF Polyclinic offers IVF, ICSI, IUI, surrogacy, and advanced fertility care.',
+      'Looking for the best IVF centre in Delhi? Pravi Global IVF Polyclinic offers IVF, ICSI, IUI, surrogacy, and advanced fertility care with top IVF doctors in Delhi.',
     url: 'https://praviglobalivf.com',
-    siteName: 'Pravi Global IVF Delhi',
+    siteName: 'Pravi Global IVF Polyclinic',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Pravi Global IVF Polyclinic - Best IVF Centre in Lajpat Nagar Delhi',
+        alt: 'Pravi Global IVF Polyclinic - Best IVF Centre in Delhi',
       },
     ],
     locale: 'en_IN',
@@ -47,9 +48,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pravi Global IVF Polyclinic - Best IVF Centre in Lajpat Nagar Delhi',
+    title: 'Pravi Global IVF Polyclinic - Best IVF Centre in Delhi',
     description:
-      'Top fertility clinic in Lajpat Nagar, Delhi offering advanced IVF, ICSI, and IUI treatments with high success rates under expert specialists.',
+      'Top fertility clinic in Delhi offering advanced IVF, ICSI, and IUI treatments with high success rates. Compassionate care from expert IVF doctors.',
     images: ['/images/og-image.jpg'],
   },
   robots: {
