@@ -13,7 +13,8 @@
     "mongoos": "^0.0.1-security",
     "mongoose": "^8.19.3",
     "next": "16.0.7",
-    "nodemailer": "^7.0.10",
+    "nodemailer": "^7.0.13",
+    "razorpay": "^2.9.6",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-phone-input-2": "^2.15.1"

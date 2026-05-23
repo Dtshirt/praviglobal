@@ -455,7 +455,7 @@ export default function PrivacyPolicy() {
                 <span className="text-2xl">📧</span>
                 <div>
                   <span className="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">Email</span>
-                  <p className="text-slate-700 font-medium">info@praviglobalivf.in</p>
+                  <p className="text-slate-700 font-medium">praviglobalinfo@praviivf.in</p>
                 </div>
               </div>
             </div>

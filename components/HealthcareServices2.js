@@ -16,16 +16,16 @@ import Link from 'next/link';
 
 export default function HealthcareServices2() {
   const services = [
-    { id: 1, title: 'Male Fertility', icon: Male, url:'/male-infertility', color: 'bg-teal-50 text-teal-600' },
-    { id: 2, title: 'Female Fertility', icon: Female, url:'/female-infertility', color: 'bg-pink-50 text-pink-600' },
-    { id: 3, title: 'IVF', icon: FlaskRound, url:'/ivf', color: 'bg-blue-50 text-blue-600' },
-    { id: 4, title: 'IUI', icon: Syringe, url:'/iui', color: 'bg-amber-50 text-amber-600' },
-    { id: 5, title: 'ICSI', icon: Dna, url:'/icsi', color: 'bg-indigo-50 text-indigo-600' },
-    { id: 6, title: 'PGS/PGD', icon: Beaker, url:'/pgspgd', color: 'bg-rose-50 text-rose-600' },
-    { id: 7, title: 'Surrogacy', icon: Baby, url:'/surrogacy', color: 'bg-purple-50 text-purple-600' },
-    { id: 8, title: 'ART Bank', icon: Library, url:'/art-bank', color: 'bg-emerald-50 text-emerald-600' },
-    { id: 9, title: 'PGT-A/M/SR', icon: Microscope, url:'/pgt', color: 'bg-cyan-50 text-cyan-600' },
-    { id: 10, title: 'Micro TESE', icon: Target, url:'/micro-tese', color: 'bg-orange-50 text-orange-600' }
+    { id: 1, title: 'Male Fertility', icon: Male, url:'/male-infertility-treatment-in-lajpat-nagar-delhi/', color: 'bg-teal-50 text-teal-600' },
+    { id: 2, title: 'Female Fertility', icon: Female, url:'/female-infertility-treatment-in-lajpat-nagar-delhi/', color: 'bg-pink-50 text-pink-600' },
+    { id: 3, title: 'IVF', icon: FlaskRound, url:'/ivf-treatment-in-lajpat-nagar-delhi/', color: 'bg-blue-50 text-blue-600' },
+    { id: 4, title: 'IUI', icon: Syringe, url:'/iui-treatment-in-lajpat-nagar-delhi/', color: 'bg-amber-50 text-amber-600' },
+    { id: 5, title: 'ICSI', icon: Dna, url:'/icsi-treatment-in-lajpat-nagar-delhi/', color: 'bg-indigo-50 text-indigo-600' },
+    { id: 6, title: 'PGS/PGD', icon: Beaker, url:'/pgs-pgd-testing-in-lajpat-nagar-delhi/', color: 'bg-rose-50 text-rose-600' },
+    { id: 7, title: 'Surrogacy', icon: Baby, url:'/surrogacy-treatment-in-lajpat-nagar-delhi/', color: 'bg-purple-50 text-purple-600' },
+    { id: 8, title: 'ART Bank', icon: Library, url:'/donor-services-in-lajpat-nagar-delhi/', color: 'bg-emerald-50 text-emerald-600' },
+    { id: 9, title: 'PGT-A/M/SR', icon: Microscope, url:'/pgs-pgd-testing-in-lajpat-nagar-delhi/', color: 'bg-cyan-50 text-cyan-600' },
+    { id: 10, title: 'Micro TESE', icon: Target, url:'/tesa-and-pesa-treatment-in-lajpat-nagar-delhi/', color: 'bg-orange-50 text-orange-600' }
   ];
 
   return (
@@ -39,6 +39,7 @@ export default function HealthcareServices2() {
             return (
               <Link 
                 href={service.url} 
+                prefetch={true}
                 key={service.id} 
                 className="group flex flex-col items-center transition-all duration-300"
               >

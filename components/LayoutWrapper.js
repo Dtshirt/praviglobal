@@ -9,7 +9,7 @@ import DoctorPopup from './DoctorPopup';
 export default function LayoutWrapper({ children }) {
   const pathname = usePathname();
   const normalizedPath = pathname ? pathname.replace(/\/$/, '') : '';
-  const isAppOnlyPage = normalizedPath === '/advanced-fertility-care';
+  const isAppOnlyPage = normalizedPath === '/advanced-fertility-care' || normalizedPath === '/free-webinar';
 
   if (isAppOnlyPage) {
     return (

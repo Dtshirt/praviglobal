@@ -1,8 +1,9 @@
 'use client';
-
+ 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import {
   Menu,
   X,
@@ -29,19 +30,48 @@ import {
   BadgeCheck
 } from 'lucide-react';
 import { hospitalInfo } from '@/lib/data';
-
+ 
 export default function Header() {
+  const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [internationalOpen, setInternationalOpen] = useState(false);
   const [ivfSuccessOpen, setIvfSuccessOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+ 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Programmatic warming of route cache for 0ms transitions (native mobile app speed)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const paths = [
+        '/',
+        '/success-stories/',
+        '/fertility-services-in-lajpat-nagar-delhi/',
+        '/best-ivf-doctors-in-lajpat-nagar-delhi/',
+        '/gallery/',
+        '/contact/',
+        '/international/',
+        '/free-webinar/',
+        '/book-appointment/'
+      ];
+      // Delay prefetching by 1 second to ensure current page loads critical content first
+      const timer = setTimeout(() => {
+        paths.forEach((path) => {
+          try {
+            router.prefetch(path);
+          } catch (e) {
+            console.warn('Route prefetch failed:', e);
+          }
+        });
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [router]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -148,7 +178,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2 group">
+            <Link href="/" prefetch={true} className="flex items-center space-x-2 group">
               <Image
                 src="/images/footer-logo.svg"
                 width={150}
@@ -156,7 +186,7 @@ export default function Header() {
                 alt="Pravi IVF Logo"
               />
             </Link>
-
+ 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex space-x-8 relative">
               {navLinks.map((link) =>
@@ -175,6 +205,7 @@ export default function Header() {
                           <li key={path}>
                             <Link
                               href={path}
+                              prefetch={true}
                               className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-600 transition-colors rounded-md"
                             >
                               <Icon className="h-4 w-4 text-blue-500" />
@@ -196,7 +227,7 @@ export default function Header() {
                     <div className="absolute left-0 -mt-1 w-[350px] bg-white shadow-lg rounded-xl border border-gray-100 opacity-0 group-hover:opacity-100 group-hover:translate-y-1 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
                       <ul className="flex flex-col py-2">
                         <li className="px-4 py-2 border-b border-gray-50 pb-2 mb-1">
-                           <Link href="/success-stories/" className="text-sm font-bold text-teal-700 hover:text-teal-800">
+                           <Link href="/success-stories/" prefetch={true} className="text-sm font-bold text-teal-700 hover:text-teal-800">
                              All Success Stories
                            </Link>
                         </li>
@@ -204,6 +235,7 @@ export default function Header() {
                           <li key={idx}>
                             <Link
                               href={cat.path}
+                              prefetch={true}
                               className="flex items-center gap-2 px-4 py-2.5 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-700 transition-colors"
                             >
                               <BadgeCheck className="h-4 w-4 text-teal-500" />
@@ -225,11 +257,12 @@ export default function Header() {
                     {/* Dropdown: International (with inline countries), NRI, OCI */}
                     <div className="absolute right-0 -mt-1 w-[480px] bg-white shadow-xl rounded-xl border border-gray-100 opacity-0 group-hover:opacity-100 group-hover:translate-y-1 pointer-events-none group-hover:pointer-events-auto transition-all duration-300 z-50">
                       <div className="p-4">
-
+ 
                         {/* NRI & OCI */}
                         <div className="grid grid-cols-2 gap-2">
                           <Link
                             href="/nri/"
+                            prefetch={true}
                             className="flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-gray-700 bg-green-100 hover:bg-green-200 hover:text-green-700 transition-colors rounded-lg"
                           >
                             <UserCheck className="h-4 w-4 text-green-600" />
@@ -237,6 +270,7 @@ export default function Header() {
                           </Link>
                           <Link
                             href="/oci/"
+                            prefetch={true}
                             className="flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-gray-700 bg-green-100 hover:bg-green-200 hover:text-green-700 transition-colors rounded-lg"
                           >
                             <BadgeCheck className="h-4 w-4 text-green-600" />
@@ -257,6 +291,7 @@ export default function Header() {
                               <Link
                                 key={path}
                                 href={path}
+                                prefetch={true}
                                 className="flex items-center gap-2 px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors rounded-md"
                               >
                                 <Icon className="h-3.5 w-3.5 text-green-500 flex-shrink-0" />
@@ -265,7 +300,7 @@ export default function Header() {
                             ))}
                           </div>
                         </div>
-
+ 
                       </div>
                     </div>
                   </div>
@@ -273,6 +308,7 @@ export default function Header() {
                   <Link
                     key={link.path}
                     href={link.path}
+                    prefetch={true}
                     className="text-gray-50 hover:text-gray-200 font-medium transition-colors relative group"
                   >
                     {link.name}
@@ -321,6 +357,7 @@ export default function Header() {
                             <Link
                               key={path}
                               href={path}
+                              prefetch={true}
                               className="flex items-center gap-2 text-gray-50 hover:text-blue-600 transition-colors text-sm"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -344,6 +381,7 @@ export default function Header() {
                         <div className="pl-4 mt-2 flex flex-col space-y-2">
                           <Link
                             href="/success-stories/"
+                            prefetch={true}
                             className="flex items-center gap-2 text-teal-300 hover:text-teal-100 transition-colors text-sm font-semibold mb-1"
                             onClick={() => setMobileMenuOpen(false)}
                           >
@@ -353,6 +391,7 @@ export default function Header() {
                             <Link
                               key={path}
                               href={path}
+                              prefetch={true}
                               className="flex items-center gap-2 text-gray-50 hover:text-teal-400 transition-colors text-sm"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -384,6 +423,7 @@ export default function Header() {
                               <Link
                                 key={path}
                                 href={path}
+                                prefetch={true}
                                 className="flex items-center gap-2 text-gray-50 hover:text-green-400 transition-colors text-sm"
                                 onClick={() => setMobileMenuOpen(false)}
                               >
@@ -396,6 +436,7 @@ export default function Header() {
                           <div className="pt-2 border-t border-gray-700 grid grid-cols-2 gap-x-3 gap-y-2">
                             <Link
                               href="/nri/"
+                              prefetch={true}
                               className="flex items-center gap-2 text-gray-50 hover:text-green-400 transition-colors text-sm"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -404,6 +445,7 @@ export default function Header() {
                             </Link>
                             <Link
                               href="/oci/"
+                              prefetch={true}
                               className="flex items-center gap-2 text-gray-50 hover:text-green-400 transition-colors text-sm"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -418,6 +460,7 @@ export default function Header() {
                     <Link
                       key={link.path}
                       href={link.path}
+                      prefetch={true}
                       className="text-gray-50 hover:text-blue-600 font-medium transition-colors py-2"
                       onClick={() => setMobileMenuOpen(false)}
                     >

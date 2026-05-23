@@ -4,16 +4,6 @@ export const metadata = {
   alternates: {
     canonical: 'https://praviglobalivf.com/best-ivf-centre-in-lajpat-nagar-delhi',
   },
-
-  robots: {
-    index: false,
-    follow: false,
-    googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
-    },
-  },
   openGraph: {
     title: 'Best IVF Centre in Lajpat Nagar, Delhi | High Success IVF Clinic',
     description: 'Looking for the best IVF centre in Lajpat Nagar, Delhi? Our top fertility clinic offers advanced IVF, IUI & ICSI treatments with high success rates.',

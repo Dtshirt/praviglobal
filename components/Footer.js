@@ -43,17 +43,17 @@ export default function Footer() {
             </p>
             <ul className='text-sm text-gray-400 mt-0 mb-3 space-y-1'>
               <li>
-                <Link href="/" className="hover:text-blue-500 transition-colors">
+                <Link href="/" prefetch={true} className="hover:text-blue-500 transition-colors">
                   Best IVF Centre in Delhi
                 </Link>
               </li>
               <li>
-                <Link href="/best-ivf-centre-in-lajpat-nagar-delhi/" className="hover:text-blue-500 transition-colors">
+                <Link href="/best-ivf-centre-in-lajpat-nagar-delhi/" prefetch={true} className="hover:text-blue-500 transition-colors">
                   Best IVF Centre in Lajpat Nagar
                 </Link>
               </li>
               <li>
-                <Link href="/best-ivf-centre-in-south-delhi/" className="hover:text-blue-500 transition-colors">
+                <Link href="/best-ivf-centre-in-south-delhi/" prefetch={true} className="hover:text-blue-500 transition-colors">
                   Best IVF Centre in South Delhi
                 </Link>
               </li> 
@@ -88,7 +88,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
+ 
           {/* Quick Links */}
           <div>
             <p className="text-lg font-semibold mb-6">Quick Links</p>
@@ -97,6 +97,7 @@ export default function Footer() {
                 <li key={link.path}>
                   <Link
                     href={link.path}
+                    prefetch={true}
                     className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group"
                   >
                     <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 -ml-6 group-hover:ml-0 transition-all" />
@@ -106,7 +107,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
+ 
           {/* Our Services */}
           <div>
             <p className="text-lg font-semibold mb-6">Our Services</p>
@@ -115,6 +116,7 @@ export default function Footer() {
                 <li key={service.url}>
                   <Link
                     href={service.url}
+                    prefetch={true}
                     className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group"
                   >
                     <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 -ml-6 group-hover:ml-0 transition-all" />

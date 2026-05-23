@@ -3,24 +3,19 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import { ArrowRight, Calendar, Heart, Award, Shield, CheckCircle, Users, Clock, ChevronRight, Star, Phone, TrendingUp, Send, CheckCircle2, RefreshCw, ShieldCheck, Sparkles } from 'lucide-react';
 import { hospitalInfo, services, doctors, testimonials, whyChooseUs, stats } from '@/lib/data';
 
-// Dynamic imports for below-the-fold components
-const DoctorCard = dynamic(() => import('@/components/DoctorCard'), { ssr: true });
-const TestimonialCard = dynamic(() => import('@/components/TestimonialCard'), { ssr: true });
-const HealthcareServices2 = dynamic(() => import('@/components/HealthcareServices2'), { ssr: true });
-const HomeSeoContent = dynamic(() => import('@/components/HomeSeoContent'), { ssr: true });
-const ServiceCard = dynamic(() => import('@/components/ServiceCard'), { ssr: true });
-
+// Static imports for instant, pre-fetched rendering (0ms loading delay)
+import DoctorCard from '@/components/DoctorCard';
+import TestimonialCard from '@/components/TestimonialCard';
+import HealthcareServices2 from '@/components/HealthcareServices2';
+import HomeSeoContent from '@/components/HomeSeoContent';
+import ServiceCard from '@/components/ServiceCard';
 import HealthcareServices from '@/components/HealthcareServices';
-import HeroSlider from '@/components/HeroSlider';
-
-const MapSection = dynamic(() => import('@/components/MapSection'), { ssr: true });
+import MapSection from '@/components/MapSection';
 
 export default function HomePage() {
-  const [currentSlide, setCurrentSlide] = useState(0);
 
   // 🌸 Homepage Hero Image Slider State
   const [activeHeroSlide, setActiveHeroSlide] = useState(0);
@@ -135,30 +130,7 @@ export default function HomePage() {
     });
   };
 
-  const heroSlides = [
-    {
-      image: 'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&h=800&fit=crop',
-      title: 'Your Journey to Parenthood Starts Here',
-      subtitle: 'Experience world-class fertility care with personalized treatment plans'
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1920&h=800&fit=crop',
-      title: 'Advanced Fertility Solutions',
-      subtitle: 'State-of-the-art technology combined with compassionate care'
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1551076805-e1869033e561?w=1920&h=800&fit=crop',
-      title: 'Compassionate Care, Successful Outcomes',
-      subtitle: 'Helping thousands of families realize their dream of parenthood'
-    }
-  ];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <>
@@ -214,13 +186,23 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="inline-flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] px-4.5 py-2 rounded-full text-slate-300 font-semibold text-xs tracking-wider uppercase backdrop-blur-md">
-                <Sparkles className="h-3.5 w-3.5 text-yellow-400" />
-                #1 Rated Fertility Clinic in Lajpat Nagar
-              </div>
+              <Link href="/free-webinar" prefetch={true} className="block w-full max-w-md mx-auto lg:mx-0 bg-gradient-to-r from-rose-500 to-rose-600 border border-rose-400 p-4 rounded-2xl mb-6 shadow-[0_0_30px_rgba(244,63,94,0.3)] hover:scale-[1.02] transition-transform group">
+                <div className="flex items-center justify-between text-white">
+                  <div className="text-left">
+                    <span className="bg-white/20 text-xs px-2 py-1 rounded-full font-bold uppercase tracking-wide mb-2 inline-block animate-pulse">🔴 LIVE FERTILITY Webinar</span>
+                    <h4 className="font-bold text-[17px] leading-tight">प्रेगनेंसी क्यों नहीं हो रही?</h4>
+                    <p className="text-xs font-semibold text-white/90 mt-1 flex items-center gap-2">
+                      <Calendar className="w-3.5 h-3.5" /> 7 June 2026 | 2:00 PM
+                    </p>
+                  </div>
+                  <div className="bg-white text-rose-600 rounded-full w-10 h-10 flex items-center justify-center shrink-0 group-hover:translate-x-1 transition-transform">
+                    <ArrowRight className="w-5 h-5" />
+                  </div>
+                </div>
+              </Link>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6.5xl tracking-normal leading-[1.2] text-white font-extrabold">
-                Best IVF Centre in <span className="bg-gradient-to-r from-teal-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">Lajpat Nagar Delhi</span>
+                Best IVF Centre in <span className="bg-gradient-to-r from-teal-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent drop-shadow-sm">Lajpat Nagar, Delhi</span>
               </h1>
 
               <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed font-light">
@@ -413,7 +395,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <Link href="/about-fertility-treatment-in-delhi/" className="btn-primary text-white py-3 px-10">
+              <Link href="/about-fertility-treatment-in-delhi/" prefetch={true} className="btn-primary text-white py-3 px-10">
                 Learn More About Us <ChevronRight className="ml-2 h-5 w-5" />
               </Link>
             </div>
@@ -461,7 +443,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Link href="/fertility-services-in-lajpat-nagar-delhi/" className="btn-primary text-lg px-8 py-4 text-white">
+            <Link href="/fertility-services-in-lajpat-nagar-delhi/" prefetch={true} className="btn-primary text-lg px-8 py-4 text-white">
               View All Services <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
@@ -519,7 +501,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Link href="/best-ivf-doctors-in-lajpat-nagar-delhi/" className="btn-primary text-lg px-8 py-4 text-white">
+            <Link href="/best-ivf-doctors-in-lajpat-nagar-delhi/" prefetch={true} className="btn-primary text-lg px-8 py-4 text-white">
               Meet All Doctors <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>
@@ -563,6 +545,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/book-appointment"
+                prefetch={true}
                 className="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover:scale-105 inline-flex items-center justify-center text-lg font-semibold"
               >
                 <Calendar className="mr-2 h-6 w-6" />
@@ -576,6 +559,7 @@ export default function HomePage() {
               </button>
               <Link
                 href="/contact"
+                prefetch={true}
                 className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-blue-600 transition-all hover:scale-105 inline-flex items-center justify-center text-lg font-semibold"
               >
                 Contact Us
@@ -591,10 +575,15 @@ export default function HomePage() {
       {/* 🌸 FLOATING OVULATION CALCULATOR BADGE */}
       <button
         onClick={() => setShowOvulationModal(true)}
-        className="fixed bottom-24 right-5 sm:right-8 z-40 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-bold py-3.5 px-5 rounded-full shadow-[0_8px_30px_rgb(244,63,94,0.4)] hover:shadow-[0_8px_30px_rgb(244,63,94,0.6)] flex items-center gap-2 transition-all hover:scale-105 select-none text-xs sm:text-sm"
+        className="fixed bottom-24 right-5 sm:right-8 z-40 bg-white/95 backdrop-blur-md text-slate-800 font-bold py-3 px-5 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.15)] hover:shadow-[0_15px_35px_rgba(244,63,94,0.25)] flex items-center gap-2.5 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 select-none text-xs sm:text-sm border border-rose-100 group"
       >
-        <span className="text-base sm:text-lg animate-bounce">🌸</span>
-        <span>Ovulation Calculator</span>
+        <span className="relative flex h-2 w-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
+        </span>
+        <span className="text-base sm:text-lg animate-bounce group-hover:scale-120 transition-transform">🌸</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-700 tracking-wide font-semibold">Ovulation Calculator</span>
+        <span className="bg-rose-100 text-rose-600 text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full shrink-0">Free</span>
       </button>
 
       {/* 🌸 INTERACTIVE OVULATION CALCULATOR POPUP MODAL */}

@@ -222,7 +222,7 @@ export default function BlogClient({ blog, relatedBlogs }) {
                                 <a href="tel:+918009150040" className="block w-full px-4 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors text-center">
                                     📞 Call: +91 8009150040
                                 </a>
-                                <a href="mailto:info@praviivf.in" className="block w-full px-4 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-colors text-center">
+                                <a href="mailto:praviglobalinfo@praviivf.in" className="block w-full px-4 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-colors text-center">
                                     ✉️ Email Us
                                 </a>
                             </div>

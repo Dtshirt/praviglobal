@@ -1,5 +1,9 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import fs from 'fs/promises';
+import path from 'path';
+
+const DB_PATH = path.join(process.cwd(), 'contacts.json');
 
 export async function POST(request) {
   try {
@@ -23,81 +27,76 @@ export async function POST(request) {
       );
     }
 
-    // Create transporter
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT),
-      secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      }, 
-    });
+    // --- STEP 1: SAVE INQUIRY TO BACKUP DATABASE ---
+    try {
+      let contacts = [];
+      try {
+        const fileContent = await fs.readFile(DB_PATH, 'utf-8');
+        contacts = JSON.parse(fileContent);
+      } catch (err) {}
 
-    const Mails = [
-      'info@praviivf.in',
-      'ritshukla@gmail.com',
-      'deepakbaradwaj933@gmail.com'
-    ]
+      contacts.push({
+        id: `contact_${Date.now()}`,
+        name,
+        email,
+        phone,
+        message,
+        submittedAt: new Date().toISOString()
+      });
 
-    // Email options
-    const mailOptions = {
-      from: `"Pravi IVF Clinic" <${process.env.SMTP_USER}>`, // Sender address
-      to: Mails, // Where you receive contact emails
-      subject: `New Inquiry from ${name}`,
-      html: `
-        <h2>New Contact Message</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-        <hr/>
-        <p>Sent from your website contact form.</p>
-      `,
-    };
+      await fs.writeFile(DB_PATH, JSON.stringify(contacts, null, 2));
+    } catch (dbErr) {
+      console.error('Failed to save contact inquiry to local backup:', dbErr);
+    }
 
-    // Send email
-    await transporter.sendMail(mailOptions);
+    // --- STEP 2: SEND SMTP ALERT IN BACKGROUND ---
+    const key_id = process.env.SMTP_USER;
+    const key_pass = process.env.SMTP_PASS;
 
-    // return new Response(JSON.stringify({ success: true }), { status: 200 });
+    if (key_id && key_pass) {
+      try {
+        const transporter = nodemailer.createTransport({
+          host: process.env.SMTP_HOST,
+          port: Number(process.env.SMTP_PORT || 587),
+          secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
+          auth: {
+            user: key_id,
+            pass: key_pass,
+          },
+        });
 
-    return NextResponse.json(
-      { 
-        success: true,
-        message: 'Thank you for contacting us. We will get back to you soon.' 
-      },
-      { status: 200 }
-    );
+        const Mails = [
+          'praviglobalinfo@praviivf.in',
+          'ritshukla@gmail.com',
+          'deepakbaradwaj933@gmail.com'
+        ];
 
+        const mailOptions = {
+          from: `"Pravi IVF Clinic" <${process.env.SMTP_USER}>`, // Sender address
+          to: Mails, // Where you receive contact emails
+          subject: `New Inquiry from ${name}`,
+          html: `
+            <h2>New Contact Message</h2>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone}</p>
+            <p><strong>Message:</strong></p>
+            <p>${message}</p>
+            <hr/>
+            <p>Sent from your website contact form.</p>
+          `,
+        };
 
-    // Log the contact form submission (in production, you'd save to database or send email)
-    console.log('Contact Form Submission:', {
-      name,
-      email,
-      phone,
-      message,
-      timestamp: new Date().toISOString()
-    });
-
-    // In production, you would:
-    // 1. Save to database
-    // 2. Send email notification to admin
-    // 3. Send confirmation email to user
-    // 4. Integrate with CRM
-
-    // Example: Send email using a service like SendGrid, Resend, or Nodemailer
-    // await sendEmail({
-    //   to: 'info@praviivf.in',
-    //   subject: `New Contact Form Submission from ${name}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>Name:</strong> ${name}</p>
-    //     <p><strong>Email:</strong> ${email}</p>
-    //     <p><strong>Phone:</strong> ${phone}</p>
-    //     <p><strong>Message:</strong> ${message}</p>
-    //   `
-    // });
+        // Fire email in background to prevent blocking UI execution
+        transporter.sendMail(mailOptions).catch(emailErr => {
+          console.error('Background contact email dispatch failed:', emailErr);
+        });
+      } catch (smtpInitErr) {
+        console.error('SMTP Transporter initialization failed (Safe bypass):', smtpInitErr);
+      }
+    } else {
+      console.log('Contact inquiry received in Mock Mode (No SMTP credentials configured). Saved to contacts.json.');
+    }
 
     return NextResponse.json(
       { 
